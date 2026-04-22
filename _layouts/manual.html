@@ -1,0 +1,23 @@
+---
+layout: default
+---
+<article class="manual-page">
+  <nav class="breadcrumb">
+    <a href="{{ '/manual/' | relative_url }}">Manual</a>
+    {% assign segments = page.url | remove: '/manual/' | split: '_' %}
+    {% assign acc = '' %}
+    {% for seg in segments %}
+      {% if forloop.first %}
+        {% assign acc = seg %}
+      {% else %}
+        {% assign acc = acc | append: '_' | append: seg %}
+      {% endif %}
+      {% unless forloop.last %}
+        / <a href="{{ '/manual/' | append: acc | relative_url }}">{{ seg }}</a>
+      {% else %}
+        / <span>{{ seg }}</span>
+      {% endunless %}
+    {% endfor %}
+  </nav>
+  {{ content }}
+</article>
