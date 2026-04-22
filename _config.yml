@@ -1,0 +1,24 @@
+title: Maton CLI
+description: Maton on the command line.
+url: https://cli.maton.ai
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+
+permalink: /:path/:basename
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - README.md
+  - script
+
+defaults:
+  - scope:
+      path: "manual"
+    values:
+      layout: manual
