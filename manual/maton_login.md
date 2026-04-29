@@ -21,6 +21,10 @@ Login to your Maton account to set up the CLI. By default, this opens your brows
 
 
 <dl class="flags">
+	<dt>
+		<code>--insecure-storage</code></dt>
+	<dd>Save the API key in plain text instead of the OS keyring</dd>
+
 	<dt><code>-i</code>, 
 		<code>--interactive</code></dt>
 	<dd>Skip launching the browser; only prompt for an API key</dd>
