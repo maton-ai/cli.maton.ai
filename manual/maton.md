@@ -38,15 +38,20 @@ The official command-line tool to interact with Maton.
 * [maton connection](./maton_connection)
 
 
+### Auth commands
+
+* [maton login](./maton_login)
+* [maton logout](./maton_logout)
+* [maton whoami](./maton_whoami)
+
+
 ### Additional commands
 
 * [maton alias](./maton_alias)
 * [maton api](./maton_api)
 * [maton completion](./maton_completion)
 * [maton config](./maton_config)
-* [maton login](./maton_login)
-* [maton logout](./maton_logout)
-* [maton whoami](./maton_whoami)
+* [maton upgrade](./maton_upgrade)
 
 
 ### Options
