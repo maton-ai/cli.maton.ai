@@ -1,0 +1,43 @@
+---
+layout: manual
+permalink: /:path/:basename
+---
+
+{% raw %}## maton one-drive
+
+Manage files and folders in OneDrive.
+
+### Available commands
+
+* [maton one-drive drive](/manual/maton/one-drive/drive)
+* [maton one-drive item](/manual/maton/one-drive/item)
+* [maton one-drive whoami](/manual/maton/one-drive/whoami)
+
+
+### Options inherited from parent commands
+
+
+<dl class="flags">
+	<dt><code>-p</code>, 
+		<code>--profile &lt;string&gt;</code></dt>
+	<dd>Profile to use for this invocation (overrides the active profile; also reads MATON_PROFILE)</dd>
+</dl>
+
+
+{% endraw %}
+### Examples
+
+{% highlight bash %}{% raw %}
+$ maton one-drive whoami
+$ maton one-drive item list
+$ maton one-drive item list Documents/Reports
+$ maton one-drive item view-by-path Documents/report.pdf
+$ maton one-drive item create-folder Reports --path Documents
+$ maton one-drive item upload ./report.pdf --path Documents/report.pdf
+$ maton one-drive item share 01ABCDEF --type view --scope anonymous
+$ maton one-drive drive search 'budget'
+{% endraw %}{% endhighlight %}
+
+### See also
+
+* [maton](/manual/maton)

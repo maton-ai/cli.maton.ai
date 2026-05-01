@@ -9,49 +9,49 @@ The official command-line tool to interact with Maton.
 
 ### App commands
 
-* [maton asana](./maton_asana)
-* [maton github](./maton_github)
-* [maton google-ads](./maton_google-ads)
-* [maton google-calendar](./maton_google-calendar)
-* [maton google-docs](./maton_google-docs)
-* [maton google-drive](./maton_google-drive)
-* [maton google-mail](./maton_google-mail)
-* [maton google-sheets](./maton_google-sheets)
-* [maton google-tasks](./maton_google-tasks)
-* [maton hubspot](./maton_hubspot)
-* [maton jira](./maton_jira)
-* [maton linear](./maton_linear)
-* [maton linkedin](./maton_linkedin)
-* [maton microsoft-teams](./maton_microsoft-teams)
-* [maton notion](./maton_notion)
-* [maton one-drive](./maton_one-drive)
-* [maton outlook](./maton_outlook)
-* [maton salesforce](./maton_salesforce)
-* [maton slack](./maton_slack)
-* [maton stripe](./maton_stripe)
-* [maton trello](./maton_trello)
-* [maton youtube](./maton_youtube)
+* [maton asana](/manual/maton/asana)
+* [maton github](/manual/maton/github)
+* [maton google-ads](/manual/maton/google-ads)
+* [maton google-calendar](/manual/maton/google-calendar)
+* [maton google-docs](/manual/maton/google-docs)
+* [maton google-drive](/manual/maton/google-drive)
+* [maton google-mail](/manual/maton/google-mail)
+* [maton google-sheets](/manual/maton/google-sheets)
+* [maton google-tasks](/manual/maton/google-tasks)
+* [maton hubspot](/manual/maton/hubspot)
+* [maton jira](/manual/maton/jira)
+* [maton linear](/manual/maton/linear)
+* [maton linkedin](/manual/maton/linkedin)
+* [maton microsoft-teams](/manual/maton/microsoft-teams)
+* [maton notion](/manual/maton/notion)
+* [maton one-drive](/manual/maton/one-drive)
+* [maton outlook](/manual/maton/outlook)
+* [maton salesforce](/manual/maton/salesforce)
+* [maton slack](/manual/maton/slack)
+* [maton stripe](/manual/maton/stripe)
+* [maton trello](/manual/maton/trello)
+* [maton youtube](/manual/maton/youtube)
 
 
 ### Resource commands
 
-* [maton connection](./maton_connection)
+* [maton connection](/manual/maton/connection)
 
 
 ### Auth commands
 
-* [maton login](./maton_login)
-* [maton logout](./maton_logout)
-* [maton whoami](./maton_whoami)
+* [maton login](/manual/maton/login)
+* [maton logout](/manual/maton/logout)
+* [maton whoami](/manual/maton/whoami)
 
 
 ### Additional commands
 
-* [maton alias](./maton_alias)
-* [maton api](./maton_api)
-* [maton completion](./maton_completion)
-* [maton config](./maton_config)
-* [maton upgrade](./maton_upgrade)
+* [maton alias](/manual/maton/alias)
+* [maton api](/manual/maton/api)
+* [maton completion](/manual/maton/completion)
+* [maton config](/manual/maton/config)
+* [maton upgrade](/manual/maton/upgrade)
 
 
 ### Options

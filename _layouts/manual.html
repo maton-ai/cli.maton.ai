@@ -1,23 +1,31 @@
 ---
 layout: default
 ---
-<article class="manual-page">
-  <nav class="breadcrumb">
-    <a href="{{ '/manual/' | relative_url }}">Manual</a>
-    {% assign segments = page.url | remove: '/manual/' | split: '_' %}
-    {% assign acc = '' %}
-    {% for seg in segments %}
-      {% if forloop.first %}
-        {% assign acc = seg %}
-      {% else %}
-        {% assign acc = acc | append: '_' | append: seg %}
-      {% endif %}
-      {% unless forloop.last %}
-        / <a href="{{ '/manual/' | append: acc | relative_url }}">{{ seg }}</a>
-      {% else %}
-        / <span>{{ seg }}</span>
-      {% endunless %}
-    {% endfor %}
-  </nav>
-  {{ content }}
-</article>
+<div class="d-flex flex-wrap flex-justify-center">
+  <div class="col-lg-2">
+    <div class="height-full">
+      <nav aria-label="CLI commands" class="docs-nav d-none d-lg-flex flex-column px-6 py-3">
+        {% include manual_nav.html %}
+      </nav>
+    </div>
+  </div>
+  <details id="mobile-nav-container" class="docs-nav docs-nav-mobile details-reset d-lg-none">
+    <summary class="color-bg-default text-center left-0 right-0 p-3" style="z-index: 100;">
+      <svg viewBox="0 0 16 16" width="16" height="16" class="octicon octicon-three-bars" aria-hidden="true">
+        <path d="M1 2.75A.75.75 0 0 1 1.75 2h12.5a.75.75 0 0 1 0 1.5H1.75A.75.75 0 0 1 1 2.75Zm0 5A.75.75 0 0 1 1.75 7h12.5a.75.75 0 0 1 0 1.5H1.75A.75.75 0 0 1 1 7.75ZM1.75 12h12.5a.75.75 0 0 1 0 1.5H1.75a.75.75 0 0 1 0-1.5Z"></path>
+      </svg>
+      <span class="pl-2">CLI manual</span>
+    </summary>
+    <details-menu class="position-absolute width-full color-bg-subtle left-0" style="z-index: 50">
+      <nav aria-label="CLI commands" class="px-3 py-3 pb-3">
+        {% include manual_nav.html %}
+      </nav>
+    </details-menu>
+  </details>
+
+  <main id="main" class="main-content color-bg-subtle markdown-body col-12 col-lg-10 py-3 px-3 px-md-6">
+    <div class="container-lg">
+      {{ content }}
+    </div>
+  </main>
+</div>

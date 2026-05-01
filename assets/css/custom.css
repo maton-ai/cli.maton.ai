@@ -1,0 +1,126 @@
+/* Match maton.ai aesthetic: near-black bg, hairline borders */
+:root {
+  --maton-bg: #080a09;
+  --maton-border: #222;
+  --maton-fg: #fff;
+  --maton-fg-muted: rgba(255, 255, 255, 0.7);
+}
+
+html,
+body {
+  background-color: var(--maton-bg);
+  color: var(--maton-fg);
+}
+
+/* Header */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background-color: var(--maton-bg);
+  border-bottom: 1px solid var(--maton-border);
+}
+
+.site-nav {
+  height: 56px;
+  max-width: none;
+  width: 100%;
+}
+
+.site-logo {
+  color: var(--maton-fg);
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  text-decoration: none;
+}
+
+.site-logo:hover {
+  color: var(--maton-fg);
+  text-decoration: none;
+}
+
+.site-nav-links {
+  gap: 8px;
+}
+
+.site-nav-link {
+  display: inline-block;
+  padding: 6px 10px;
+  font-size: 14px;
+  color: var(--maton-fg-muted);
+  text-decoration: none;
+  border-radius: 6px;
+  transition: color 0.15s ease, background-color 0.15s ease;
+}
+
+.site-nav-link:hover {
+  color: var(--maton-fg);
+  background-color: rgba(255, 255, 255, 0.06);
+  text-decoration: none;
+}
+
+.site-nav-cta {
+  display: inline-block;
+  margin-left: 4px;
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #080a09;
+  background-color: var(--maton-fg);
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.15s ease;
+}
+
+.site-nav-cta:hover {
+  color: #080a09;
+  background-color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+}
+
+/* Footer */
+.site-footer {
+  border-top: 1px solid var(--maton-border);
+  background-color: var(--maton-bg);
+}
+
+.site-footer-nav {
+  max-width: none;
+  width: 100%;
+}
+
+.site-footer-copy {
+  color: var(--maton-fg-muted);
+  font-size: 13px;
+}
+
+.site-footer-links {
+  gap: 16px;
+}
+
+.site-footer-links li {
+  margin: 0;
+}
+
+.site-footer-link {
+  color: var(--maton-fg-muted);
+  font-size: 13px;
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.site-footer-link:hover {
+  color: var(--maton-fg);
+  text-decoration: none;
+}
+
+/* Sticky, scrollable sidebar at lg+ */
+@media (min-width: 1012px) {
+  .docs-nav.d-lg-flex {
+    position: sticky;
+    top: 56px;
+    max-height: calc(100vh - 56px);
+    overflow-y: auto;
+  }
+}

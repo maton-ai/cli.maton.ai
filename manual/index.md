@@ -1,16 +1,45 @@
 ---
-layout: default
+layout: manual
 title: Manual
 permalink: /manual/
 ---
 
 # Maton CLI manual
 
-Reference for every `maton` command.
+Maton CLI, or `maton`, is a command-line interface to Maton for use in your terminal or your scripts.
 
-<ul class="manual-index">
-{% assign pages = site.pages | where_exp: "p", "p.path contains 'manual/maton'" | sort: "path" %}
-{% for p in pages %}
-  <li><a href="{{ p.url | relative_url }}"><code>{{ p.path | remove: 'manual/' | remove: '.md' | replace: '_', ' ' }}</code></a></li>
-{% endfor %}
-</ul>
+- [Available commands](./maton)
+- [Releases](https://github.com/maton-ai/cli/releases)
+- [Source on GitHub](https://github.com/maton-ai/cli)
+
+## Installation
+
+### macOS / Linux
+
+```
+curl -fsSL https://maton.ai/install.sh | bash
+```
+
+### Windows
+
+```
+irm https://maton.ai/install.ps1 | iex
+```
+
+### npm
+
+```
+npm install -g @maton-ai/cli
+```
+
+### Homebrew
+
+```
+brew install maton-ai/cli/maton
+```
+
+Or download a binary from the [latest GitHub Release](https://github.com/maton-ai/cli/releases/latest).
+
+## Support
+
+- Report bugs or search for existing feature requests in our [issue tracker](https://github.com/maton-ai/cli/issues).
