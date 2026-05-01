@@ -1,6 +1,5 @@
 ---
 layout: manual
-title: Manual
 permalink: /manual/
 ---
 
