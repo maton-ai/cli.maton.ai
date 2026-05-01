@@ -5,19 +5,29 @@ title: Maton CLI
 {% assign version = "0.1.1" %}
 
 <section class="hero">
-  <h1>Maton on the command line.</h1>
-  <p>Connect Maton to 100+ APIs from your terminal.</p>
-  <p class="version">Latest release: <code>v{{ version }}</code></p>
+  <h1>Maton CLI</h1>
   <p>
     <a class="cta" href="{{ '/manual/' | relative_url }}">Read the manual →</a>
   </p>
 </section>
 
-<section class="install">
-  <h2>Install</h2>
-  <pre><code># macOS / Linux
-brew install maton-ai/tap/maton
+<section class="installation">
+  <h2>Installation</h2>
 
-# or download a release binary
-# https://github.com/maton-ai/cli/releases/tag/v{{ version }}</code></pre>
+  <h3>macOS / Linux</h3>
+  <pre><code>curl -fsSL https://maton.ai/install.sh | bash</code></pre>
+
+  <h3>Windows</h3>
+  <pre><code>irm https://maton.ai/install.ps1 | iex</code></pre>
+
+  <h3>npm</h3>
+  <pre><code>npm install -g @maton-ai/cli</code></pre>
+
+  <h3>Homebrew</h3>
+  <pre><code>brew install maton-ai/cli/maton</code></pre>
+
+  <p>
+    Or download a binary from the
+    <a href="https://github.com/maton-ai/cli/releases/latest">latest GitHub Release</a>.
+  </p>
 </section>
