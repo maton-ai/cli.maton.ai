@@ -5,12 +5,13 @@ permalink: /:path/:basename
 
 {% raw %}## maton hubspot associations
 
-Link and unlink CRM objects (v4 associations API)
+List, create, and delete CRM object links (v4 associations API)
 
 ### Available commands
 
 * [maton hubspot associations create](/manual/maton/hubspot/associations/create)
 * [maton hubspot associations delete](/manual/maton/hubspot/associations/delete)
+* [maton hubspot associations list](/manual/maton/hubspot/associations/list)
 
 
 ### Options inherited from parent commands
@@ -31,6 +32,7 @@ maton hubspot association
 ### Examples
 
 {% highlight bash %}{% raw %}
+$ maton hubspot associations list --from contacts:12345 --to companies
 $ maton hubspot associations create --from contacts:12345 --to companies:67890
 $ maton hubspot associations create --from contacts:12345 --to deals:99999 --type 4
 $ maton hubspot associations delete --from contacts:12345 --to companies:67890

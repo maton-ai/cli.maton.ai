@@ -5,11 +5,17 @@ permalink: /:path/:basename
 
 {% raw %}## maton youtube subscription list
 
-List your channel subscriptions, or another channel's with --channel
-
 ```
 maton youtube subscription list [flags]
 ```
+
+List subscriptions on your account (default), or a specific channel's
+subscriptions with --channel.
+
+Pass --for-channel <channelId> to check whether the requesting account
+is subscribed to that channel — the response is empty when no
+subscription exists.
+
 
 ### Options
 
@@ -28,12 +34,16 @@ maton youtube subscription list [flags]
 	<dd>Print the request that would be sent without executing it</dd>
 
 	<dt>
-		<code>--format &lt;string&gt;</code></dt>
-	<dd>Output format: &#39;json&#39; (default) or &#39;text&#39; on supported commands</dd>
+		<code>--for-channel &lt;string&gt;</code></dt>
+	<dd>Filter results to subscriptions that point at this channel ID (use to check if subscribed)</dd>
 
 	<dt><code>-q</code>, 
 		<code>--jq &lt;expression&gt;</code></dt>
 	<dd>Filter JSON output using a jq expression</dd>
+
+	<dt>
+		<code>--json</code></dt>
+	<dd>Output raw JSON</dd>
 
 	<dt><code>-L</code>, 
 		<code>--limit &lt;int&gt; (default 25)</code></dt>
@@ -47,7 +57,7 @@ maton youtube subscription list [flags]
 		<code>--paginate</code></dt>
 	<dd>Follow next_cursor and concatenate all pages (list commands only)</dd>
 
-	<dt>
+	<dt><code>-t</code>, 
 		<code>--template &lt;string&gt;</code></dt>
 	<dd>Format JSON output using a Go template; see &#34;maton help formatting&#34;</dd>
 </dl>
@@ -70,6 +80,7 @@ maton youtube subscription list [flags]
 $ maton youtube subscription list
 $ maton youtube subscription list --paginate
 $ maton youtube subscription list --channel UCBJycsmduvYEL83R_U4JriQ
+$ maton youtube subscription list --for-channel UCBJycsmduvYEL83R_U4JriQ
 {% endraw %}{% endhighlight %}
 
 ### See also

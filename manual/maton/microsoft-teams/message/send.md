@@ -32,16 +32,16 @@ maton microsoft-teams message send [flags]
 	<dd>Print the request that would be sent without executing it</dd>
 
 	<dt>
-		<code>--format &lt;string&gt;</code></dt>
-	<dd>Output format: &#39;json&#39; (default) or &#39;text&#39; on supported commands</dd>
-
-	<dt>
 		<code>--html</code></dt>
 	<dd>Send as HTML instead of plain text</dd>
 
 	<dt><code>-q</code>, 
 		<code>--jq &lt;expression&gt;</code></dt>
 	<dd>Filter JSON output using a jq expression</dd>
+
+	<dt>
+		<code>--json</code></dt>
+	<dd>Output raw JSON</dd>
 
 	<dt>
 		<code>--paginate</code></dt>
@@ -57,10 +57,10 @@ maton microsoft-teams message send [flags]
 
 	<dt><code>-t</code>, 
 		<code>--text &lt;string&gt;</code></dt>
-	<dd>Message content (one of --text, --text-from-file required)</dd>
+	<dd>Message content (one of --text, --text-file required)</dd>
 
 	<dt><code>-F</code>, 
-		<code>--text-from-file &lt;string&gt;</code></dt>
+		<code>--text-file &lt;string&gt;</code></dt>
 	<dd>Read message text from a file path (or &#39;-&#39; for stdin)</dd>
 </dl>
 
@@ -81,7 +81,7 @@ maton microsoft-teams message send [flags]
 {% highlight bash %}{% raw %}
 $ maton microsoft-teams message send --team 19:t... --channel 19:c... --text 'hello'
 $ maton microsoft-teams message send --chat 19:abc... --text 'hi'
-$ maton microsoft-teams message send --chat 19:abc... --text-from-file ./post.md
+$ maton microsoft-teams message send --chat 19:abc... --text-file ./post.md
 $ maton microsoft-teams message send --chat 19:abc... --text '<b>hi</b>' --html
 {% endraw %}{% endhighlight %}
 

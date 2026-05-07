@@ -31,13 +31,13 @@ maton google-drive permission list [flags]
 		<code>--file &lt;string&gt;</code></dt>
 	<dd>File or folder ID (required)</dd>
 
-	<dt>
-		<code>--format &lt;string&gt;</code></dt>
-	<dd>Output format: &#39;json&#39; (default) or &#39;text&#39; on supported commands</dd>
-
 	<dt><code>-q</code>, 
 		<code>--jq &lt;expression&gt;</code></dt>
 	<dd>Filter JSON output using a jq expression</dd>
+
+	<dt>
+		<code>--json</code></dt>
+	<dd>Output raw JSON</dd>
 
 	<dt><code>-L</code>, 
 		<code>--page-size &lt;int&gt; (default 100)</code></dt>
@@ -55,7 +55,7 @@ maton google-drive permission list [flags]
 		<code>--supports-all-drives</code></dt>
 	<dd>Set when the file lives in a shared drive</dd>
 
-	<dt>
+	<dt><code>-t</code>, 
 		<code>--template &lt;string&gt;</code></dt>
 	<dd>Format JSON output using a Go template; see &#34;maton help formatting&#34;</dd>
 </dl>

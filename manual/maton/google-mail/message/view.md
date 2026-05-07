@@ -28,10 +28,6 @@ Fetch a Gmail message and print its body. Defaults to plain text; use --html to 
 	<dd>Gmail messages.get format: minimal, metadata, full, raw (forces raw JSON output)</dd>
 
 	<dt>
-		<code>--format &lt;string&gt;</code></dt>
-	<dd>Output format: &#39;json&#39; (default) or &#39;text&#39; on supported commands</dd>
-
-	<dt>
 		<code>--headers</code></dt>
 	<dd>Print From/To/Cc/Subject/Date before the body</dd>
 
@@ -42,6 +38,10 @@ Fetch a Gmail message and print its body. Defaults to plain text; use --html to 
 	<dt><code>-q</code>, 
 		<code>--jq &lt;expression&gt;</code></dt>
 	<dd>Filter JSON output using a jq expression</dd>
+
+	<dt>
+		<code>--json</code></dt>
+	<dd>Output raw JSON</dd>
 
 	<dt>
 		<code>--metadata-header &lt;strings&gt;</code></dt>
@@ -55,7 +55,7 @@ Fetch a Gmail message and print its body. Defaults to plain text; use --html to 
 		<code>--raw</code></dt>
 	<dd>Print the raw users.messages.get response as JSON</dd>
 
-	<dt>
+	<dt><code>-t</code>, 
 		<code>--template &lt;string&gt;</code></dt>
 	<dd>Format JSON output using a Go template; see &#34;maton help formatting&#34;</dd>
 </dl>
@@ -77,7 +77,7 @@ Fetch a Gmail message and print its body. Defaults to plain text; use --html to 
 {% highlight bash %}{% raw %}
 $ maton google-mail message view 18f1a2b3c4d
 $ maton google-mail message view 18f1a2b3c4d --headers
-$ maton google-mail message view 18f1a2b3c4d --raw --format json
+$ maton google-mail message view 18f1a2b3c4d --raw --json
 $ maton google-mail message view 18f1a2b3c4d --fetch-format metadata --metadata-header From,Subject,Date
 {% endraw %}{% endhighlight %}
 

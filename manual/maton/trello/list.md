@@ -5,12 +5,14 @@ permalink: /:path/:basename
 
 {% raw %}## maton trello list
 
-Manage lists on a board (list, create)
+Manage lists on a board (list, view, create, update)
 
 ### Available commands
 
 * [maton trello list create](/manual/maton/trello/list/create)
 * [maton trello list list](/manual/maton/trello/list/list)
+* [maton trello list update](/manual/maton/trello/list/update)
+* [maton trello list view](/manual/maton/trello/list/view)
 
 
 ### Options inherited from parent commands

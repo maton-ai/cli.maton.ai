@@ -12,6 +12,7 @@ List, view, create, and delete projects
 * [maton asana project create](/manual/maton/asana/project/create)
 * [maton asana project delete](/manual/maton/asana/project/delete)
 * [maton asana project list](/manual/maton/asana/project/list)
+* [maton asana project update](/manual/maton/asana/project/update)
 * [maton asana project view](/manual/maton/asana/project/view)
 
 

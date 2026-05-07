@@ -39,13 +39,13 @@ Create a single event on a calendar (defaults to "primary"). Use --meet to attac
 		<code>--end &lt;string&gt;</code></dt>
 	<dd>End time, RFC 3339 (required)</dd>
 
-	<dt>
-		<code>--format &lt;string&gt;</code></dt>
-	<dd>Output format: &#39;json&#39; (default) or &#39;text&#39; on supported commands</dd>
-
 	<dt><code>-q</code>, 
 		<code>--jq &lt;expression&gt;</code></dt>
 	<dd>Filter JSON output using a jq expression</dd>
+
+	<dt>
+		<code>--json</code></dt>
+	<dd>Output raw JSON</dd>
 
 	<dt>
 		<code>--location &lt;string&gt;</code></dt>
@@ -71,7 +71,7 @@ Create a single event on a calendar (defaults to "primary"). Use --meet to attac
 		<code>--summary &lt;string&gt;</code></dt>
 	<dd>Event summary/title (required)</dd>
 
-	<dt>
+	<dt><code>-t</code>, 
 		<code>--template &lt;string&gt;</code></dt>
 	<dd>Format JSON output using a Go template; see &#34;maton help formatting&#34;</dd>
 </dl>

@@ -9,6 +9,7 @@ Manage messages, channels, and users in Slack.
 
 ### Available commands
 
+* [maton slack bookmark](/manual/maton/slack/bookmark)
 * [maton slack bot](/manual/maton/slack/bot)
 * [maton slack channel](/manual/maton/slack/channel)
 * [maton slack conversation](/manual/maton/slack/conversation)

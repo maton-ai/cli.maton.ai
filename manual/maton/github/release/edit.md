@@ -31,13 +31,13 @@ maton github release edit <tag> [flags]
 		<code>--dry-run</code></dt>
 	<dd>Print the request that would be sent without executing it</dd>
 
-	<dt>
-		<code>--format &lt;string&gt;</code></dt>
-	<dd>Output format: &#39;json&#39; (default) or &#39;text&#39; on supported commands</dd>
-
 	<dt><code>-q</code>, 
 		<code>--jq &lt;expression&gt;</code></dt>
 	<dd>Filter JSON output using a jq expression</dd>
+
+	<dt>
+		<code>--json</code></dt>
+	<dd>Output raw JSON</dd>
 
 	<dt><code>-n</code>, 
 		<code>--notes &lt;string&gt;</code></dt>
@@ -68,7 +68,7 @@ maton github release edit <tag> [flags]
 	<dd>Format JSON output using a Go template; see &#34;maton help formatting&#34;</dd>
 
 	<dt><code>-F</code>, 
-		<code>--text-from-file &lt;file&gt;</code></dt>
+		<code>--text-file &lt;file&gt;</code></dt>
 	<dd>Read notes from file (or `-` for stdin)</dd>
 
 	<dt><code>-t</code>, 

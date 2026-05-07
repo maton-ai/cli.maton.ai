@@ -17,10 +17,10 @@ maton outlook message reply <message-id> [flags]
 <dl class="flags">
 	<dt><code>-t</code>, 
 		<code>--body &lt;string&gt;</code></dt>
-	<dd>Reply body content (one of --body, --body-from-file required)</dd>
+	<dd>Reply body content (one of --body, --body-file required)</dd>
 
 	<dt><code>-F</code>, 
-		<code>--body-from-file &lt;string&gt;</code></dt>
+		<code>--body-file &lt;string&gt;</code></dt>
 	<dd>Read reply body from a file path (or &#39;-&#39; for stdin)</dd>
 
 	<dt>
@@ -31,13 +31,13 @@ maton outlook message reply <message-id> [flags]
 		<code>--dry-run</code></dt>
 	<dd>Print the request that would be sent without executing it</dd>
 
-	<dt>
-		<code>--format &lt;string&gt;</code></dt>
-	<dd>Output format: &#39;json&#39; (default) or &#39;text&#39; on supported commands</dd>
-
 	<dt><code>-q</code>, 
 		<code>--jq &lt;expression&gt;</code></dt>
 	<dd>Filter JSON output using a jq expression</dd>
+
+	<dt>
+		<code>--json</code></dt>
+	<dd>Output raw JSON</dd>
 
 	<dt>
 		<code>--paginate</code></dt>
@@ -64,7 +64,7 @@ maton outlook message reply <message-id> [flags]
 
 {% highlight bash %}{% raw %}
 $ maton outlook message reply AAMkAGI... --body "Got it, thanks!"
-$ maton outlook message reply AAMkAGI... --body-from-file ./reply.md
+$ maton outlook message reply AAMkAGI... --body-file ./reply.md
 {% endraw %}{% endhighlight %}
 
 ### See also

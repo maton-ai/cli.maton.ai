@@ -37,6 +37,7 @@ maton notion pages
 $ maton notion page view 0123456789abcdef0123456789abcdef
 $ maton notion page create --parent-page 0123... --title 'Sprint planning'
 $ maton notion page update 0123... --properties '{"Status":{"select":{"name":"Done"}}}'
+$ maton notion page update 0123... --icon 🚀
 $ maton notion page archive 0123456789abcdef0123456789abcdef
 {% endraw %}{% endhighlight %}
 

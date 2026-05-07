@@ -28,10 +28,6 @@ Send a JSON array of ValueRange objects, each with "range" and "values". See htt
 	<dd>Print the request that would be sent without executing it</dd>
 
 	<dt>
-		<code>--format &lt;string&gt;</code></dt>
-	<dd>Output format: &#39;json&#39; (default) or &#39;text&#39; on supported commands</dd>
-
-	<dt>
 		<code>--include-values-in-response</code></dt>
 	<dd>Echo the written values back in the response</dd>
 
@@ -44,6 +40,10 @@ Send a JSON array of ValueRange objects, each with "range" and "values". See htt
 	<dd>Filter JSON output using a jq expression</dd>
 
 	<dt>
+		<code>--json</code></dt>
+	<dd>Output raw JSON</dd>
+
+	<dt>
 		<code>--paginate</code></dt>
 	<dd>Follow next_cursor and concatenate all pages (list commands only)</dd>
 
@@ -51,7 +51,7 @@ Send a JSON array of ValueRange objects, each with "range" and "values". See htt
 		<code>--response-value-render-option &lt;string&gt;</code></dt>
 	<dd>FORMATTED_VALUE (default), UNFORMATTED_VALUE, or FORMULA</dd>
 
-	<dt>
+	<dt><code>-t</code>, 
 		<code>--template &lt;string&gt;</code></dt>
 	<dd>Format JSON output using a Go template; see &#34;maton help formatting&#34;</dd>
 </dl>

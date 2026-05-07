@@ -10,10 +10,15 @@ Manage customers, payments, and subscriptions in Stripe.
 ### Available commands
 
 * [maton stripe balance](/manual/maton/stripe/balance)
+* [maton stripe balance-transaction](/manual/maton/stripe/balance-transaction)
 * [maton stripe charge](/manual/maton/stripe/charge)
+* [maton stripe coupon](/manual/maton/stripe/coupon)
 * [maton stripe customer](/manual/maton/stripe/customer)
 * [maton stripe invoice](/manual/maton/stripe/invoice)
 * [maton stripe payment](/manual/maton/stripe/payment)
+* [maton stripe payment-method](/manual/maton/stripe/payment-method)
+* [maton stripe price](/manual/maton/stripe/price)
+* [maton stripe product](/manual/maton/stripe/product)
 * [maton stripe refund](/manual/maton/stripe/refund)
 * [maton stripe subscription](/manual/maton/stripe/subscription)
 * [maton stripe whoami](/manual/maton/stripe/whoami)

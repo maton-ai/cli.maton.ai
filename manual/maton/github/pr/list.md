@@ -43,10 +43,6 @@ or --assignee for "the authenticated user".
 		<code>--dry-run</code></dt>
 	<dd>Print the request that would be sent without executing it</dd>
 
-	<dt>
-		<code>--format &lt;string&gt;</code></dt>
-	<dd>Output format: &#39;json&#39; (default) or &#39;text&#39; on supported commands</dd>
-
 	<dt><code>-H</code>, 
 		<code>--head &lt;user:branch&gt;</code></dt>
 	<dd>Filter by head ref (user:branch or `branch`)</dd>
@@ -54,6 +50,10 @@ or --assignee for "the authenticated user".
 	<dt><code>-q</code>, 
 		<code>--jq &lt;expression&gt;</code></dt>
 	<dd>Filter JSON output using a jq expression</dd>
+
+	<dt>
+		<code>--json</code></dt>
+	<dd>Output raw JSON</dd>
 
 	<dt><code>-l</code>, 
 		<code>--label &lt;string&gt;</code></dt>
@@ -79,7 +79,7 @@ or --assignee for "the authenticated user".
 		<code>--state &lt;string&gt; (default &#34;open&#34;)</code></dt>
 	<dd>Filter by state: open, closed, all</dd>
 
-	<dt>
+	<dt><code>-t</code>, 
 		<code>--template &lt;string&gt;</code></dt>
 	<dd>Format JSON output using a Go template; see &#34;maton help formatting&#34;</dd>
 </dl>
@@ -102,7 +102,7 @@ or --assignee for "the authenticated user".
 $ maton github pr list --repo maton-ai/cli --state open
 $ maton github pr list --repo maton-ai/cli --base main --head feature
 $ maton github pr list --repo maton-ai/cli --label bug --author @me
-$ maton github pr list --repo maton-ai/cli --paginate --format text
+$ maton github pr list --repo maton-ai/cli --paginate --json
 {% endraw %}{% endhighlight %}
 
 ### See also

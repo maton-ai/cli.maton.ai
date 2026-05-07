@@ -5,51 +5,60 @@ permalink: /:path/:basename
 
 {% raw %}## maton salesforce record create
 
-Create a new record
-
 ```
 maton salesforce record create [flags]
 ```
+
+Create a record (POST /sobjects/{type}) when --data is a JSON object,
+or up to 200 records (POST /composite/sobjects) when --data is a JSON
+array. In array mode each record must include its own attributes.type
+and the --type flag is ignored; pass --all-or-none to roll back the
+whole batch if any record fails.
+
 
 ### Options
 
 
 <dl class="flags">
 	<dt>
+		<code>--all-or-none</code></dt>
+	<dd>Batch only: roll back the entire batch if any record fails</dd>
+
+	<dt>
 		<code>--connection &lt;string&gt;</code></dt>
 	<dd>Connection ID to route through (Maton-Connection header)</dd>
 
 	<dt>
 		<code>--data &lt;string&gt;</code></dt>
-	<dd>Record fields as JSON (e.g. &#39;{&#34;FirstName&#34;:&#34;John&#34;,&#34;LastName&#34;:&#34;Doe&#34;}&#39;)</dd>
+	<dd>Record fields as JSON object, or JSON array of records for batch</dd>
 
 	<dt><code>-F</code>, 
-		<code>--data-from-file &lt;string&gt;</code></dt>
+		<code>--data-file &lt;string&gt;</code></dt>
 	<dd>Read JSON record fields from a file (use - for stdin)</dd>
 
 	<dt>
 		<code>--dry-run</code></dt>
 	<dd>Print the request that would be sent without executing it</dd>
 
-	<dt>
-		<code>--format &lt;string&gt;</code></dt>
-	<dd>Output format: &#39;json&#39; (default) or &#39;text&#39; on supported commands</dd>
-
 	<dt><code>-q</code>, 
 		<code>--jq &lt;expression&gt;</code></dt>
 	<dd>Filter JSON output using a jq expression</dd>
 
 	<dt>
+		<code>--json</code></dt>
+	<dd>Output raw JSON</dd>
+
+	<dt>
 		<code>--paginate</code></dt>
 	<dd>Follow next_cursor and concatenate all pages (list commands only)</dd>
 
-	<dt>
+	<dt><code>-t</code>, 
 		<code>--template &lt;string&gt;</code></dt>
 	<dd>Format JSON output using a Go template; see &#34;maton help formatting&#34;</dd>
 
 	<dt>
 		<code>--type &lt;string&gt;</code></dt>
-	<dd>sObject type (required, e.g. Contact, Account, Lead, Opportunity, Case)</dd>
+	<dd>sObject type (required when --data is a JSON object; ignored when array)</dd>
 </dl>
 
 
@@ -68,8 +77,10 @@ maton salesforce record create [flags]
 
 {% highlight bash %}{% raw %}
 $ maton salesforce record create --type Contact --data '{"FirstName":"John","LastName":"Doe"}'
-$ maton salesforce record create --type Account --data-from-file account.json
+$ maton salesforce record create --type Account --data-file account.json
 $ cat account.json | maton salesforce record create --type Account -F -
+$ maton salesforce record create -F records.json
+$ maton salesforce record create --all-or-none -F records.json
 {% endraw %}{% endhighlight %}
 
 ### See also

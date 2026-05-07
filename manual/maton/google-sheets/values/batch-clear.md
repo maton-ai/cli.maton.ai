@@ -23,13 +23,13 @@ maton google-sheets values batch-clear <spreadsheet-id> [flags]
 		<code>--dry-run</code></dt>
 	<dd>Print the request that would be sent without executing it</dd>
 
-	<dt>
-		<code>--format &lt;string&gt;</code></dt>
-	<dd>Output format: &#39;json&#39; (default) or &#39;text&#39; on supported commands</dd>
-
 	<dt><code>-q</code>, 
 		<code>--jq &lt;expression&gt;</code></dt>
 	<dd>Filter JSON output using a jq expression</dd>
+
+	<dt>
+		<code>--json</code></dt>
+	<dd>Output raw JSON</dd>
 
 	<dt>
 		<code>--paginate</code></dt>
@@ -37,9 +37,9 @@ maton google-sheets values batch-clear <spreadsheet-id> [flags]
 
 	<dt><code>-r</code>, 
 		<code>--range &lt;strings&gt;</code></dt>
-	<dd>A1 range to clear; pass repeatedly for multiple ranges (required)</dd>
+	<dd>A1 range(s) to clear (required)</dd>
 
-	<dt>
+	<dt><code>-t</code>, 
 		<code>--template &lt;string&gt;</code></dt>
 	<dd>Format JSON output using a Go template; see &#34;maton help formatting&#34;</dd>
 </dl>
@@ -59,7 +59,7 @@ maton google-sheets values batch-clear <spreadsheet-id> [flags]
 ### Examples
 
 {% highlight bash %}{% raw %}
-$ maton google-sheets values batch-clear ABC --range Sheet1!A2:D --range Sheet2!A:Z
+$ maton google-sheets values batch-clear ABC --range Sheet1!A2:D,Sheet2!A:Z
 {% endraw %}{% endhighlight %}
 
 ### See also

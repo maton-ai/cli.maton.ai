@@ -27,13 +27,13 @@ maton google-sheets values get <spreadsheet-id> [flags]
 		<code>--dry-run</code></dt>
 	<dd>Print the request that would be sent without executing it</dd>
 
-	<dt>
-		<code>--format &lt;string&gt;</code></dt>
-	<dd>Output format: &#39;json&#39; (default) or &#39;text&#39; on supported commands</dd>
-
 	<dt><code>-q</code>, 
 		<code>--jq &lt;expression&gt;</code></dt>
 	<dd>Filter JSON output using a jq expression</dd>
+
+	<dt>
+		<code>--json</code></dt>
+	<dd>Output raw JSON</dd>
 
 	<dt>
 		<code>--major-dimension &lt;string&gt;</code></dt>
@@ -47,7 +47,7 @@ maton google-sheets values get <spreadsheet-id> [flags]
 		<code>--range &lt;string&gt;</code></dt>
 	<dd>Range in A1 notation, e.g. &#39;Sheet1!A1:B2&#39; (required)</dd>
 
-	<dt>
+	<dt><code>-t</code>, 
 		<code>--template &lt;string&gt;</code></dt>
 	<dd>Format JSON output using a Go template; see &#34;maton help formatting&#34;</dd>
 
@@ -72,7 +72,7 @@ maton google-sheets values get <spreadsheet-id> [flags]
 
 {% highlight bash %}{% raw %}
 $ maton google-sheets values get ABC --range 'Sheet1!A1:D10'
-$ maton google-sheets values get ABC --range Sheet1 --format text
+$ maton google-sheets values get ABC --range Sheet1 --json
 $ maton google-sheets values get ABC --range A1:B2 --value-render-option UNFORMATTED_VALUE
 {% endraw %}{% endhighlight %}
 

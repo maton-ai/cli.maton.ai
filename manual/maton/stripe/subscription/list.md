@@ -27,13 +27,13 @@ maton stripe subscription list [flags]
 		<code>--dry-run</code></dt>
 	<dd>Print the request that would be sent without executing it</dd>
 
-	<dt>
-		<code>--format &lt;string&gt;</code></dt>
-	<dd>Output format: &#39;json&#39; (default) or &#39;text&#39; on supported commands</dd>
-
 	<dt><code>-q</code>, 
 		<code>--jq &lt;expression&gt;</code></dt>
 	<dd>Filter JSON output using a jq expression</dd>
+
+	<dt>
+		<code>--json</code></dt>
+	<dd>Output raw JSON</dd>
 
 	<dt><code>-L</code>, 
 		<code>--limit &lt;int&gt; (default 10)</code></dt>
@@ -51,7 +51,7 @@ maton stripe subscription list [flags]
 		<code>--status &lt;string&gt;</code></dt>
 	<dd>Filter by status (active, canceled, past_due, …)</dd>
 
-	<dt>
+	<dt><code>-t</code>, 
 		<code>--template &lt;string&gt;</code></dt>
 	<dd>Format JSON output using a Go template; see &#34;maton help formatting&#34;</dd>
 </dl>
@@ -74,7 +74,7 @@ maton stripe subscription list [flags]
 $ maton stripe subscription list
 $ maton stripe subscription list --customer cus_123 --status active
 $ maton stripe subscription list --paginate
-$ maton stripe subscription list --format text
+$ maton stripe subscription list --json
 {% endraw %}{% endhighlight %}
 
 ### See also

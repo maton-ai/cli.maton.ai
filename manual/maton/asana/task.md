@@ -12,6 +12,7 @@ List, view, create, update, and delete tasks
 * [maton asana task create](/manual/maton/asana/task/create)
 * [maton asana task delete](/manual/maton/asana/task/delete)
 * [maton asana task list](/manual/maton/asana/task/list)
+* [maton asana task search](/manual/maton/asana/task/search)
 * [maton asana task update](/manual/maton/asana/task/update)
 * [maton asana task view](/manual/maton/asana/task/view)
 

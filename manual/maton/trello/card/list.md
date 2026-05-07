@@ -5,7 +5,7 @@ permalink: /:path/:basename
 
 {% raw %}## maton trello card list
 
-List cards in a list
+List cards in a list or on a board
 
 ```
 maton trello card list [flags]
@@ -15,6 +15,10 @@ maton trello card list [flags]
 
 
 <dl class="flags">
+	<dt><code>-b</code>, 
+		<code>--board &lt;string&gt;</code></dt>
+	<dd>Board ID (returns cards across all lists on the board)</dd>
+
 	<dt>
 		<code>--connection &lt;string&gt;</code></dt>
 	<dd>Connection ID to route through (Maton-Connection header)</dd>
@@ -24,22 +28,26 @@ maton trello card list [flags]
 	<dd>Print the request that would be sent without executing it</dd>
 
 	<dt>
-		<code>--format &lt;string&gt;</code></dt>
-	<dd>Output format: &#39;json&#39; (default) or &#39;text&#39; on supported commands</dd>
+		<code>--filter &lt;string&gt;</code></dt>
+	<dd>Card filter when --board is set: open, closed, all, visible (default open)</dd>
 
 	<dt><code>-q</code>, 
 		<code>--jq &lt;expression&gt;</code></dt>
 	<dd>Filter JSON output using a jq expression</dd>
 
+	<dt>
+		<code>--json</code></dt>
+	<dd>Output raw JSON</dd>
+
 	<dt><code>-l</code>, 
 		<code>--list &lt;string&gt;</code></dt>
-	<dd>List ID (required)</dd>
+	<dd>List ID</dd>
 
 	<dt>
 		<code>--paginate</code></dt>
 	<dd>Follow next_cursor and concatenate all pages (list commands only)</dd>
 
-	<dt>
+	<dt><code>-t</code>, 
 		<code>--template &lt;string&gt;</code></dt>
 	<dd>Format JSON output using a Go template; see &#34;maton help formatting&#34;</dd>
 </dl>
@@ -60,7 +68,8 @@ maton trello card list [flags]
 
 {% highlight bash %}{% raw %}
 $ maton trello card list --list 5f1a2b3c4d5e6f7a8b9c0d1e
-$ maton trello card list -l 5f1a... --format text
+$ maton trello card list --board 6b2c... --filter all
+$ maton trello card list -l 5f1a... --json
 {% endraw %}{% endhighlight %}
 
 ### See also

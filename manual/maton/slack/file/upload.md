@@ -32,10 +32,6 @@ maton slack file upload [flags]
 	<dd>Path to a local file to upload (required)</dd>
 
 	<dt>
-		<code>--format &lt;string&gt;</code></dt>
-	<dd>Output format: &#39;json&#39; (default) or &#39;text&#39; on supported commands</dd>
-
-	<dt>
 		<code>--initial-comment &lt;string&gt;</code></dt>
 	<dd>Message to post alongside the file</dd>
 
@@ -44,10 +40,14 @@ maton slack file upload [flags]
 	<dd>Filter JSON output using a jq expression</dd>
 
 	<dt>
+		<code>--json</code></dt>
+	<dd>Output raw JSON</dd>
+
+	<dt>
 		<code>--paginate</code></dt>
 	<dd>Follow next_cursor and concatenate all pages (list commands only)</dd>
 
-	<dt>
+	<dt><code>-t</code>, 
 		<code>--template &lt;string&gt;</code></dt>
 	<dd>Format JSON output using a Go template; see &#34;maton help formatting&#34;</dd>
 

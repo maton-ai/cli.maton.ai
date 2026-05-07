@@ -12,8 +12,12 @@ Manage issues, projects, and comments in Jira.
 * [maton jira cloud](/manual/maton/jira/cloud)
 * [maton jira comment](/manual/maton/jira/comment)
 * [maton jira issue](/manual/maton/jira/issue)
+* [maton jira issuetype](/manual/maton/jira/issuetype)
+* [maton jira priority](/manual/maton/jira/priority)
 * [maton jira project](/manual/maton/jira/project)
+* [maton jira status](/manual/maton/jira/status)
 * [maton jira transition](/manual/maton/jira/transition)
+* [maton jira user](/manual/maton/jira/user)
 * [maton jira whoami](/manual/maton/jira/whoami)
 
 

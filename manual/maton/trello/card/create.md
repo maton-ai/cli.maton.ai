@@ -31,13 +31,13 @@ maton trello card create [flags]
 		<code>--due &lt;string&gt;</code></dt>
 	<dd>Due date (ISO 8601 format)</dd>
 
-	<dt>
-		<code>--format &lt;string&gt;</code></dt>
-	<dd>Output format: &#39;json&#39; (default) or &#39;text&#39; on supported commands</dd>
-
 	<dt><code>-q</code>, 
 		<code>--jq &lt;expression&gt;</code></dt>
 	<dd>Filter JSON output using a jq expression</dd>
+
+	<dt>
+		<code>--json</code></dt>
+	<dd>Output raw JSON</dd>
 
 	<dt>
 		<code>--label-ids &lt;string&gt;</code></dt>
@@ -63,7 +63,7 @@ maton trello card create [flags]
 		<code>--pos &lt;string&gt; (default &#34;bottom&#34;)</code></dt>
 	<dd>Position: top, bottom, or a number</dd>
 
-	<dt>
+	<dt><code>-t</code>, 
 		<code>--template &lt;string&gt;</code></dt>
 	<dd>Format JSON output using a Go template; see &#34;maton help formatting&#34;</dd>
 </dl>

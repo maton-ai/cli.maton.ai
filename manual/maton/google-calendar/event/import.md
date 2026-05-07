@@ -20,8 +20,8 @@ Used to copy an event from another calendar without losing its iCalUID/organizer
 	<dd>Full event JSON (required)</dd>
 
 	<dt><code>-c</code>, 
-		<code>--calendar &lt;string&gt;</code></dt>
-	<dd>Calendar ID (required)</dd>
+		<code>--calendar &lt;string&gt; (default &#34;primary&#34;)</code></dt>
+	<dd>Calendar ID</dd>
 
 	<dt>
 		<code>--connection &lt;string&gt;</code></dt>
@@ -31,19 +31,19 @@ Used to copy an event from another calendar without losing its iCalUID/organizer
 		<code>--dry-run</code></dt>
 	<dd>Print the request that would be sent without executing it</dd>
 
-	<dt>
-		<code>--format &lt;string&gt;</code></dt>
-	<dd>Output format: &#39;json&#39; (default) or &#39;text&#39; on supported commands</dd>
-
 	<dt><code>-q</code>, 
 		<code>--jq &lt;expression&gt;</code></dt>
 	<dd>Filter JSON output using a jq expression</dd>
 
 	<dt>
+		<code>--json</code></dt>
+	<dd>Output raw JSON</dd>
+
+	<dt>
 		<code>--paginate</code></dt>
 	<dd>Follow next_cursor and concatenate all pages (list commands only)</dd>
 
-	<dt>
+	<dt><code>-t</code>, 
 		<code>--template &lt;string&gt;</code></dt>
 	<dd>Format JSON output using a Go template; see &#34;maton help formatting&#34;</dd>
 </dl>

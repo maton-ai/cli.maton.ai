@@ -31,13 +31,13 @@ maton stripe customer list [flags]
 		<code>--ending-before &lt;string&gt;</code></dt>
 	<dd>Cursor for previous page (customer ID)</dd>
 
-	<dt>
-		<code>--format &lt;string&gt;</code></dt>
-	<dd>Output format: &#39;json&#39; (default) or &#39;text&#39; on supported commands</dd>
-
 	<dt><code>-q</code>, 
 		<code>--jq &lt;expression&gt;</code></dt>
 	<dd>Filter JSON output using a jq expression</dd>
+
+	<dt>
+		<code>--json</code></dt>
+	<dd>Output raw JSON</dd>
 
 	<dt><code>-L</code>, 
 		<code>--limit &lt;int&gt; (default 10)</code></dt>
@@ -51,7 +51,7 @@ maton stripe customer list [flags]
 		<code>--starting-after &lt;string&gt;</code></dt>
 	<dd>Cursor for next page (customer ID)</dd>
 
-	<dt>
+	<dt><code>-t</code>, 
 		<code>--template &lt;string&gt;</code></dt>
 	<dd>Format JSON output using a Go template; see &#34;maton help formatting&#34;</dd>
 </dl>
@@ -75,7 +75,7 @@ $ maton stripe customer list
 $ maton stripe customer list --email alice@example.com
 $ maton stripe customer list -L 50 --starting-after cus_123
 $ maton stripe customer list --paginate
-$ maton stripe customer list --format text
+$ maton stripe customer list --json
 {% endraw %}{% endhighlight %}
 
 ### See also

@@ -9,6 +9,7 @@ View Trello members
 
 ### Available commands
 
+* [maton trello member list](/manual/maton/trello/member/list)
 * [maton trello member view](/manual/maton/trello/member/view)
 
 

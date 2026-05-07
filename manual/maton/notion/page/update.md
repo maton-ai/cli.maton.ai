@@ -5,7 +5,7 @@ permalink: /:path/:basename
 
 {% raw %}## maton notion page update
 
-Update page properties
+Update page properties or icon
 
 ```
 maton notion page update <page-id> [flags]
@@ -24,12 +24,16 @@ maton notion page update <page-id> [flags]
 	<dd>Print the request that would be sent without executing it</dd>
 
 	<dt>
-		<code>--format &lt;string&gt;</code></dt>
-	<dd>Output format: &#39;json&#39; (default) or &#39;text&#39; on supported commands</dd>
+		<code>--icon &lt;string&gt;</code></dt>
+	<dd>Page icon: an emoji (e.g. 🚀) or an image URL</dd>
 
 	<dt><code>-q</code>, 
 		<code>--jq &lt;expression&gt;</code></dt>
 	<dd>Filter JSON output using a jq expression</dd>
+
+	<dt>
+		<code>--json</code></dt>
+	<dd>Output raw JSON</dd>
 
 	<dt>
 		<code>--paginate</code></dt>
@@ -37,9 +41,9 @@ maton notion page update <page-id> [flags]
 
 	<dt>
 		<code>--properties &lt;string&gt;</code></dt>
-	<dd>Properties to update as JSON (required)</dd>
+	<dd>Properties to update as JSON</dd>
 
-	<dt>
+	<dt><code>-t</code>, 
 		<code>--template &lt;string&gt;</code></dt>
 	<dd>Format JSON output using a Go template; see &#34;maton help formatting&#34;</dd>
 </dl>
@@ -60,6 +64,8 @@ maton notion page update <page-id> [flags]
 
 {% highlight bash %}{% raw %}
 $ maton notion page update 0123... --properties '{"Status":{"select":{"name":"Done"}}}'
+$ maton notion page update 0123... --icon 🚀
+$ maton notion page update 0123... --icon https://example.com/icon.png
 {% endraw %}{% endhighlight %}
 
 ### See also

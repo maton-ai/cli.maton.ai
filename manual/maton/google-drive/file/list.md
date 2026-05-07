@@ -36,16 +36,16 @@ List files visible to the connection. Use -q for Drive's query language (e.g. "m
 	<dd>Partial-response field mask (default: server default)</dd>
 
 	<dt>
-		<code>--format &lt;string&gt;</code></dt>
-	<dd>Output format: &#39;json&#39; (default) or &#39;text&#39; on supported commands</dd>
-
-	<dt>
 		<code>--include-items-from-all-drives</code></dt>
 	<dd>Include shared drive items in results</dd>
 
 	<dt><code>-q</code>, 
 		<code>--jq &lt;expression&gt;</code></dt>
 	<dd>Filter JSON output using a jq expression</dd>
+
+	<dt>
+		<code>--json</code></dt>
+	<dd>Output raw JSON</dd>
 
 	<dt>
 		<code>--order-by &lt;string&gt;</code></dt>
@@ -71,7 +71,7 @@ List files visible to the connection. Use -q for Drive's query language (e.g. "m
 		<code>--spaces &lt;string&gt;</code></dt>
 	<dd>Comma-separated spaces: drive, appDataFolder</dd>
 
-	<dt>
+	<dt><code>-t</code>, 
 		<code>--template &lt;string&gt;</code></dt>
 	<dd>Format JSON output using a Go template; see &#34;maton help formatting&#34;</dd>
 </dl>
@@ -92,7 +92,7 @@ List files visible to the connection. Use -q for Drive's query language (e.g. "m
 
 {% highlight bash %}{% raw %}
 $ maton google-drive file list
-$ maton google-drive file list -Q "name contains 'budget'" --format text
+$ maton google-drive file list -Q "name contains 'budget'" --json
 $ maton google-drive file list --drive-id 0AB... --include-items-from-all-drives --paginate
 {% endraw %}{% endhighlight %}
 

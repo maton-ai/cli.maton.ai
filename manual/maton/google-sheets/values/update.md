@@ -24,10 +24,6 @@ Replace values in a range. Use --values for a simple comma-separated single row,
 	<dd>Print the request that would be sent without executing it</dd>
 
 	<dt>
-		<code>--format &lt;string&gt;</code></dt>
-	<dd>Output format: &#39;json&#39; (default) or &#39;text&#39; on supported commands</dd>
-
-	<dt>
 		<code>--include-values-in-response</code></dt>
 	<dd>Echo the written values back in the response</dd>
 
@@ -38,6 +34,10 @@ Replace values in a range. Use --values for a simple comma-separated single row,
 	<dt><code>-q</code>, 
 		<code>--jq &lt;expression&gt;</code></dt>
 	<dd>Filter JSON output using a jq expression</dd>
+
+	<dt>
+		<code>--json</code></dt>
+	<dd>Output raw JSON</dd>
 
 	<dt>
 		<code>--json-values &lt;string&gt;</code></dt>
@@ -55,7 +55,7 @@ Replace values in a range. Use --values for a simple comma-separated single row,
 		<code>--response-value-render-option &lt;string&gt;</code></dt>
 	<dd>FORMATTED_VALUE (default), UNFORMATTED_VALUE, or FORMULA — applies when --include-values-in-response is set</dd>
 
-	<dt>
+	<dt><code>-t</code>, 
 		<code>--template &lt;string&gt;</code></dt>
 	<dd>Format JSON output using a Go template; see &#34;maton help formatting&#34;</dd>
 

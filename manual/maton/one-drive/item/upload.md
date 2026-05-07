@@ -9,7 +9,7 @@ permalink: /:path/:basename
 maton one-drive item upload <local-file> [flags]
 ```
 
-Upload a local file to OneDrive via a single PUT to /root:/path:/content. The destination path is given by --path and must include the target filename. Files larger than 4 MiB require an upload session — use 'maton api' for that.
+Upload a local file to OneDrive. Files ≤4 MiB go through a single PUT to /root:/path:/content; larger files automatically open an upload session and stream in chunks. The destination path is given by --path and must include the target filename.
 
 ### Options
 
@@ -27,13 +27,13 @@ Upload a local file to OneDrive via a single PUT to /root:/path:/content. The de
 		<code>--dry-run</code></dt>
 	<dd>Print the request that would be sent without executing it</dd>
 
-	<dt>
-		<code>--format &lt;string&gt;</code></dt>
-	<dd>Output format: &#39;json&#39; (default) or &#39;text&#39; on supported commands</dd>
-
 	<dt><code>-q</code>, 
 		<code>--jq &lt;expression&gt;</code></dt>
 	<dd>Filter JSON output using a jq expression</dd>
+
+	<dt>
+		<code>--json</code></dt>
+	<dd>Output raw JSON</dd>
 
 	<dt>
 		<code>--mime-type &lt;string&gt;</code></dt>
@@ -47,7 +47,7 @@ Upload a local file to OneDrive via a single PUT to /root:/path:/content. The de
 		<code>--path &lt;string&gt;</code></dt>
 	<dd>Destination path including filename (required, e.g. Documents/report.pdf)</dd>
 
-	<dt>
+	<dt><code>-t</code>, 
 		<code>--template &lt;string&gt;</code></dt>
 	<dd>Format JSON output using a Go template; see &#34;maton help formatting&#34;</dd>
 </dl>

@@ -9,11 +9,13 @@ Query, manage, and inspect records in Salesforce.
 
 ### Available commands
 
-* [maton salesforce limits](/manual/maton/salesforce/limits)
+* [maton salesforce composite](/manual/maton/salesforce/composite)
+* [maton salesforce limit](/manual/maton/salesforce/limit)
 * [maton salesforce object](/manual/maton/salesforce/object)
 * [maton salesforce query](/manual/maton/salesforce/query)
 * [maton salesforce record](/manual/maton/salesforce/record)
 * [maton salesforce search](/manual/maton/salesforce/search)
+* [maton salesforce version](/manual/maton/salesforce/version)
 * [maton salesforce whoami](/manual/maton/salesforce/whoami)
 
 
@@ -33,9 +35,9 @@ Query, manage, and inspect records in Salesforce.
 {% highlight bash %}{% raw %}
 $ maton salesforce whoami
 $ maton salesforce query 'SELECT Id,Name FROM Contact LIMIT 10'
-$ maton salesforce record view 0035g00000XYZ --type Contact
 $ maton salesforce record create --type Contact --data '{"FirstName":"John","LastName":"Doe"}'
 $ maton salesforce object describe Contact
+$ maton salesforce composite call -F composite.json
 {% endraw %}{% endhighlight %}
 
 ### See also

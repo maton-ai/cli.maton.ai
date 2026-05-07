@@ -5,7 +5,7 @@ permalink: /:path/:basename
 
 {% raw %}## maton outlook folder list
 
-List mail folders
+List mail folders (top-level by default; child folders with --parent)
 
 ```
 maton outlook folder list [flags]
@@ -23,19 +23,23 @@ maton outlook folder list [flags]
 		<code>--dry-run</code></dt>
 	<dd>Print the request that would be sent without executing it</dd>
 
-	<dt>
-		<code>--format &lt;string&gt;</code></dt>
-	<dd>Output format: &#39;json&#39; (default) or &#39;text&#39; on supported commands</dd>
-
 	<dt><code>-q</code>, 
 		<code>--jq &lt;expression&gt;</code></dt>
 	<dd>Filter JSON output using a jq expression</dd>
+
+	<dt>
+		<code>--json</code></dt>
+	<dd>Output raw JSON</dd>
 
 	<dt>
 		<code>--paginate</code></dt>
 	<dd>Follow next_cursor and concatenate all pages (list commands only)</dd>
 
 	<dt>
+		<code>--parent &lt;string&gt;</code></dt>
+	<dd>Parent folder ID or well-known name; lists child folders when set</dd>
+
+	<dt><code>-t</code>, 
 		<code>--template &lt;string&gt;</code></dt>
 	<dd>Format JSON output using a Go template; see &#34;maton help formatting&#34;</dd>
 
@@ -61,7 +65,8 @@ maton outlook folder list [flags]
 {% highlight bash %}{% raw %}
 $ maton outlook folder list
 $ maton outlook folder list --top 100
-$ maton outlook folder list --format text
+$ maton outlook folder list --parent Inbox
+$ maton outlook folder list --json
 $ maton outlook folder list --paginate
 {% endraw %}{% endhighlight %}
 

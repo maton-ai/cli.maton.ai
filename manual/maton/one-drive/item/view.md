@@ -5,11 +5,11 @@ permalink: /:path/:basename
 
 {% raw %}## maton one-drive item view
 
-Show metadata for an item by ID
+```
+maton one-drive item view [<item-id>] [flags]
+```
 
-```
-maton one-drive item view <item-id> [flags]
-```
+Show metadata for a drive item. Pass an item ID, the literal "root" for the drive root (/me/drive/root), or --special <name> for a well-known folder (documents, photos, cameraroll, approot, music).
 
 ### Options
 
@@ -27,13 +27,13 @@ maton one-drive item view <item-id> [flags]
 		<code>--expand &lt;string&gt;</code></dt>
 	<dd>Relationships to expand ($expand), e.g. children,thumbnails</dd>
 
-	<dt>
-		<code>--format &lt;string&gt;</code></dt>
-	<dd>Output format: &#39;json&#39; (default) or &#39;text&#39; on supported commands</dd>
-
 	<dt><code>-q</code>, 
 		<code>--jq &lt;expression&gt;</code></dt>
 	<dd>Filter JSON output using a jq expression</dd>
+
+	<dt>
+		<code>--json</code></dt>
+	<dd>Output raw JSON</dd>
 
 	<dt>
 		<code>--paginate</code></dt>
@@ -44,6 +44,10 @@ maton one-drive item view <item-id> [flags]
 	<dd>Comma-separated fields ($select)</dd>
 
 	<dt>
+		<code>--special &lt;string&gt;</code></dt>
+	<dd>Well-known folder name: documents, photos, cameraroll, approot, music</dd>
+
+	<dt><code>-t</code>, 
 		<code>--template &lt;string&gt;</code></dt>
 	<dd>Format JSON output using a Go template; see &#34;maton help formatting&#34;</dd>
 </dl>
@@ -65,6 +69,8 @@ maton one-drive item view <item-id> [flags]
 {% highlight bash %}{% raw %}
 $ maton one-drive item view 01ABCDEF
 $ maton one-drive item view 01ABCDEF --expand children
+$ maton one-drive item view root
+$ maton one-drive item view --special documents
 {% endraw %}{% endhighlight %}
 
 ### See also

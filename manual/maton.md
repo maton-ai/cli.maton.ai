@@ -21,7 +21,6 @@ The official command-line tool to interact with Maton.
 * [maton hubspot](/manual/maton/hubspot)
 * [maton jira](/manual/maton/jira)
 * [maton linear](/manual/maton/linear)
-* [maton linkedin](/manual/maton/linkedin)
 * [maton microsoft-teams](/manual/maton/microsoft-teams)
 * [maton notion](/manual/maton/notion)
 * [maton one-drive](/manual/maton/one-drive)

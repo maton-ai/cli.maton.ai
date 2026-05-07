@@ -5,13 +5,16 @@ permalink: /:path/:basename
 
 {% raw %}## maton stripe invoice
 
-Manage invoices (list, view, create)
+Manage invoices (list, view, create, finalize, pay, void)
 
 ### Available commands
 
 * [maton stripe invoice create](/manual/maton/stripe/invoice/create)
+* [maton stripe invoice finalize](/manual/maton/stripe/invoice/finalize)
 * [maton stripe invoice list](/manual/maton/stripe/invoice/list)
+* [maton stripe invoice pay](/manual/maton/stripe/invoice/pay)
 * [maton stripe invoice view](/manual/maton/stripe/invoice/view)
+* [maton stripe invoice void](/manual/maton/stripe/invoice/void)
 
 
 ### Options inherited from parent commands
@@ -35,6 +38,9 @@ maton stripe invoices
 $ maton stripe invoice list
 $ maton stripe invoice view in_123
 $ maton stripe invoice create --customer cus_123
+$ maton stripe invoice finalize in_123
+$ maton stripe invoice pay in_123
+$ maton stripe invoice void in_123
 {% endraw %}{% endhighlight %}
 
 ### See also

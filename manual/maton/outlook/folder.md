@@ -9,6 +9,8 @@ Browse mail folders
 
 ### Available commands
 
+* [maton outlook folder create](/manual/maton/outlook/folder/create)
+* [maton outlook folder delete](/manual/maton/outlook/folder/delete)
 * [maton outlook folder list](/manual/maton/outlook/folder/list)
 * [maton outlook folder view](/manual/maton/outlook/folder/view)
 

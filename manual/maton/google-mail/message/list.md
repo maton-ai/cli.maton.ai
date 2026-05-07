@@ -24,16 +24,16 @@ List messages in the active Gmail mailbox. Read-only — never modifies anything
 	<dd>Print the request that would be sent without executing it</dd>
 
 	<dt>
-		<code>--format &lt;string&gt;</code></dt>
-	<dd>Output format: &#39;json&#39; (default) or &#39;text&#39; on supported commands</dd>
-
-	<dt>
 		<code>--hydrate</code></dt>
 	<dd>Fetch From/Subject/Date for each result and render a table</dd>
 
 	<dt><code>-q</code>, 
 		<code>--jq &lt;expression&gt;</code></dt>
 	<dd>Filter JSON output using a jq expression</dd>
+
+	<dt>
+		<code>--json</code></dt>
+	<dd>Output raw JSON</dd>
 
 	<dt>
 		<code>--label &lt;strings&gt;</code></dt>
@@ -51,7 +51,7 @@ List messages in the active Gmail mailbox. Read-only — never modifies anything
 		<code>--query &lt;string&gt; (default &#34;is:unread&#34;)</code></dt>
 	<dd>Gmail search query</dd>
 
-	<dt>
+	<dt><code>-t</code>, 
 		<code>--template &lt;string&gt;</code></dt>
 	<dd>Format JSON output using a Go template; see &#34;maton help formatting&#34;</dd>
 </dl>
@@ -73,7 +73,7 @@ List messages in the active Gmail mailbox. Read-only — never modifies anything
 {% highlight bash %}{% raw %}
 $ maton google-mail message list
 $ maton google-mail message list -L 5 --query 'from:boss'
-$ maton google-mail message list --hydrate --format text
+$ maton google-mail message list --hydrate --json
 $ maton google-mail message list --paginate --query 'newer_than:7d'
 {% endraw %}{% endhighlight %}
 

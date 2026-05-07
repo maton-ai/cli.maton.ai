@@ -9,8 +9,13 @@ List, view, create, update, archive, and search contacts
 
 ### Available commands
 
+* [maton hubspot contact archive](/manual/maton/hubspot/contact/archive)
+* [maton hubspot contact batch-archive](/manual/maton/hubspot/contact/batch-archive)
+* [maton hubspot contact batch-create](/manual/maton/hubspot/contact/batch-create)
+* [maton hubspot contact batch-read](/manual/maton/hubspot/contact/batch-read)
+* [maton hubspot contact batch-update](/manual/maton/hubspot/contact/batch-update)
 * [maton hubspot contact create](/manual/maton/hubspot/contact/create)
-* [maton hubspot contact delete](/manual/maton/hubspot/contact/delete)
+* [maton hubspot contact gdpr-delete](/manual/maton/hubspot/contact/gdpr-delete)
 * [maton hubspot contact list](/manual/maton/hubspot/contact/list)
 * [maton hubspot contact search](/manual/maton/hubspot/contact/search)
 * [maton hubspot contact update](/manual/maton/hubspot/contact/update)

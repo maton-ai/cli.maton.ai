@@ -35,13 +35,13 @@ Submit an APPROVE / REQUEST_CHANGES / COMMENT review. Exactly one of --approve, 
 		<code>--dry-run</code></dt>
 	<dd>Print the request that would be sent without executing it</dd>
 
-	<dt>
-		<code>--format &lt;string&gt;</code></dt>
-	<dd>Output format: &#39;json&#39; (default) or &#39;text&#39; on supported commands</dd>
-
 	<dt><code>-q</code>, 
 		<code>--jq &lt;expression&gt;</code></dt>
 	<dd>Filter JSON output using a jq expression</dd>
+
+	<dt>
+		<code>--json</code></dt>
+	<dd>Output raw JSON</dd>
 
 	<dt>
 		<code>--paginate</code></dt>
@@ -55,12 +55,12 @@ Submit an APPROVE / REQUEST_CHANGES / COMMENT review. Exactly one of --approve, 
 		<code>--request-changes</code></dt>
 	<dd>Submit a REQUEST_CHANGES review</dd>
 
-	<dt>
+	<dt><code>-t</code>, 
 		<code>--template &lt;string&gt;</code></dt>
 	<dd>Format JSON output using a Go template; see &#34;maton help formatting&#34;</dd>
 
 	<dt><code>-F</code>, 
-		<code>--text-from-file &lt;file&gt;</code></dt>
+		<code>--text-file &lt;file&gt;</code></dt>
 	<dd>Read body from file (or `-` for stdin)</dd>
 </dl>
 

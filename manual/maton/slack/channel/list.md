@@ -31,13 +31,13 @@ maton slack channel list [flags]
 		<code>--exclude-archived</code></dt>
 	<dd>Hide archived channels</dd>
 
-	<dt>
-		<code>--format &lt;string&gt;</code></dt>
-	<dd>Output format: &#39;json&#39; (default) or &#39;text&#39; on supported commands</dd>
-
 	<dt><code>-q</code>, 
 		<code>--jq &lt;expression&gt;</code></dt>
 	<dd>Filter JSON output using a jq expression</dd>
+
+	<dt>
+		<code>--json</code></dt>
+	<dd>Output raw JSON</dd>
 
 	<dt><code>-L</code>, 
 		<code>--limit &lt;int&gt; (default 100)</code></dt>
@@ -47,7 +47,7 @@ maton slack channel list [flags]
 		<code>--paginate</code></dt>
 	<dd>Follow next_cursor and concatenate all pages (list commands only)</dd>
 
-	<dt>
+	<dt><code>-t</code>, 
 		<code>--template &lt;string&gt;</code></dt>
 	<dd>Format JSON output using a Go template; see &#34;maton help formatting&#34;</dd>
 
@@ -73,7 +73,7 @@ maton slack channel list [flags]
 {% highlight bash %}{% raw %}
 $ maton slack channel list
 $ maton slack channel list --types public_channel,private_channel,im,mpim --limit 50
-$ maton slack channel list --format text
+$ maton slack channel list --json
 $ maton slack channel list --paginate
 {% endraw %}{% endhighlight %}
 

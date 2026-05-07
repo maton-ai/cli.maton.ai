@@ -9,7 +9,7 @@ permalink: /:path/:basename
 maton asana task list [flags]
 ```
 
-Asana requires either --project, or --assignee plus --workspace, to scope the listing. Use --incomplete to fetch only open tasks.
+Asana requires a scope: --project, --assignee plus --workspace, or --parent (lists subtasks of the given task). Use --incomplete to fetch only open tasks.
 
 ### Options
 
@@ -32,16 +32,16 @@ Asana requires either --project, or --assignee plus --workspace, to scope the li
 	<dd>Print the request that would be sent without executing it</dd>
 
 	<dt>
-		<code>--format &lt;string&gt;</code></dt>
-	<dd>Output format: &#39;json&#39; (default) or &#39;text&#39; on supported commands</dd>
-
-	<dt>
 		<code>--incomplete</code></dt>
 	<dd>Only return open (incomplete) tasks</dd>
 
 	<dt><code>-q</code>, 
 		<code>--jq &lt;expression&gt;</code></dt>
 	<dd>Filter JSON output using a jq expression</dd>
+
+	<dt>
+		<code>--json</code></dt>
+	<dd>Output raw JSON</dd>
 
 	<dt><code>-L</code>, 
 		<code>--limit &lt;int&gt; (default 0)</code></dt>
@@ -60,10 +60,14 @@ Asana requires either --project, or --assignee plus --workspace, to scope the li
 	<dd>Follow next_cursor and concatenate all pages (list commands only)</dd>
 
 	<dt>
+		<code>--parent &lt;string&gt;</code></dt>
+	<dd>Parent task gid (lists its subtasks)</dd>
+
+	<dt>
 		<code>--project &lt;string&gt;</code></dt>
 	<dd>Project gid to list tasks from</dd>
 
-	<dt>
+	<dt><code>-t</code>, 
 		<code>--template &lt;string&gt;</code></dt>
 	<dd>Format JSON output using a Go template; see &#34;maton help formatting&#34;</dd>
 
@@ -90,6 +94,7 @@ Asana requires either --project, or --assignee plus --workspace, to scope the li
 $ maton asana task list --project 67890
 $ maton asana task list --assignee me --workspace 12345
 $ maton asana task list --assignee me -w 12345 --incomplete
+$ maton asana task list --parent 11111
 $ maton asana task list --project 67890 --paginate
 {% endraw %}{% endhighlight %}
 

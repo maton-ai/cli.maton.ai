@@ -15,10 +15,10 @@ Aliases should be defined as a map in YAML, where the keys represent aliases and
 the values represent the corresponding expansions. An example file should look like
 the following:
 
-    bugs: issue list --label=bug
-    igrep: '!maton issue list --label="$1" | grep "$2"'
+    bugs: github issue list --label=bug
+    igrep: '!maton github issue list --label="$1" | grep "$2"'
     features: |-
-        issue list
+        github issue list
         --label=enhancement
 
 Use `-` to read aliases (in YAML format) from standard input.

@@ -17,7 +17,7 @@ maton linear comment create [flags]
 <dl class="flags">
 	<dt><code>-b</code>, 
 		<code>--body &lt;string&gt;</code></dt>
-	<dd>Comment body (markdown) (one of --body/--text-from-file)</dd>
+	<dd>Comment body (markdown) (one of --body/--text-file)</dd>
 
 	<dt>
 		<code>--connection &lt;string&gt;</code></dt>
@@ -28,10 +28,6 @@ maton linear comment create [flags]
 	<dd>Print the request that would be sent without executing it</dd>
 
 	<dt>
-		<code>--format &lt;string&gt;</code></dt>
-	<dd>Output format: &#39;json&#39; (default) or &#39;text&#39; on supported commands</dd>
-
-	<dt>
 		<code>--issue &lt;string&gt;</code></dt>
 	<dd>Issue identifier (e.g. MTN-527) or UUID (required)</dd>
 
@@ -40,16 +36,20 @@ maton linear comment create [flags]
 	<dd>Filter JSON output using a jq expression</dd>
 
 	<dt>
+		<code>--json</code></dt>
+	<dd>Output raw JSON</dd>
+
+	<dt>
 		<code>--paginate</code></dt>
 	<dd>Follow next_cursor and concatenate all pages (list commands only)</dd>
 
-	<dt>
+	<dt><code>-t</code>, 
 		<code>--template &lt;string&gt;</code></dt>
 	<dd>Format JSON output using a Go template; see &#34;maton help formatting&#34;</dd>
 
 	<dt><code>-F</code>, 
-		<code>--text-from-file &lt;file&gt;</code></dt>
-	<dd>Read body from file (or `-` for stdin) (one of --body/--text-from-file)</dd>
+		<code>--text-file &lt;file&gt;</code></dt>
+	<dd>Read body from file (or `-` for stdin) (one of --body/--text-file)</dd>
 </dl>
 
 

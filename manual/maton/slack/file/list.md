@@ -31,13 +31,13 @@ maton slack file list [flags]
 		<code>--dry-run</code></dt>
 	<dd>Print the request that would be sent without executing it</dd>
 
-	<dt>
-		<code>--format &lt;string&gt;</code></dt>
-	<dd>Output format: &#39;json&#39; (default) or &#39;text&#39; on supported commands</dd>
-
 	<dt><code>-q</code>, 
 		<code>--jq &lt;expression&gt;</code></dt>
 	<dd>Filter JSON output using a jq expression</dd>
+
+	<dt>
+		<code>--json</code></dt>
+	<dd>Output raw JSON</dd>
 
 	<dt>
 		<code>--page &lt;int&gt; (default 0)</code></dt>
@@ -47,7 +47,7 @@ maton slack file list [flags]
 		<code>--paginate</code></dt>
 	<dd>Follow next_cursor and concatenate all pages (list commands only)</dd>
 
-	<dt>
+	<dt><code>-t</code>, 
 		<code>--template &lt;string&gt;</code></dt>
 	<dd>Format JSON output using a Go template; see &#34;maton help formatting&#34;</dd>
 
@@ -78,7 +78,7 @@ maton slack file list [flags]
 $ maton slack file list
 $ maton slack file list --channel C0123456789
 $ maton slack file list --user U0123456789 --types images,pdfs
-$ maton slack file list --count 50 --page 2 --format text
+$ maton slack file list --count 50 --page 2 --json
 {% endraw %}{% endhighlight %}
 
 ### See also

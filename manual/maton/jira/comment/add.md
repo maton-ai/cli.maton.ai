@@ -17,11 +17,11 @@ Post a plain-text comment on an issue. The body is automatically wrapped in Atla
 <dl class="flags">
 	<dt>
 		<code>--body &lt;string&gt;</code></dt>
-	<dd>Comment text (one of --body/--text-from-file; wrapped in ADF)</dd>
+	<dd>Comment text (one of --body/--text-file; wrapped in ADF)</dd>
 
 	<dt>
 		<code>--cloud-id &lt;string&gt;</code></dt>
-	<dd>Jira Cloud ID (run &#39;maton jira cloud list&#39; to discover)</dd>
+	<dd>Jira Cloud ID, run &#39;maton jira cloud list&#39; to discover (required)</dd>
 
 	<dt>
 		<code>--connection &lt;string&gt;</code></dt>
@@ -31,25 +31,25 @@ Post a plain-text comment on an issue. The body is automatically wrapped in Atla
 		<code>--dry-run</code></dt>
 	<dd>Print the request that would be sent without executing it</dd>
 
-	<dt>
-		<code>--format &lt;string&gt;</code></dt>
-	<dd>Output format: &#39;json&#39; (default) or &#39;text&#39; on supported commands</dd>
-
 	<dt><code>-q</code>, 
 		<code>--jq &lt;expression&gt;</code></dt>
 	<dd>Filter JSON output using a jq expression</dd>
 
 	<dt>
+		<code>--json</code></dt>
+	<dd>Output raw JSON</dd>
+
+	<dt>
 		<code>--paginate</code></dt>
 	<dd>Follow next_cursor and concatenate all pages (list commands only)</dd>
 
-	<dt>
+	<dt><code>-t</code>, 
 		<code>--template &lt;string&gt;</code></dt>
 	<dd>Format JSON output using a Go template; see &#34;maton help formatting&#34;</dd>
 
 	<dt><code>-F</code>, 
-		<code>--text-from-file &lt;file&gt;</code></dt>
-	<dd>Read body from file (or `-` for stdin; one of --body/--text-from-file)</dd>
+		<code>--text-file &lt;file&gt;</code></dt>
+	<dd>Read body from file (or `-` for stdin; one of --body/--text-file)</dd>
 </dl>
 
 

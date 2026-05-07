@@ -17,7 +17,7 @@ maton slack message send [flags]
 <dl class="flags">
 	<dt>
 		<code>--blocks &lt;string&gt;</code></dt>
-	<dd>Block Kit blocks as a JSON array string (one of --text/--text-from-file/--blocks)</dd>
+	<dd>Block Kit blocks as a JSON array string (one of --text/--text-file/--blocks)</dd>
 
 	<dt><code>-c</code>, 
 		<code>--channel &lt;string&gt;</code></dt>
@@ -32,16 +32,16 @@ maton slack message send [flags]
 	<dd>Print the request that would be sent without executing it</dd>
 
 	<dt>
-		<code>--format &lt;string&gt;</code></dt>
-	<dd>Output format: &#39;json&#39; (default) or &#39;text&#39; on supported commands</dd>
-
-	<dt>
 		<code>--icon-emoji &lt;string&gt;</code></dt>
 	<dd>Override the bot icon with an emoji, e.g. :ghost:</dd>
 
 	<dt><code>-q</code>, 
 		<code>--jq &lt;expression&gt;</code></dt>
 	<dd>Filter JSON output using a jq expression</dd>
+
+	<dt>
+		<code>--json</code></dt>
+	<dd>Output raw JSON</dd>
 
 	<dt>
 		<code>--paginate</code></dt>
@@ -57,11 +57,11 @@ maton slack message send [flags]
 
 	<dt><code>-t</code>, 
 		<code>--text &lt;string&gt;</code></dt>
-	<dd>Message text — supports mrkdwn (one of --text/--text-from-file/--blocks)</dd>
+	<dd>Message text — supports mrkdwn (one of --text/--text-file/--blocks)</dd>
 
 	<dt><code>-F</code>, 
-		<code>--text-from-file &lt;string&gt;</code></dt>
-	<dd>Read message text from a file path (or &#39;-&#39; for stdin) (one of --text/--text-from-file/--blocks)</dd>
+		<code>--text-file &lt;string&gt;</code></dt>
+	<dd>Read message text from a file path (or &#39;-&#39; for stdin) (one of --text/--text-file/--blocks)</dd>
 
 	<dt>
 		<code>--unfurl-links</code></dt>
@@ -92,7 +92,7 @@ maton slack message send [flags]
 
 {% highlight bash %}{% raw %}
 $ maton slack message send --channel C0123456789 --text 'Deploy complete'
-$ maton slack message send --channel C0123456789 --text-from-file ./post.md
+$ maton slack message send --channel C0123456789 --text-file ./post.md
 $ maton slack message send --channel C012 --text 'Heads up' --blocks '[{"type":"section","text":{"type":"mrkdwn","text":"*Heads up*"}}]'
 {% endraw %}{% endhighlight %}
 

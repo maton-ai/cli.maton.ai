@@ -5,11 +5,12 @@ permalink: /:path/:basename
 
 {% raw %}## maton jira issue
 
-View, create, update, and search issues
+View, create, update, delete, and search issues
 
 ### Available commands
 
 * [maton jira issue create](/manual/maton/jira/issue/create)
+* [maton jira issue delete](/manual/maton/jira/issue/delete)
 * [maton jira issue search](/manual/maton/jira/issue/search)
 * [maton jira issue update](/manual/maton/jira/issue/update)
 * [maton jira issue view](/manual/maton/jira/issue/view)
@@ -36,6 +37,8 @@ maton jira issues
 $ maton jira cloud list
 $ maton jira issue view PROJ-123 --cloud-id <id>
 $ maton jira issue create --cloud-id <id> --project PROJ --summary 'Fix login'
+$ maton jira issue update PROJ-123 --cloud-id <id> --assignee 5b10ac8d82e05b22cc7d4ef5
+$ maton jira issue delete PROJ-123 --cloud-id <id>
 $ maton jira issue search 'project = PROJ' --cloud-id <id>
 {% endraw %}{% endhighlight %}
 

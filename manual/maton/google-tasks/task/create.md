@@ -27,13 +27,13 @@ maton google-tasks task create [flags]
 		<code>--due &lt;string&gt;</code></dt>
 	<dd>Due date (YYYY-MM-DD or RFC 3339)</dd>
 
-	<dt>
-		<code>--format &lt;string&gt;</code></dt>
-	<dd>Output format: &#39;json&#39; (default) or &#39;text&#39; on supported commands</dd>
-
 	<dt><code>-q</code>, 
 		<code>--jq &lt;expression&gt;</code></dt>
 	<dd>Filter JSON output using a jq expression</dd>
+
+	<dt>
+		<code>--json</code></dt>
+	<dd>Output raw JSON</dd>
 
 	<dt><code>-l</code>, 
 		<code>--list &lt;string&gt;</code></dt>
@@ -55,7 +55,7 @@ maton google-tasks task create [flags]
 		<code>--previous &lt;string&gt;</code></dt>
 	<dd>Place after this sibling task ID</dd>
 
-	<dt>
+	<dt><code>-t</code>, 
 		<code>--template &lt;string&gt;</code></dt>
 	<dd>Format JSON output using a Go template; see &#34;maton help formatting&#34;</dd>
 

@@ -21,10 +21,10 @@ maton outlook message draft [flags]
 
 	<dt><code>-t</code>, 
 		<code>--body &lt;string&gt;</code></dt>
-	<dd>Email body content (one of --body, --body-from-file required)</dd>
+	<dd>Email body content (one of --body, --body-file required)</dd>
 
 	<dt><code>-F</code>, 
-		<code>--body-from-file &lt;string&gt;</code></dt>
+		<code>--body-file &lt;string&gt;</code></dt>
 	<dd>Read message body from a file path (or &#39;-&#39; for stdin)</dd>
 
 	<dt>
@@ -40,16 +40,16 @@ maton outlook message draft [flags]
 	<dd>Print the request that would be sent without executing it</dd>
 
 	<dt>
-		<code>--format &lt;string&gt;</code></dt>
-	<dd>Output format: &#39;json&#39; (default) or &#39;text&#39; on supported commands</dd>
-
-	<dt>
 		<code>--html</code></dt>
 	<dd>Save body as HTML (default: plain text)</dd>
 
 	<dt><code>-q</code>, 
 		<code>--jq &lt;expression&gt;</code></dt>
 	<dd>Filter JSON output using a jq expression</dd>
+
+	<dt>
+		<code>--json</code></dt>
+	<dd>Output raw JSON</dd>
 
 	<dt>
 		<code>--paginate</code></dt>

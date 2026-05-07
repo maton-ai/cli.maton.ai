@@ -9,8 +9,12 @@ List, view, create, update, archive, and search companies
 
 ### Available commands
 
+* [maton hubspot company archive](/manual/maton/hubspot/company/archive)
+* [maton hubspot company batch-archive](/manual/maton/hubspot/company/batch-archive)
+* [maton hubspot company batch-create](/manual/maton/hubspot/company/batch-create)
+* [maton hubspot company batch-read](/manual/maton/hubspot/company/batch-read)
+* [maton hubspot company batch-update](/manual/maton/hubspot/company/batch-update)
 * [maton hubspot company create](/manual/maton/hubspot/company/create)
-* [maton hubspot company delete](/manual/maton/hubspot/company/delete)
 * [maton hubspot company list](/manual/maton/hubspot/company/list)
 * [maton hubspot company search](/manual/maton/hubspot/company/search)
 * [maton hubspot company update](/manual/maton/hubspot/company/update)

@@ -9,15 +9,15 @@ permalink: /:path/:basename
 maton whoami [flags]
 ```
 
-Display the current authentication state for the Maton CLI. Calls the Maton /user endpoint to verify the stored API key and fetch account info. Use --format json for output suitable for scripting or agent consumption. Exit codes: 0  Authenticated 1  Not authenticated, or an error occurred
+Display the current authentication state for the Maton CLI. Calls the Maton /user endpoint to verify the stored API key and fetch account info. Use --json for output suitable for scripting or agent consumption. Exit codes: 0  Authenticated 1  Not authenticated, or an error occurred
 
 ### Options
 
 
 <dl class="flags">
 	<dt>
-		<code>--format &lt;string&gt;</code></dt>
-	<dd>Output format: &#39;json&#39; for a stable JSON schema (suitable for scripting)</dd>
+		<code>--json</code></dt>
+	<dd>Emit a stable JSON schema (suitable for scripting)</dd>
 </dl>
 
 
@@ -36,7 +36,7 @@ Display the current authentication state for the Maton CLI. Calls the Maton /use
 
 {% highlight bash %}{% raw %}
 $ maton whoami
-$ maton whoami --format json
+$ maton whoami --json
 {% endraw %}{% endhighlight %}
 
 ### See also

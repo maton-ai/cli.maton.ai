@@ -53,23 +53,23 @@ invoked. This allows for chaining multiple commands via piping and redirection.
 
 {% highlight bash %}{% raw %}
 # Note: Command Prompt on Windows requires using double quotes for arguments
-$ maton alias set pv 'pr view'
-$ maton pv -w 123  #=> maton pr view -w 123
+$ maton alias set prv 'github pr view'
+$ maton prv 123  #=> maton github pr view 123
 
-$ maton alias set bugs 'issue list --label=bugs'
+$ maton alias set bugs 'github issue list --label=bug'
 $ maton bugs
 
-$ maton alias set homework 'issue list --assignee @me'
-$ maton homework
+$ maton alias set standup 'slack message send --channel C0123456789 --text'
+$ maton standup "What I did today..."
 
-$ maton alias set 'issue mine' 'issue list --mention @me'
-$ maton issue mine
+$ maton alias set 'slack ping' 'slack message send --channel C0123456789 --text "ping"'
+$ maton slack ping
 
-$ maton alias set epicsBy 'issue list --author="$1" --label="epic"'
-$ maton epicsBy vilmibm  #=> maton issue list --author="vilmibm" --label="epic"
+$ maton alias set authoredBy 'github issue list --author="$1" --label="bug"'
+$ maton authoredBy octocat  #=> maton github issue list --author="octocat" --label="bug"
 
-$ maton alias set --shell igrep 'maton issue list --label="$1" | grep "$2"'
-$ maton igrep epic foo  #=> maton issue list --label="epic" | grep "foo"
+$ maton alias set --shell igrep 'maton github issue list --label="$1" | grep "$2"'
+$ maton igrep bug foo  #=> maton github issue list --label="bug" | grep "foo"
 {% endraw %}{% endhighlight %}
 
 ### See also

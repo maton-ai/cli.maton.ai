@@ -15,6 +15,7 @@ Manage videos, playlists, and channels in YouTube.
 * [maton youtube search](/manual/maton/youtube/search)
 * [maton youtube subscription](/manual/maton/youtube/subscription)
 * [maton youtube video](/manual/maton/youtube/video)
+* [maton youtube video-category](/manual/maton/youtube/video-category)
 * [maton youtube whoami](/manual/maton/youtube/whoami)
 
 
@@ -36,8 +37,6 @@ $ maton youtube whoami
 $ maton youtube search videos 'go programming'
 $ maton youtube video list --region US
 $ maton youtube video view dQw4w9WgXcQ
-$ maton youtube channel mine
-$ maton youtube playlist list
 $ maton youtube comment list --video dQw4w9WgXcQ
 {% endraw %}{% endhighlight %}
 

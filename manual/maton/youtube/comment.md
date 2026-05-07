@@ -5,10 +5,12 @@ permalink: /:path/:basename
 
 {% raw %}## maton youtube comment
 
-List comment threads on videos
+List, post, reply to, and delete comments
 
 ### Available commands
 
+* [maton youtube comment create](/manual/maton/youtube/comment/create)
+* [maton youtube comment delete](/manual/maton/youtube/comment/delete)
 * [maton youtube comment list](/manual/maton/youtube/comment/list)
 
 
@@ -31,8 +33,9 @@ maton youtube comments
 
 {% highlight bash %}{% raw %}
 $ maton youtube comment list --video dQw4w9WgXcQ
-$ maton youtube comment list --video dQw4w9WgXcQ --order time
-$ maton youtube comment list --video dQw4w9WgXcQ --limit 100
+$ maton youtube comment create --video dQw4w9WgXcQ --text "Great video!"
+$ maton youtube comment create --parent <commentId> --text "I agree"
+$ maton youtube comment delete <commentId>
 {% endraw %}{% endhighlight %}
 
 ### See also

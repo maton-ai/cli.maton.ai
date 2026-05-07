@@ -13,6 +13,7 @@ Manage contacts, companies, and deals in HubSpot CRM.
 * [maton hubspot company](/manual/maton/hubspot/company)
 * [maton hubspot contact](/manual/maton/hubspot/contact)
 * [maton hubspot deal](/manual/maton/hubspot/deal)
+* [maton hubspot properties](/manual/maton/hubspot/properties)
 * [maton hubspot whoami](/manual/maton/hubspot/whoami)
 
 

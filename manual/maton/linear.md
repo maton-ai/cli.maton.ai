@@ -14,6 +14,7 @@ Manage issues, projects, and teams in Linear.
 * [maton linear issue](/manual/maton/linear/issue)
 * [maton linear label](/manual/maton/linear/label)
 * [maton linear me](/manual/maton/linear/me)
+* [maton linear org](/manual/maton/linear/org)
 * [maton linear project](/manual/maton/linear/project)
 * [maton linear state](/manual/maton/linear/state)
 * [maton linear team](/manual/maton/linear/team)

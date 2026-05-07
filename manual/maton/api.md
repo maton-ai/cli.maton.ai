@@ -135,8 +135,7 @@ $ maton api -H 'Accept: application/json' connections
 $ maton api /connections --jq '.[].id'
 
 # Use a template for the output
-$ maton api /connections --template \
-  '{{range .}}{{.id}} ({{.app | color "yellow"}}){{"\n"}}{{end}}'
+$ maton api /connections --template '{{range .}}{{.id}} ({{.app | color "yellow"}}){{"\n"}}{{end}}'
 {% endraw %}{% endhighlight %}
 
 ### See also

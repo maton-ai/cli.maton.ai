@@ -5,10 +5,10 @@ permalink: /:path/:basename
 
 {% raw %}## maton youtube channel view
 
-View a channel by ID
+View a channel by ID, @handle, or legacy username
 
 ```
-maton youtube channel view <channelId> [flags]
+maton youtube channel view [channelId] [flags]
 ```
 
 ### Options
@@ -24,12 +24,16 @@ maton youtube channel view <channelId> [flags]
 	<dd>Print the request that would be sent without executing it</dd>
 
 	<dt>
-		<code>--format &lt;string&gt;</code></dt>
-	<dd>Output format: &#39;json&#39; (default) or &#39;text&#39; on supported commands</dd>
+		<code>--handle &lt;string&gt;</code></dt>
+	<dd>Look up a channel by @handle (no leading @)</dd>
 
 	<dt><code>-q</code>, 
 		<code>--jq &lt;expression&gt;</code></dt>
 	<dd>Filter JSON output using a jq expression</dd>
+
+	<dt>
+		<code>--json</code></dt>
+	<dd>Output raw JSON</dd>
 
 	<dt>
 		<code>--paginate</code></dt>
@@ -39,9 +43,13 @@ maton youtube channel view <channelId> [flags]
 		<code>--parts &lt;string&gt; (default &#34;snippet,statistics,contentDetails&#34;)</code></dt>
 	<dd>Comma-separated parts</dd>
 
-	<dt>
+	<dt><code>-t</code>, 
 		<code>--template &lt;string&gt;</code></dt>
 	<dd>Format JSON output using a Go template; see &#34;maton help formatting&#34;</dd>
+
+	<dt>
+		<code>--username &lt;string&gt;</code></dt>
+	<dd>Look up a channel by legacy YouTube username</dd>
 </dl>
 
 
@@ -60,6 +68,8 @@ maton youtube channel view <channelId> [flags]
 
 {% highlight bash %}{% raw %}
 $ maton youtube channel view UCBJycsmduvYEL83R_U4JriQ
+$ maton youtube channel view --handle GoogleDevelopers
+$ maton youtube channel view --username GoogleDevelopers
 {% endraw %}{% endhighlight %}
 
 ### See also

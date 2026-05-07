@@ -5,11 +5,14 @@ permalink: /:path/:basename
 
 {% raw %}## maton outlook message send
 
-Send an email (builds the Microsoft Graph message object automatically)
+```
+maton outlook message send [<draft-id>] [flags]
+```
 
-```
-maton outlook message send [flags]
-```
+Send a message. Without a positional draft ID, builds a Microsoft Graph
+message object from the compose flags and posts to /me/sendMail. With a
+positional draft ID, sends an existing draft (POST /me/messages/{id}/send)
+and ignores the compose flags.
 
 ### Options
 
@@ -21,10 +24,10 @@ maton outlook message send [flags]
 
 	<dt><code>-t</code>, 
 		<code>--body &lt;string&gt;</code></dt>
-	<dd>Email body content (one of --body, --body-from-file required)</dd>
+	<dd>Email body content (one of --body, --body-file required when composing)</dd>
 
 	<dt><code>-F</code>, 
-		<code>--body-from-file &lt;string&gt;</code></dt>
+		<code>--body-file &lt;string&gt;</code></dt>
 	<dd>Read message body from a file path (or &#39;-&#39; for stdin)</dd>
 
 	<dt>
@@ -40,10 +43,6 @@ maton outlook message send [flags]
 	<dd>Print the request that would be sent without executing it</dd>
 
 	<dt>
-		<code>--format &lt;string&gt;</code></dt>
-	<dd>Output format: &#39;json&#39; (default) or &#39;text&#39; on supported commands</dd>
-
-	<dt>
 		<code>--html</code></dt>
 	<dd>Send body as HTML (default: plain text)</dd>
 
@@ -52,8 +51,12 @@ maton outlook message send [flags]
 	<dd>Filter JSON output using a jq expression</dd>
 
 	<dt>
+		<code>--json</code></dt>
+	<dd>Output raw JSON</dd>
+
+	<dt>
 		<code>--no-save</code></dt>
-	<dd>Do not save the sent message to Sent Items</dd>
+	<dd>Do not save the sent message to Sent Items (compose mode only)</dd>
 
 	<dt>
 		<code>--paginate</code></dt>
@@ -61,7 +64,7 @@ maton outlook message send [flags]
 
 	<dt>
 		<code>--subject &lt;string&gt;</code></dt>
-	<dd>Email subject line (required)</dd>
+	<dd>Email subject line (required when composing)</dd>
 
 	<dt>
 		<code>--template &lt;string&gt;</code></dt>
@@ -69,7 +72,7 @@ maton outlook message send [flags]
 
 	<dt>
 		<code>--to &lt;string&gt;</code></dt>
-	<dd>Recipient email(s), comma-separated (required)</dd>
+	<dd>Recipient email(s), comma-separated (required when composing)</dd>
 </dl>
 
 
@@ -90,8 +93,9 @@ maton outlook message send [flags]
 $ maton outlook message send --to alice@example.com --subject "Hi" --body "hello"
 $ maton outlook message send --to a@b.com,c@d.com --cc boss@b.com --subject Update --body "..."
 $ maton outlook message send --to a@b.com --subject "Report" --body "<p>see attached</p>" --html
-$ maton outlook message send --to a@b.com --subject draft --body-from-file ./body.md
+$ maton outlook message send --to a@b.com --subject draft --body-file ./body.md
 $ maton outlook message send --to a@b.com --subject draft --body "..." --no-save
+$ maton outlook message send AAMkAGI...   # send an existing draft
 {% endraw %}{% endhighlight %}
 
 ### See also

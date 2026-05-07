@@ -27,13 +27,13 @@ maton microsoft-teams chat list [flags]
 		<code>--filter &lt;string&gt;</code></dt>
 	<dd>OData $filter</dd>
 
-	<dt>
-		<code>--format &lt;string&gt;</code></dt>
-	<dd>Output format: &#39;json&#39; (default) or &#39;text&#39; on supported commands</dd>
-
 	<dt><code>-q</code>, 
 		<code>--jq &lt;expression&gt;</code></dt>
 	<dd>Filter JSON output using a jq expression</dd>
+
+	<dt>
+		<code>--json</code></dt>
+	<dd>Output raw JSON</dd>
 
 	<dt>
 		<code>--paginate</code></dt>
@@ -43,7 +43,7 @@ maton microsoft-teams chat list [flags]
 		<code>--select &lt;string&gt;</code></dt>
 	<dd>Comma-separated fields to return</dd>
 
-	<dt>
+	<dt><code>-t</code>, 
 		<code>--template &lt;string&gt;</code></dt>
 	<dd>Format JSON output using a Go template; see &#34;maton help formatting&#34;</dd>
 

@@ -23,13 +23,13 @@ Insert plain text at the end of a document body via documents.batchUpdate. For r
 		<code>--dry-run</code></dt>
 	<dd>Print the request that would be sent without executing it</dd>
 
-	<dt>
-		<code>--format &lt;string&gt;</code></dt>
-	<dd>Output format: &#39;json&#39; (default) or &#39;text&#39; on supported commands</dd>
-
 	<dt><code>-q</code>, 
 		<code>--jq &lt;expression&gt;</code></dt>
 	<dd>Filter JSON output using a jq expression</dd>
+
+	<dt>
+		<code>--json</code></dt>
+	<dd>Output raw JSON</dd>
 
 	<dt>
 		<code>--paginate</code></dt>
@@ -41,11 +41,11 @@ Insert plain text at the end of a document body via documents.batchUpdate. For r
 
 	<dt><code>-t</code>, 
 		<code>--text &lt;string&gt;</code></dt>
-	<dd>Text to append at the end of the body (one of --text/--text-from-file)</dd>
+	<dd>Text to append at the end of the body (one of --text/--text-file)</dd>
 
 	<dt><code>-F</code>, 
-		<code>--text-from-file &lt;string&gt;</code></dt>
-	<dd>Read text from a file (&#39;-&#39; for stdin) (one of --text/--text-from-file)</dd>
+		<code>--text-file &lt;string&gt;</code></dt>
+	<dd>Read text from a file (&#39;-&#39; for stdin) (one of --text/--text-file)</dd>
 </dl>
 
 

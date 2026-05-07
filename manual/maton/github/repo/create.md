@@ -36,10 +36,6 @@ Create a repository owned by the authenticated user, or by the org named via 'ow
 	<dd>Print the request that would be sent without executing it</dd>
 
 	<dt>
-		<code>--format &lt;string&gt;</code></dt>
-	<dd>Output format: &#39;json&#39; (default) or &#39;text&#39; on supported commands</dd>
-
-	<dt>
 		<code>--from-template &lt;owner/name&gt;</code></dt>
 	<dd>Template repo to base this on, in owner/name form</dd>
 
@@ -58,6 +54,10 @@ Create a repository owned by the authenticated user, or by the org named via 'ow
 	<dt><code>-q</code>, 
 		<code>--jq &lt;expression&gt;</code></dt>
 	<dd>Filter JSON output using a jq expression</dd>
+
+	<dt>
+		<code>--json</code></dt>
+	<dd>Output raw JSON</dd>
 
 	<dt><code>-l</code>, 
 		<code>--license &lt;string&gt;</code></dt>

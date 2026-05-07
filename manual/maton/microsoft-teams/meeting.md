@@ -30,8 +30,7 @@ maton microsoft-teams meetings
 ### Examples
 
 {% highlight bash %}{% raw %}
-$ maton microsoft-teams meeting create --subject 'Team Sync' \
-    --start 2026-02-18T10:00:00Z --end 2026-02-18T11:00:00Z
+$ maton microsoft-teams meeting create --subject 'Team Sync' --start 2026-02-18T10:00:00Z --end 2026-02-18T11:00:00Z
 {% endraw %}{% endhighlight %}
 
 ### See also

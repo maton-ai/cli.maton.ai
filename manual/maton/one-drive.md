@@ -29,12 +29,9 @@ Manage files and folders in OneDrive.
 
 {% highlight bash %}{% raw %}
 $ maton one-drive whoami
+$ maton one-drive drive list
 $ maton one-drive item list
-$ maton one-drive item list Documents/Reports
-$ maton one-drive item view-by-path Documents/report.pdf
-$ maton one-drive item create-folder Reports --path Documents
 $ maton one-drive item upload ./report.pdf --path Documents/report.pdf
-$ maton one-drive item share 01ABCDEF --type view --scope anonymous
 $ maton one-drive drive search 'budget'
 {% endraw %}{% endhighlight %}
 

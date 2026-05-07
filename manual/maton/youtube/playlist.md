@@ -5,14 +5,17 @@ permalink: /:path/:basename
 
 {% raw %}## maton youtube playlist
 
-List, view, create, and add videos to playlists
+List, view, create, update, delete, and manage playlist videos
 
 ### Available commands
 
 * [maton youtube playlist add-video](/manual/maton/youtube/playlist/add-video)
 * [maton youtube playlist create](/manual/maton/youtube/playlist/create)
+* [maton youtube playlist delete](/manual/maton/youtube/playlist/delete)
 * [maton youtube playlist items](/manual/maton/youtube/playlist/items)
 * [maton youtube playlist list](/manual/maton/youtube/playlist/list)
+* [maton youtube playlist remove-video](/manual/maton/youtube/playlist/remove-video)
+* [maton youtube playlist update](/manual/maton/youtube/playlist/update)
 * [maton youtube playlist view](/manual/maton/youtube/playlist/view)
 
 
@@ -37,7 +40,10 @@ maton youtube playlists
 $ maton youtube playlist list
 $ maton youtube playlist items PLrAXtmRdnEQy6nuLMfO6JzeRBGroTkzmA
 $ maton youtube playlist create --title "Study music"
+$ maton youtube playlist update PL123 --title "Renamed"
+$ maton youtube playlist delete PL123
 $ maton youtube playlist add-video --playlist PL123 --video dQw4w9WgXcQ
+$ maton youtube playlist remove-video PLI1
 {% endraw %}{% endhighlight %}
 
 ### See also

@@ -16,6 +16,7 @@ Read, send, and manage mailbox messages
 * [maton outlook message reply](/manual/maton/outlook/message/reply)
 * [maton outlook message search](/manual/maton/outlook/message/search)
 * [maton outlook message send](/manual/maton/outlook/message/send)
+* [maton outlook message update](/manual/maton/outlook/message/update)
 * [maton outlook message view](/manual/maton/outlook/message/view)
 
 
