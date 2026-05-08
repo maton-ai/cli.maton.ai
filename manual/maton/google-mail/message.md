@@ -32,7 +32,7 @@ List, read, send, reply to, and modify messages
 
 ### ALIASES
 
-maton google-mail messages
+ maton google-mail messages, maton gmail messages
 
 {% endraw %}
 ### Examples

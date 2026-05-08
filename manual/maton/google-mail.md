@@ -13,6 +13,7 @@ Manage messages, threads, and drafts in Gmail.
 * [maton google-mail label](/manual/maton/google-mail/label)
 * [maton google-mail message](/manual/maton/google-mail/message)
 * [maton google-mail thread](/manual/maton/google-mail/thread)
+* [maton google-mail whoami](/manual/maton/google-mail/whoami)
 
 
 ### Options inherited from parent commands
@@ -25,10 +26,15 @@ Manage messages, threads, and drafts in Gmail.
 </dl>
 
 
+### ALIASES
+
+maton gmail
+
 {% endraw %}
 ### Examples
 
 {% highlight bash %}{% raw %}
+$ maton google-mail whoami
 $ maton google-mail message list -L 5
 $ maton google-mail message view 18f1a2b3 --headers
 $ maton google-mail message send --to a@b.com --subject Hi --body 'Hello!'

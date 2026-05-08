@@ -28,7 +28,7 @@ Create, list, view, send, and delete drafts
 
 ### ALIASES
 
-maton google-mail drafts
+ maton google-mail drafts, maton gmail drafts
 
 {% endraw %}
 ### Examples

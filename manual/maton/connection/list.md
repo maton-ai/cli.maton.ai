@@ -24,8 +24,8 @@ List the app connections in your Maton account. Pass an app name to filter to th
 	<dd>Output JSON with the specified fields</dd>
 
 	<dt><code>-L</code>, 
-		<code>--limit &lt;int&gt; (default 30)</code></dt>
-	<dd>Maximum number of connections to fetch</dd>
+		<code>--limit &lt;int&gt; (default 0)</code></dt>
+	<dd>Maximum number of connections to fetch (0 = no limit)</dd>
 
 	<dt>
 		<code>--method &lt;string&gt;</code></dt>

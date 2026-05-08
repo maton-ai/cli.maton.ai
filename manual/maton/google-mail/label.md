@@ -28,7 +28,7 @@ List, create, update, and delete labels
 
 ### ALIASES
 
-maton google-mail labels
+ maton google-mail labels, maton gmail labels
 
 {% endraw %}
 ### Examples

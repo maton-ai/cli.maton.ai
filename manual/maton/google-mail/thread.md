@@ -28,7 +28,7 @@ List, view, trash, and modify message threads
 
 ### ALIASES
 
-maton google-mail threads
+ maton google-mail threads, maton gmail threads
 
 {% endraw %}
 ### Examples
