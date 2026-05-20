@@ -5,11 +5,11 @@ permalink: /:path/:basename
 
 {% raw %}## maton github issue unpin
 
-Unpin an issue
-
 ```
 maton github issue unpin <number-or-url> [flags]
 ```
+
+Uses GitHub's GraphQL unpinIssue mutation.
 
 ### Options
 

@@ -12,7 +12,6 @@ List, view, and look up workspace users
 * [maton slack user list](/manual/maton/slack/user/list)
 * [maton slack user lookup](/manual/maton/slack/user/lookup)
 * [maton slack user presence](/manual/maton/slack/user/presence)
-* [maton slack user set-presence](/manual/maton/slack/user/set-presence)
 * [maton slack user view](/manual/maton/slack/user/view)
 
 

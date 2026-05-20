@@ -11,7 +11,6 @@ Manage tasks, projects, and workspaces in Asana.
 
 * [maton asana project](/manual/maton/asana/project)
 * [maton asana task](/manual/maton/asana/task)
-* [maton asana user](/manual/maton/asana/user)
 * [maton asana whoami](/manual/maton/asana/whoami)
 * [maton asana workspace](/manual/maton/asana/workspace)
 

@@ -5,11 +5,11 @@ permalink: /:path/:basename
 
 {% raw %}## maton github issue transfer
 
-Transfer an issue to another repository
-
 ```
 maton github issue transfer <number> <dest-repo> [flags]
 ```
+
+Uses GitHub's GraphQL transferIssue mutation. Both repos must belong to the same owner or you must have permission on both.
 
 ### Options
 

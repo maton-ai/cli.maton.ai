@@ -5,11 +5,11 @@ permalink: /:path/:basename
 
 {% raw %}## maton github issue pin
 
-Pin an issue to its repository
-
 ```
 maton github issue pin <number-or-url> [flags]
 ```
+
+Uses GitHub's GraphQL pinIssue mutation. A repo can have at most three pinned issues.
 
 ### Options
 

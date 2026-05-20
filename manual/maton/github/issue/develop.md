@@ -9,7 +9,7 @@ permalink: /:path/:basename
 maton github issue develop <number-or-url> [flags]
 ```
 
-Create a linked branch for an issue, or list linked branches with --list. Without --base-branch the linked branch is created off the repo's default branch.
+Create a linked branch for an issue via the GraphQL createLinkedBranch mutation, or list linked branches with --list. Without --base-branch the linked branch is created off the repo's default branch.
 
 ### Options
 
@@ -17,7 +17,7 @@ Create a linked branch for an issue, or list linked branches with --list. Withou
 <dl class="flags">
 	<dt>
 		<code>--base-branch &lt;string&gt;</code></dt>
-	<dd>Branch to base the new branch off</dd>
+	<dd>Branch to base the new branch off (defaults to repo default)</dd>
 
 	<dt>
 		<code>--base-repo &lt;string&gt;</code></dt>
