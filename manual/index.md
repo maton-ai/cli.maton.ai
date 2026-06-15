@@ -28,7 +28,7 @@ irm https://maton.ai/install.ps1 | iex
 ### npm
 
 ```
-npm install -g @maton-ai/cli
+npm install -g @maton/cli
 ```
 
 ### Homebrew
