@@ -11,7 +11,6 @@ Send, list, update, delete, and link messages
 
 * [maton slack message delete](/manual/maton/slack/message/delete)
 * [maton slack message list](/manual/maton/slack/message/list)
-* [maton slack message me](/manual/maton/slack/message/me)
 * [maton slack message permalink](/manual/maton/slack/message/permalink)
 * [maton slack message replies](/manual/maton/slack/message/replies)
 * [maton slack message reply](/manual/maton/slack/message/reply)

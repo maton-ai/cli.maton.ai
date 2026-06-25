@@ -5,12 +5,12 @@ permalink: /:path/:basename
 
 {% raw %}## maton jira project
 
-View and list projects
+Get and list projects
 
 ### Available commands
 
+* [maton jira project get](/manual/maton/jira/project/get)
 * [maton jira project list](/manual/maton/jira/project/list)
-* [maton jira project view](/manual/maton/jira/project/view)
 
 
 ### Options inherited from parent commands
@@ -33,7 +33,7 @@ maton jira projects
 {% highlight bash %}{% raw %}
 $ maton jira cloud list
 $ maton jira project list --cloud-id <id>
-$ maton jira project view PROJ --cloud-id <id>
+$ maton jira project get PROJ --cloud-id <id>
 {% endraw %}{% endhighlight %}
 
 ### See also

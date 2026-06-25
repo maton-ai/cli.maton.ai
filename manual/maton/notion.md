@@ -7,7 +7,7 @@ permalink: /:path/:basename
 
 Manage pages, databases, and blocks in Notion.
 
-### Available commands
+### Resource commands
 
 * [maton notion block](/manual/maton/notion/block)
 * [maton notion data-source](/manual/maton/notion/data-source)
@@ -15,6 +15,10 @@ Manage pages, databases, and blocks in Notion.
 * [maton notion page](/manual/maton/notion/page)
 * [maton notion search](/manual/maton/notion/search)
 * [maton notion user](/manual/maton/notion/user)
+
+
+### Auth commands
+
 * [maton notion whoami](/manual/maton/notion/whoami)
 
 
@@ -34,7 +38,7 @@ Manage pages, databases, and blocks in Notion.
 {% highlight bash %}{% raw %}
 $ maton notion whoami
 $ maton notion search 'roadmap'
-$ maton notion page view 0123456789abcdef0123456789abcdef
+$ maton notion page get 0123456789abcdef0123456789abcdef
 $ maton notion data-source query <dataSourceId> --filter '{"property":"Status","select":{"equals":"Active"}}'
 {% endraw %}{% endhighlight %}
 

@@ -5,14 +5,14 @@ permalink: /:path/:basename
 
 {% raw %}## maton stripe payment-method
 
-Manage payment methods (list, view, attach, detach)
+Manage payment methods (list, get, attach, detach)
 
 ### Available commands
 
 * [maton stripe payment-method attach](/manual/maton/stripe/payment-method/attach)
 * [maton stripe payment-method detach](/manual/maton/stripe/payment-method/detach)
+* [maton stripe payment-method get](/manual/maton/stripe/payment-method/get)
 * [maton stripe payment-method list](/manual/maton/stripe/payment-method/list)
-* [maton stripe payment-method view](/manual/maton/stripe/payment-method/view)
 
 
 ### Options inherited from parent commands
@@ -34,7 +34,7 @@ maton stripe payment-methods
 
 {% highlight bash %}{% raw %}
 $ maton stripe payment-method list --customer cus_123
-$ maton stripe payment-method view pm_123
+$ maton stripe payment-method get pm_123
 $ maton stripe payment-method attach pm_123 --customer cus_123
 $ maton stripe payment-method detach pm_123
 {% endraw %}{% endhighlight %}

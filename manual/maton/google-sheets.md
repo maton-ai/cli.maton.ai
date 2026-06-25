@@ -7,7 +7,7 @@ permalink: /:path/:basename
 
 Manage spreadsheets and cell values in Google Sheets.
 
-### Available commands
+### Resource commands
 
 * [maton google-sheets sheet](/manual/maton/google-sheets/sheet)
 * [maton google-sheets spreadsheet](/manual/maton/google-sheets/spreadsheet)
@@ -28,7 +28,7 @@ Manage spreadsheets and cell values in Google Sheets.
 ### Examples
 
 {% highlight bash %}{% raw %}
-$ maton google-sheets spreadsheet view <spreadsheetId>
+$ maton google-sheets spreadsheet get <spreadsheetId>
 $ maton google-sheets values get <spreadsheetId> --range 'Sheet1!A1:B10'
 $ maton google-sheets values append <spreadsheetId> --range A1 --values 'Alice,100,true'
 $ maton google-sheets values update <spreadsheetId> --range A1 --json-values '[["x","y"]]'

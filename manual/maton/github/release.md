@@ -14,9 +14,9 @@ Manage GitHub releases and their assets
 * [maton github release delete-asset](/manual/maton/github/release/delete-asset)
 * [maton github release download](/manual/maton/github/release/download)
 * [maton github release edit](/manual/maton/github/release/edit)
+* [maton github release get](/manual/maton/github/release/get)
 * [maton github release list](/manual/maton/github/release/list)
 * [maton github release upload](/manual/maton/github/release/upload)
-* [maton github release view](/manual/maton/github/release/view)
 
 
 ### Options inherited from parent commands
@@ -38,7 +38,7 @@ maton github releases
 
 {% highlight bash %}{% raw %}
 $ maton github release list --repo maton-ai/cli
-$ maton github release view v1.0.0 --repo maton-ai/cli
+$ maton github release get v1.0.0 --repo maton-ai/cli
 $ maton github release create v1.0.0 --repo maton-ai/cli --title "v1.0.0" --notes "..."
 $ maton github release delete v1.0.0 --repo maton-ai/cli --yes
 {% endraw %}{% endhighlight %}

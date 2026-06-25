@@ -11,9 +11,9 @@ prices — set --active=false to deactivate one instead.
 ### Available commands
 
 * [maton stripe price create](/manual/maton/stripe/price/create)
+* [maton stripe price get](/manual/maton/stripe/price/get)
 * [maton stripe price list](/manual/maton/stripe/price/list)
 * [maton stripe price update](/manual/maton/stripe/price/update)
-* [maton stripe price view](/manual/maton/stripe/price/view)
 
 
 ### Options inherited from parent commands
@@ -35,7 +35,7 @@ maton stripe prices
 
 {% highlight bash %}{% raw %}
 $ maton stripe price list --product prod_123
-$ maton stripe price view price_123
+$ maton stripe price get price_123
 $ maton stripe price create --product prod_123 --currency usd --unit-amount 1999
 {% endraw %}{% endhighlight %}
 

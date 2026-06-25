@@ -5,10 +5,10 @@ permalink: /:path/:basename
 
 {% raw %}## maton youtube search videos
 
-Search for videos
+Search for videos, or list your own uploads with --mine
 
 ```
-maton youtube search videos <query> [flags]
+maton youtube search videos [query] [flags]
 ```
 
 ### Options
@@ -38,6 +38,10 @@ maton youtube search videos <query> [flags]
 	<dt><code>-L</code>, 
 		<code>--limit &lt;int&gt; (default 10)</code></dt>
 	<dd>Max results (1-50)</dd>
+
+	<dt>
+		<code>--mine</code></dt>
+	<dd>List the authenticated user&#39;s own uploaded videos</dd>
 
 	<dt>
 		<code>--order &lt;string&gt; (default &#34;relevance&#34;)</code></dt>
@@ -73,6 +77,8 @@ maton youtube search videos <query> [flags]
 {% highlight bash %}{% raw %}
 $ maton youtube search videos 'go programming'
 $ maton youtube search videos 'lo-fi' --duration long --order date
+$ maton youtube search videos 'lo-fi' --mine
+$ maton youtube search videos --mine --order viewCount --limit 25
 {% endraw %}{% endhighlight %}
 
 ### See also

@@ -9,7 +9,7 @@ Look up bot users
 
 ### Available commands
 
-* [maton slack bot view](/manual/maton/slack/bot/view)
+* [maton slack bot get](/manual/maton/slack/bot/get)
 
 
 ### Options inherited from parent commands

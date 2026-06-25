@@ -1,0 +1,67 @@
+---
+layout: manual
+permalink: /:path/:basename
+---
+
+{% raw %}## maton notion user get
+
+Get a user by ID
+
+```
+maton notion user get <user-id> [flags]
+```
+
+### Options
+
+
+<dl class="flags">
+	<dt>
+		<code>--connection &lt;string&gt;</code></dt>
+	<dd>Connection ID to route through (Maton-Connection header)</dd>
+
+	<dt>
+		<code>--dry-run</code></dt>
+	<dd>Print the request that would be sent without executing it</dd>
+
+	<dt><code>-q</code>, 
+		<code>--jq &lt;expression&gt;</code></dt>
+	<dd>Filter JSON output using a jq expression</dd>
+
+	<dt>
+		<code>--json</code></dt>
+	<dd>Output raw JSON</dd>
+
+	<dt>
+		<code>--paginate</code></dt>
+	<dd>Follow next_cursor and concatenate all pages (list commands only)</dd>
+
+	<dt><code>-t</code>, 
+		<code>--template &lt;string&gt;</code></dt>
+	<dd>Format JSON output using a Go template; see &#34;maton help formatting&#34;</dd>
+</dl>
+
+
+### Options inherited from parent commands
+
+
+<dl class="flags">
+	<dt><code>-p</code>, 
+		<code>--profile &lt;string&gt;</code></dt>
+	<dd>Profile to use for this invocation (overrides the active profile; also reads MATON_PROFILE)</dd>
+</dl>
+
+
+### ALIASES
+
+ maton notion users view, maton notion user view
+
+{% endraw %}
+### Examples
+
+{% highlight bash %}{% raw %}
+$ maton notion user get 0123456789abcdef0123456789abcdef
+{% endraw %}{% endhighlight %}
+
+### See also
+
+* [maton notion user](/manual/maton/notion/user)

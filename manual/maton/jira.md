@@ -7,7 +7,7 @@ permalink: /:path/:basename
 
 Manage issues, projects, and comments in Jira.
 
-### Available commands
+### Resource commands
 
 * [maton jira cloud](/manual/maton/jira/cloud)
 * [maton jira comment](/manual/maton/jira/comment)
@@ -18,6 +18,10 @@ Manage issues, projects, and comments in Jira.
 * [maton jira status](/manual/maton/jira/status)
 * [maton jira transition](/manual/maton/jira/transition)
 * [maton jira user](/manual/maton/jira/user)
+
+
+### Auth commands
+
 * [maton jira whoami](/manual/maton/jira/whoami)
 
 

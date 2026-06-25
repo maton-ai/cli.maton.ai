@@ -10,6 +10,7 @@ List, read, send, reply to, and modify messages
 ### Available commands
 
 * [maton google-mail message forward](/manual/maton/google-mail/message/forward)
+* [maton google-mail message get](/manual/maton/google-mail/message/get)
 * [maton google-mail message list](/manual/maton/google-mail/message/list)
 * [maton google-mail message modify](/manual/maton/google-mail/message/modify)
 * [maton google-mail message reply](/manual/maton/google-mail/message/reply)
@@ -17,7 +18,6 @@ List, read, send, reply to, and modify messages
 * [maton google-mail message send](/manual/maton/google-mail/message/send)
 * [maton google-mail message trash](/manual/maton/google-mail/message/trash)
 * [maton google-mail message untrash](/manual/maton/google-mail/message/untrash)
-* [maton google-mail message view](/manual/maton/google-mail/message/view)
 
 
 ### Options inherited from parent commands
@@ -39,7 +39,7 @@ List, read, send, reply to, and modify messages
 
 {% highlight bash %}{% raw %}
 $ maton google-mail message list -L 5
-$ maton google-mail message view 18f1a2b3 --headers
+$ maton google-mail message get 18f1a2b3 --headers
 $ maton google-mail message send --to a@b.com --subject Hi --body 'Hello!'
 $ maton google-mail message reply 18f1a2b3 --body 'Got it'
 {% endraw %}{% endhighlight %}

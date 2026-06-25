@@ -5,13 +5,12 @@ permalink: /:path/:basename
 
 {% raw %}## maton notion user
 
-List, view, and identify workspace users
+List, get, and identify workspace users
 
 ### Available commands
 
+* [maton notion user get](/manual/maton/notion/user/get)
 * [maton notion user list](/manual/maton/notion/user/list)
-* [maton notion user me](/manual/maton/notion/user/me)
-* [maton notion user view](/manual/maton/notion/user/view)
 
 
 ### Options inherited from parent commands

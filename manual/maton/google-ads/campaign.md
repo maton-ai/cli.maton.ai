@@ -5,15 +5,15 @@ permalink: /:path/:basename
 
 {% raw %}## maton google-ads campaign
 
-List, view, and report on campaigns
+List, get, and report on campaigns
 
 ### Available commands
 
 * [maton google-ads campaign create](/manual/maton/google-ads/campaign/create)
+* [maton google-ads campaign get](/manual/maton/google-ads/campaign/get)
 * [maton google-ads campaign list](/manual/maton/google-ads/campaign/list)
 * [maton google-ads campaign performance](/manual/maton/google-ads/campaign/performance)
 * [maton google-ads campaign update](/manual/maton/google-ads/campaign/update)
-* [maton google-ads campaign view](/manual/maton/google-ads/campaign/view)
 
 
 ### Options inherited from parent commands
@@ -39,7 +39,7 @@ maton google-ads campaigns
 
 {% highlight bash %}{% raw %}
 $ maton google-ads campaign list -c 1234567890
-$ maton google-ads campaign view 99999 -c 1234567890
+$ maton google-ads campaign get 99999 -c 1234567890
 $ maton google-ads campaign performance -c 1234567890 --date-range LAST_7_DAYS
 $ maton google-ads campaign create -c 1234567890 --name "Launch" --channel SEARCH --budget-id 5555
 {% endraw %}{% endhighlight %}

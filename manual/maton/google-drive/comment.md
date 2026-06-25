@@ -5,15 +5,15 @@ permalink: /:path/:basename
 
 {% raw %}## maton google-drive comment
 
-Manage comments on a file (list, view, create, update, delete)
+Manage comments on a file (list, get, create, update, delete)
 
 ### Available commands
 
 * [maton google-drive comment create](/manual/maton/google-drive/comment/create)
 * [maton google-drive comment delete](/manual/maton/google-drive/comment/delete)
+* [maton google-drive comment get](/manual/maton/google-drive/comment/get)
 * [maton google-drive comment list](/manual/maton/google-drive/comment/list)
 * [maton google-drive comment update](/manual/maton/google-drive/comment/update)
-* [maton google-drive comment view](/manual/maton/google-drive/comment/view)
 
 
 ### Options inherited from parent commands

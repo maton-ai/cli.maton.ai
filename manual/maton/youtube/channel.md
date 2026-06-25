@@ -5,12 +5,12 @@ permalink: /:path/:basename
 
 {% raw %}## maton youtube channel
 
-View channels
+Get channels
 
 ### Available commands
 
+* [maton youtube channel get](/manual/maton/youtube/channel/get)
 * [maton youtube channel mine](/manual/maton/youtube/channel/mine)
-* [maton youtube channel view](/manual/maton/youtube/channel/view)
 
 
 ### Options inherited from parent commands

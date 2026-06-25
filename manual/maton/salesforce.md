@@ -7,7 +7,7 @@ permalink: /:path/:basename
 
 Query, manage, and inspect records in Salesforce.
 
-### Available commands
+### Resource commands
 
 * [maton salesforce composite](/manual/maton/salesforce/composite)
 * [maton salesforce limit](/manual/maton/salesforce/limit)
@@ -16,6 +16,10 @@ Query, manage, and inspect records in Salesforce.
 * [maton salesforce record](/manual/maton/salesforce/record)
 * [maton salesforce search](/manual/maton/salesforce/search)
 * [maton salesforce version](/manual/maton/salesforce/version)
+
+
+### Auth commands
+
 * [maton salesforce whoami](/manual/maton/salesforce/whoami)
 
 

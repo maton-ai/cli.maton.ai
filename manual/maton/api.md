@@ -49,7 +49,7 @@ Pass `--slurp` to wrap all pages of JSON arrays or objects into an outer JSON ar
 <dl class="flags">
 	<dt>
 		<code>--connection &lt;string&gt;</code></dt>
-	<dd>Connection ID to route through (sets Maton-Connection header)</dd>
+	<dd>Connection ID to route through (Maton-Connection header)</dd>
 
 	<dt><code>-F</code>, 
 		<code>--field &lt;key=value&gt;</code></dt>

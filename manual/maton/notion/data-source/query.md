@@ -9,7 +9,7 @@ permalink: /:path/:basename
 maton notion data-source query <data-source-id> [flags]
 ```
 
-Query a Notion data source. Use 'maton notion database view' to discover the data_source ID for a database.
+Query a Notion data source. Use 'maton notion database get' to discover the data_source ID for a database.
 
 ### Options
 

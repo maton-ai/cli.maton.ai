@@ -7,18 +7,21 @@ permalink: /:path/:basename
 
 Manage issues, projects, and teams in Linear.
 
-### Available commands
+### Resource commands
 
 * [maton linear comment](/manual/maton/linear/comment)
 * [maton linear cycle](/manual/maton/linear/cycle)
 * [maton linear issue](/manual/maton/linear/issue)
 * [maton linear label](/manual/maton/linear/label)
-* [maton linear me](/manual/maton/linear/me)
 * [maton linear org](/manual/maton/linear/org)
 * [maton linear project](/manual/maton/linear/project)
 * [maton linear state](/manual/maton/linear/state)
 * [maton linear team](/manual/maton/linear/team)
 * [maton linear user](/manual/maton/linear/user)
+
+
+### Auth commands
+
 * [maton linear whoami](/manual/maton/linear/whoami)
 
 
@@ -38,7 +41,7 @@ Manage issues, projects, and teams in Linear.
 {% highlight bash %}{% raw %}
 $ maton linear whoami
 $ maton linear issue list -c MTN -L 10
-$ maton linear issue view MTN-527
+$ maton linear issue get MTN-527
 $ maton linear issue create --team-id <uuid> -t 'Fix login'
 $ maton linear comment create --issue MTN-527 -b 'Looking into this'
 {% endraw %}{% endhighlight %}

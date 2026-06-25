@@ -5,15 +5,15 @@ permalink: /:path/:basename
 
 {% raw %}## maton google-mail draft
 
-Create, list, view, send, and delete drafts
+Create, list, get, send, and delete drafts
 
 ### Available commands
 
 * [maton google-mail draft create](/manual/maton/google-mail/draft/create)
 * [maton google-mail draft delete](/manual/maton/google-mail/draft/delete)
+* [maton google-mail draft get](/manual/maton/google-mail/draft/get)
 * [maton google-mail draft list](/manual/maton/google-mail/draft/list)
 * [maton google-mail draft send](/manual/maton/google-mail/draft/send)
-* [maton google-mail draft view](/manual/maton/google-mail/draft/view)
 
 
 ### Options inherited from parent commands
@@ -36,7 +36,7 @@ Create, list, view, send, and delete drafts
 {% highlight bash %}{% raw %}
 $ maton google-mail draft list
 $ maton google-mail draft create --to a@b.com --subject Hi --body 'Hello!'
-$ maton google-mail draft view r1234567890
+$ maton google-mail draft get r1234567890
 $ maton google-mail draft send r1234567890
 {% endraw %}{% endhighlight %}
 

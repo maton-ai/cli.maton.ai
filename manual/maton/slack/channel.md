@@ -5,12 +5,13 @@ permalink: /:path/:basename
 
 {% raw %}## maton slack channel
 
-Manage channels (list, view, create, join, invite, …)
+Manage channels (list, get, create, join, invite, …)
 
 ### Available commands
 
 * [maton slack channel archive](/manual/maton/slack/channel/archive)
 * [maton slack channel create](/manual/maton/slack/channel/create)
+* [maton slack channel get](/manual/maton/slack/channel/get)
 * [maton slack channel invite](/manual/maton/slack/channel/invite)
 * [maton slack channel join](/manual/maton/slack/channel/join)
 * [maton slack channel kick](/manual/maton/slack/channel/kick)
@@ -22,7 +23,6 @@ Manage channels (list, view, create, join, invite, …)
 * [maton slack channel set-purpose](/manual/maton/slack/channel/set-purpose)
 * [maton slack channel set-topic](/manual/maton/slack/channel/set-topic)
 * [maton slack channel unarchive](/manual/maton/slack/channel/unarchive)
-* [maton slack channel view](/manual/maton/slack/channel/view)
 
 
 ### Options inherited from parent commands
@@ -40,7 +40,7 @@ Manage channels (list, view, create, join, invite, …)
 
 {% highlight bash %}{% raw %}
 $ maton slack channel list
-$ maton slack channel view C0123456789
+$ maton slack channel get C0123456789
 $ maton slack channel create --name new-channel-name
 $ maton slack channel invite C0123456789 --users U0123456789
 {% endraw %}{% endhighlight %}

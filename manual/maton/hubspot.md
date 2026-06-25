@@ -7,13 +7,17 @@ permalink: /:path/:basename
 
 Manage contacts, companies, and deals in HubSpot CRM.
 
-### Available commands
+### Resource commands
 
 * [maton hubspot associations](/manual/maton/hubspot/associations)
 * [maton hubspot company](/manual/maton/hubspot/company)
 * [maton hubspot contact](/manual/maton/hubspot/contact)
 * [maton hubspot deal](/manual/maton/hubspot/deal)
 * [maton hubspot properties](/manual/maton/hubspot/properties)
+
+
+### Auth commands
+
 * [maton hubspot whoami](/manual/maton/hubspot/whoami)
 
 

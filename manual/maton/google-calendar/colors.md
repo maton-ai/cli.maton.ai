@@ -9,7 +9,7 @@ Calendar and event color palettes
 
 ### Available commands
 
-* [maton google-calendar colors view](/manual/maton/google-calendar/colors/view)
+* [maton google-calendar colors get](/manual/maton/google-calendar/colors/get)
 
 
 ### Options inherited from parent commands

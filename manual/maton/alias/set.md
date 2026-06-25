@@ -53,8 +53,8 @@ invoked. This allows for chaining multiple commands via piping and redirection.
 
 {% highlight bash %}{% raw %}
 # Note: Command Prompt on Windows requires using double quotes for arguments
-$ maton alias set prv 'github pr view'
-$ maton prv 123  #=> maton github pr view 123
+$ maton alias set prv 'github pr get'
+$ maton prv 123  #=> maton github pr get 123
 
 $ maton alias set bugs 'github issue list --label=bug'
 $ maton bugs

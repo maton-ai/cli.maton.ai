@@ -5,13 +5,13 @@ permalink: /:path/:basename
 
 {% raw %}## maton stripe charge
 
-Manage charges (list, view, create)
+Manage charges (list, get, create)
 
 ### Available commands
 
 * [maton stripe charge create](/manual/maton/stripe/charge/create)
+* [maton stripe charge get](/manual/maton/stripe/charge/get)
 * [maton stripe charge list](/manual/maton/stripe/charge/list)
-* [maton stripe charge view](/manual/maton/stripe/charge/view)
 
 
 ### Options inherited from parent commands
@@ -33,7 +33,7 @@ maton stripe charges
 
 {% highlight bash %}{% raw %}
 $ maton stripe charge list
-$ maton stripe charge view ch_123
+$ maton stripe charge get ch_123
 $ maton stripe charge create --amount 1999 --currency usd --customer cus_123
 {% endraw %}{% endhighlight %}
 

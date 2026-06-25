@@ -5,15 +5,15 @@ permalink: /:path/:basename
 
 {% raw %}## maton stripe payment
 
-Manage payment intents (list, view, create, confirm, cancel)
+Manage payment intents (list, get, create, confirm, cancel)
 
 ### Available commands
 
 * [maton stripe payment cancel](/manual/maton/stripe/payment/cancel)
 * [maton stripe payment confirm](/manual/maton/stripe/payment/confirm)
 * [maton stripe payment create](/manual/maton/stripe/payment/create)
+* [maton stripe payment get](/manual/maton/stripe/payment/get)
 * [maton stripe payment list](/manual/maton/stripe/payment/list)
-* [maton stripe payment view](/manual/maton/stripe/payment/view)
 
 
 ### Options inherited from parent commands
@@ -35,7 +35,7 @@ maton stripe payments
 
 {% highlight bash %}{% raw %}
 $ maton stripe payment list
-$ maton stripe payment view pi_123
+$ maton stripe payment get pi_123
 $ maton stripe payment create --amount 1999 --currency usd
 $ maton stripe payment confirm pi_123
 {% endraw %}{% endhighlight %}

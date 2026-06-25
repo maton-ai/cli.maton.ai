@@ -5,14 +5,14 @@ permalink: /:path/:basename
 
 {% raw %}## maton google-drive revision
 
-Manage file revisions (list, view, update, delete)
+Manage file revisions (list, get, update, delete)
 
 ### Available commands
 
 * [maton google-drive revision delete](/manual/maton/google-drive/revision/delete)
+* [maton google-drive revision get](/manual/maton/google-drive/revision/get)
 * [maton google-drive revision list](/manual/maton/google-drive/revision/list)
 * [maton google-drive revision update](/manual/maton/google-drive/revision/update)
-* [maton google-drive revision view](/manual/maton/google-drive/revision/view)
 
 
 ### Options inherited from parent commands
@@ -35,7 +35,7 @@ maton google-drive revisions
 {% highlight bash %}{% raw %}
 $ maton google-drive file list
 $ maton google-drive revision list -f 1aBcD...
-$ maton google-drive revision view <revision-id> -f 1aBcD...
+$ maton google-drive revision get <revision-id> -f 1aBcD...
 $ maton google-drive revision update <revision-id> -f 1aBcD... --keep-forever true
 {% endraw %}{% endhighlight %}
 

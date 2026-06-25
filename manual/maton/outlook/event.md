@@ -11,8 +11,8 @@ Manage calendar events
 
 * [maton outlook event create](/manual/maton/outlook/event/create)
 * [maton outlook event delete](/manual/maton/outlook/event/delete)
+* [maton outlook event get](/manual/maton/outlook/event/get)
 * [maton outlook event list](/manual/maton/outlook/event/list)
-* [maton outlook event view](/manual/maton/outlook/event/view)
 
 
 ### Options inherited from parent commands
@@ -35,7 +35,7 @@ maton outlook events
 {% highlight bash %}{% raw %}
 $ maton outlook event list --filter "start/dateTime ge '2026-01-01'"
 $ maton outlook event create --subject Sync --start 2026-05-10T10:00:00 --end 2026-05-10T11:00:00
-$ maton outlook event view AAMkAGI...
+$ maton outlook event get AAMkAGI...
 $ maton outlook event delete AAMkAGI...
 {% endraw %}{% endhighlight %}
 

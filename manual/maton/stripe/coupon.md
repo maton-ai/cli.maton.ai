@@ -5,14 +5,14 @@ permalink: /:path/:basename
 
 {% raw %}## maton stripe coupon
 
-Manage coupons (list, view, create, delete)
+Manage coupons (list, get, create, delete)
 
 ### Available commands
 
 * [maton stripe coupon create](/manual/maton/stripe/coupon/create)
 * [maton stripe coupon delete](/manual/maton/stripe/coupon/delete)
+* [maton stripe coupon get](/manual/maton/stripe/coupon/get)
 * [maton stripe coupon list](/manual/maton/stripe/coupon/list)
-* [maton stripe coupon view](/manual/maton/stripe/coupon/view)
 
 
 ### Options inherited from parent commands
@@ -34,7 +34,7 @@ maton stripe coupons
 
 {% highlight bash %}{% raw %}
 $ maton stripe coupon list
-$ maton stripe coupon view SUMMER25
+$ maton stripe coupon get SUMMER25
 $ maton stripe coupon create --percent-off 25 --duration once
 $ maton stripe coupon delete SUMMER25
 {% endraw %}{% endhighlight %}

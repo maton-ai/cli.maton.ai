@@ -7,7 +7,7 @@ permalink: /:path/:basename
 
 Manage boards, lists, and cards in Trello.
 
-### Available commands
+### Resource commands
 
 * [maton trello board](/manual/maton/trello/board)
 * [maton trello card](/manual/maton/trello/card)
@@ -17,6 +17,10 @@ Manage boards, lists, and cards in Trello.
 * [maton trello list](/manual/maton/trello/list)
 * [maton trello member](/manual/maton/trello/member)
 * [maton trello search](/manual/maton/trello/search)
+
+
+### Auth commands
+
 * [maton trello whoami](/manual/maton/trello/whoami)
 
 

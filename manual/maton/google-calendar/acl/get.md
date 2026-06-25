@@ -1,0 +1,65 @@
+---
+layout: manual
+permalink: /:path/:basename
+---
+
+{% raw %}## maton google-calendar acl get
+
+Get a single ACL rule
+
+```
+maton google-calendar acl get <rule-id> [flags]
+```
+
+### Options
+
+
+<dl class="flags">
+	<dt><code>-c</code>, 
+		<code>--calendar &lt;string&gt;</code></dt>
+	<dd>Calendar ID (required)</dd>
+
+	<dt>
+		<code>--connection &lt;string&gt;</code></dt>
+	<dd>Connection ID to route through (Maton-Connection header)</dd>
+
+	<dt>
+		<code>--dry-run</code></dt>
+	<dd>Print the request that would be sent without executing it</dd>
+
+	<dt><code>-q</code>, 
+		<code>--jq &lt;expression&gt;</code></dt>
+	<dd>Filter JSON output using a jq expression</dd>
+
+	<dt>
+		<code>--json</code></dt>
+	<dd>Output raw JSON</dd>
+
+	<dt>
+		<code>--paginate</code></dt>
+	<dd>Follow next_cursor and concatenate all pages (list commands only)</dd>
+
+	<dt><code>-t</code>, 
+		<code>--template &lt;string&gt;</code></dt>
+	<dd>Format JSON output using a Go template; see &#34;maton help formatting&#34;</dd>
+</dl>
+
+
+### Options inherited from parent commands
+
+
+<dl class="flags">
+	<dt><code>-p</code>, 
+		<code>--profile &lt;string&gt;</code></dt>
+	<dd>Profile to use for this invocation (overrides the active profile; also reads MATON_PROFILE)</dd>
+</dl>
+
+
+### ALIASES
+
+ maton google-calendar acls view, maton google-calendar acl view
+
+{% endraw %}
+### See also
+
+* [maton google-calendar acl](/manual/maton/google-calendar/acl)

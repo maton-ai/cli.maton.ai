@@ -5,13 +5,13 @@ permalink: /:path/:basename
 
 {% raw %}## maton trello checklist
 
-Manage card checklists (view, create, delete)
+Manage card checklists (get, create, delete)
 
 ### Available commands
 
 * [maton trello checklist create](/manual/maton/trello/checklist/create)
 * [maton trello checklist delete](/manual/maton/trello/checklist/delete)
-* [maton trello checklist view](/manual/maton/trello/checklist/view)
+* [maton trello checklist get](/manual/maton/trello/checklist/get)
 
 
 ### Options inherited from parent commands

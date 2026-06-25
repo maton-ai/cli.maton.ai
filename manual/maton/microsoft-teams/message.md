@@ -5,14 +5,14 @@ permalink: /:path/:basename
 
 {% raw %}## maton microsoft-teams message
 
-Send, list, view, and reply to messages in channels and chats
+Send, list, get, and reply to messages in channels and chats
 
 ### Available commands
 
+* [maton microsoft-teams message get](/manual/maton/microsoft-teams/message/get)
 * [maton microsoft-teams message list](/manual/maton/microsoft-teams/message/list)
 * [maton microsoft-teams message reply](/manual/maton/microsoft-teams/message/reply)
 * [maton microsoft-teams message send](/manual/maton/microsoft-teams/message/send)
-* [maton microsoft-teams message view](/manual/maton/microsoft-teams/message/view)
 
 
 ### Options inherited from parent commands
@@ -36,7 +36,7 @@ maton microsoft-teams messages
 $ maton microsoft-teams message list --chat 19:abc...
 $ maton microsoft-teams message send --chat 19:abc... --text 'hi'
 $ maton microsoft-teams message reply 1700000000000 --team 19:t... --channel 19:c... --text 'thanks'
-$ maton microsoft-teams message view 1700000000000 --chat 19:abc...
+$ maton microsoft-teams message get 1700000000000 --chat 19:abc...
 {% endraw %}{% endhighlight %}
 
 ### See also

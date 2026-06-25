@@ -7,10 +7,14 @@ permalink: /:path/:basename
 
 Manage files and folders in OneDrive.
 
-### Available commands
+### Resource commands
 
 * [maton one-drive drive](/manual/maton/one-drive/drive)
 * [maton one-drive item](/manual/maton/one-drive/item)
+
+
+### Auth commands
+
 * [maton one-drive whoami](/manual/maton/one-drive/whoami)
 
 

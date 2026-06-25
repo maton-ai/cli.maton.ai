@@ -7,13 +7,17 @@ permalink: /:path/:basename
 
 Manage repos, issues, and pull requests in GitHub.
 
-### Available commands
+### Resource commands
 
 * [maton github issue](/manual/maton/github/issue)
 * [maton github label](/manual/maton/github/label)
 * [maton github pr](/manual/maton/github/pr)
 * [maton github release](/manual/maton/github/release)
 * [maton github repo](/manual/maton/github/repo)
+
+
+### Auth commands
+
 * [maton github whoami](/manual/maton/github/whoami)
 
 
@@ -32,9 +36,9 @@ Manage repos, issues, and pull requests in GitHub.
 
 {% highlight bash %}{% raw %}
 $ maton github whoami
-$ maton github repo view --repo maton-ai/cli
+$ maton github repo get --repo maton-ai/cli
 $ maton github issue list --repo maton-ai/cli --state open
-$ maton github pr view --repo maton-ai/cli 1
+$ maton github pr get --repo maton-ai/cli 1
 $ maton github label list --repo maton-ai/cli
 {% endraw %}{% endhighlight %}
 

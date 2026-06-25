@@ -5,12 +5,12 @@ permalink: /:path/:basename
 
 {% raw %}## maton linear cycle
 
-List or view cycles (sprints)
+List or get cycles (sprints)
 
 ### Available commands
 
+* [maton linear cycle get](/manual/maton/linear/cycle/get)
 * [maton linear cycle list](/manual/maton/linear/cycle/list)
-* [maton linear cycle view](/manual/maton/linear/cycle/view)
 
 
 ### Options inherited from parent commands

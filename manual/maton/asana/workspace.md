@@ -5,12 +5,12 @@ permalink: /:path/:basename
 
 {% raw %}## maton asana workspace
 
-List and view Asana workspaces
+List and get Asana workspaces
 
 ### Available commands
 
+* [maton asana workspace get](/manual/maton/asana/workspace/get)
 * [maton asana workspace list](/manual/maton/asana/workspace/list)
-* [maton asana workspace view](/manual/maton/asana/workspace/view)
 
 
 ### Options inherited from parent commands

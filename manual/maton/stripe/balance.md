@@ -5,11 +5,16 @@ permalink: /:path/:basename
 
 {% raw %}## maton stripe balance
 
-Retrieve your account balance
+Inspect your account balance (get)
 
 ```
-maton stripe balance [flags]
+maton stripe balance <command> [flags]
 ```
+
+### Available commands
+
+* [maton stripe balance get](/manual/maton/stripe/balance/get)
+
 
 ### Options
 
@@ -55,7 +60,7 @@ maton stripe balance [flags]
 ### Examples
 
 {% highlight bash %}{% raw %}
-$ maton stripe balance
+$ maton stripe balance get
 {% endraw %}{% endhighlight %}
 
 ### See also

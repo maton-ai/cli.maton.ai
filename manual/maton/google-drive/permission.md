@@ -5,15 +5,15 @@ permalink: /:path/:basename
 
 {% raw %}## maton google-drive permission
 
-Manage file/folder permissions (list, view, create, update, delete)
+Manage file/folder permissions (list, get, create, update, delete)
 
 ### Available commands
 
 * [maton google-drive permission create](/manual/maton/google-drive/permission/create)
 * [maton google-drive permission delete](/manual/maton/google-drive/permission/delete)
+* [maton google-drive permission get](/manual/maton/google-drive/permission/get)
 * [maton google-drive permission list](/manual/maton/google-drive/permission/list)
 * [maton google-drive permission update](/manual/maton/google-drive/permission/update)
-* [maton google-drive permission view](/manual/maton/google-drive/permission/view)
 
 
 ### Options inherited from parent commands

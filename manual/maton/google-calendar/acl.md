@@ -11,9 +11,9 @@ Manage access control rules on a calendar
 
 * [maton google-calendar acl create](/manual/maton/google-calendar/acl/create)
 * [maton google-calendar acl delete](/manual/maton/google-calendar/acl/delete)
+* [maton google-calendar acl get](/manual/maton/google-calendar/acl/get)
 * [maton google-calendar acl list](/manual/maton/google-calendar/acl/list)
 * [maton google-calendar acl update](/manual/maton/google-calendar/acl/update)
-* [maton google-calendar acl view](/manual/maton/google-calendar/acl/view)
 
 
 ### Options inherited from parent commands

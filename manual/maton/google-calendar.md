@@ -7,7 +7,7 @@ permalink: /:path/:basename
 
 Manage calendars and events in Google Calendar.
 
-### Available commands
+### Resource commands
 
 * [maton google-calendar acl](/manual/maton/google-calendar/acl)
 * [maton google-calendar agenda](/manual/maton/google-calendar/agenda)

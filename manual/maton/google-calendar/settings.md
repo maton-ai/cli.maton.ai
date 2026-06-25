@@ -9,8 +9,8 @@ Per-user Calendar settings
 
 ### Available commands
 
+* [maton google-calendar settings get](/manual/maton/google-calendar/settings/get)
 * [maton google-calendar settings list](/manual/maton/google-calendar/settings/list)
-* [maton google-calendar settings view](/manual/maton/google-calendar/settings/view)
 
 
 ### Options inherited from parent commands
@@ -28,8 +28,8 @@ Per-user Calendar settings
 
 {% highlight bash %}{% raw %}
 $ maton google-calendar settings list
-$ maton google-calendar settings view timezone
-$ maton google-calendar settings view locale
+$ maton google-calendar settings get timezone
+$ maton google-calendar settings get locale
 {% endraw %}{% endhighlight %}
 
 ### See also

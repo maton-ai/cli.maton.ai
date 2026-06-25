@@ -7,12 +7,16 @@ permalink: /:path/:basename
 
 Manage tasks, projects, and workspaces in Asana.
 
-### Available commands
+### Resource commands
 
 * [maton asana project](/manual/maton/asana/project)
 * [maton asana task](/manual/maton/asana/task)
-* [maton asana whoami](/manual/maton/asana/whoami)
 * [maton asana workspace](/manual/maton/asana/workspace)
+
+
+### Auth commands
+
+* [maton asana whoami](/manual/maton/asana/whoami)
 
 
 ### Options inherited from parent commands

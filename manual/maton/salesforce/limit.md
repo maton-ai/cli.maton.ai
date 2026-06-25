@@ -9,7 +9,7 @@ Inspect API usage limits for your org
 
 ### Available commands
 
-* [maton salesforce limit view](/manual/maton/salesforce/limit/view)
+* [maton salesforce limit get](/manual/maton/salesforce/limit/get)
 
 
 ### Options inherited from parent commands

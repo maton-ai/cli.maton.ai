@@ -5,12 +5,12 @@ permalink: /:path/:basename
 
 {% raw %}## maton github repo license
 
-List and view open-source license templates
+List and get open-source license templates
 
 ### Available commands
 
+* [maton github repo license get](/manual/maton/github/repo/license/get)
 * [maton github repo license list](/manual/maton/github/repo/license/list)
-* [maton github repo license view](/manual/maton/github/repo/license/view)
 
 
 ### Options inherited from parent commands

@@ -9,8 +9,8 @@ Browse 1:1 and group chats
 
 ### Available commands
 
+* [maton microsoft-teams chat get](/manual/maton/microsoft-teams/chat/get)
 * [maton microsoft-teams chat list](/manual/maton/microsoft-teams/chat/list)
-* [maton microsoft-teams chat view](/manual/maton/microsoft-teams/chat/view)
 
 
 ### Options inherited from parent commands

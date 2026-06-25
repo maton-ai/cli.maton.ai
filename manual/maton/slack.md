@@ -7,7 +7,7 @@ permalink: /:path/:basename
 
 Manage messages, channels, and users in Slack.
 
-### Available commands
+### Resource commands
 
 * [maton slack bookmark](/manual/maton/slack/bookmark)
 * [maton slack bot](/manual/maton/slack/bot)
@@ -21,6 +21,10 @@ Manage messages, channels, and users in Slack.
 * [maton slack search](/manual/maton/slack/search)
 * [maton slack star](/manual/maton/slack/star)
 * [maton slack user](/manual/maton/slack/user)
+
+
+### Auth commands
+
 * [maton slack whoami](/manual/maton/slack/whoami)
 
 

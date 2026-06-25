@@ -5,19 +5,19 @@ permalink: /:path/:basename
 
 {% raw %}## maton google-calendar event
 
-List, view, create, update, and delete events
+List, get, create, update, and delete events
 
 ### Available commands
 
 * [maton google-calendar event create](/manual/maton/google-calendar/event/create)
 * [maton google-calendar event delete](/manual/maton/google-calendar/event/delete)
+* [maton google-calendar event get](/manual/maton/google-calendar/event/get)
 * [maton google-calendar event import](/manual/maton/google-calendar/event/import)
 * [maton google-calendar event instances](/manual/maton/google-calendar/event/instances)
 * [maton google-calendar event list](/manual/maton/google-calendar/event/list)
 * [maton google-calendar event move](/manual/maton/google-calendar/event/move)
 * [maton google-calendar event quick-add](/manual/maton/google-calendar/event/quick-add)
 * [maton google-calendar event update](/manual/maton/google-calendar/event/update)
-* [maton google-calendar event view](/manual/maton/google-calendar/event/view)
 
 
 ### Options inherited from parent commands

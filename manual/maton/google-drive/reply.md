@@ -5,15 +5,15 @@ permalink: /:path/:basename
 
 {% raw %}## maton google-drive reply
 
-Manage replies to comments (list, view, create, update, delete)
+Manage replies to comments (list, get, create, update, delete)
 
 ### Available commands
 
 * [maton google-drive reply create](/manual/maton/google-drive/reply/create)
 * [maton google-drive reply delete](/manual/maton/google-drive/reply/delete)
+* [maton google-drive reply get](/manual/maton/google-drive/reply/get)
 * [maton google-drive reply list](/manual/maton/google-drive/reply/list)
 * [maton google-drive reply update](/manual/maton/google-drive/reply/update)
-* [maton google-drive reply view](/manual/maton/google-drive/reply/view)
 
 
 ### Options inherited from parent commands

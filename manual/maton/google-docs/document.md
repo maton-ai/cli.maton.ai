@@ -5,12 +5,12 @@ permalink: /:path/:basename
 
 {% raw %}## maton google-docs document
 
-View, create, and append text to documents
+Get, create, and append text to documents
 
 ### Available commands
 
 * [maton google-docs document create](/manual/maton/google-docs/document/create)
-* [maton google-docs document view](/manual/maton/google-docs/document/view)
+* [maton google-docs document get](/manual/maton/google-docs/document/get)
 * [maton google-docs document write](/manual/maton/google-docs/document/write)
 
 
@@ -33,7 +33,7 @@ View, create, and append text to documents
 
 {% highlight bash %}{% raw %}
 $ maton google-docs document create --title 'Sprint notes'
-$ maton google-docs document view DOC_ID
+$ maton google-docs document get DOC_ID
 $ maton google-docs document write DOC_ID --text 'Hello, world!'
 $ maton google-docs document write DOC_ID -F notes.md
 {% endraw %}{% endhighlight %}

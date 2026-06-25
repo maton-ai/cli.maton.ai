@@ -5,13 +5,13 @@ permalink: /:path/:basename
 
 {% raw %}## maton stripe refund
 
-Manage refunds (list, view, create)
+Manage refunds (list, get, create)
 
 ### Available commands
 
 * [maton stripe refund create](/manual/maton/stripe/refund/create)
+* [maton stripe refund get](/manual/maton/stripe/refund/get)
 * [maton stripe refund list](/manual/maton/stripe/refund/list)
-* [maton stripe refund view](/manual/maton/stripe/refund/view)
 
 
 ### Options inherited from parent commands
@@ -33,7 +33,7 @@ maton stripe refunds
 
 {% highlight bash %}{% raw %}
 $ maton stripe refund list
-$ maton stripe refund view re_123
+$ maton stripe refund get re_123
 $ maton stripe refund create --charge ch_123
 $ maton stripe refund create --payment-intent pi_123 --amount 1000
 {% endraw %}{% endhighlight %}

@@ -40,6 +40,10 @@ maton youtube playlist list [flags]
 	<dd>Max results (1-50)</dd>
 
 	<dt>
+		<code>--mine</code></dt>
+	<dd>List the authenticated user&#39;s own playlists (the default)</dd>
+
+	<dt>
 		<code>--paginate</code></dt>
 	<dd>Follow next_cursor and concatenate all pages (list commands only)</dd>
 
@@ -68,6 +72,7 @@ maton youtube playlist list [flags]
 
 {% highlight bash %}{% raw %}
 $ maton youtube playlist list
+$ maton youtube playlist list --mine
 $ maton youtube playlist list --limit 50
 $ maton youtube playlist list --channel UCBJycsmduvYEL83R_U4JriQ
 {% endraw %}{% endhighlight %}

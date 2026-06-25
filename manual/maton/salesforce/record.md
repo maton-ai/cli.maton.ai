@@ -11,9 +11,9 @@ Manage sObject records
 
 * [maton salesforce record create](/manual/maton/salesforce/record/create)
 * [maton salesforce record delete](/manual/maton/salesforce/record/delete)
+* [maton salesforce record get](/manual/maton/salesforce/record/get)
 * [maton salesforce record list](/manual/maton/salesforce/record/list)
 * [maton salesforce record update](/manual/maton/salesforce/record/update)
-* [maton salesforce record view](/manual/maton/salesforce/record/view)
 
 
 ### Options inherited from parent commands
@@ -34,7 +34,7 @@ maton salesforce records
 ### Examples
 
 {% highlight bash %}{% raw %}
-$ maton salesforce record view 0035g00000XYZ --type Contact
+$ maton salesforce record get 0035g00000XYZ --type Contact
 $ maton salesforce record list --type Contact --start 2026-04-01T00:00:00Z --end 2026-05-01T00:00:00Z
 $ maton salesforce record list --recent
 $ maton salesforce record create --type Contact --data '{"FirstName":"John","LastName":"Doe"}'

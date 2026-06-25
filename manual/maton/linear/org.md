@@ -5,11 +5,11 @@ permalink: /:path/:basename
 
 {% raw %}## maton linear org
 
-View the Linear organization (workspace)
+Get the Linear organization (workspace)
 
 ### Available commands
 
-* [maton linear org view](/manual/maton/linear/org/view)
+* [maton linear org get](/manual/maton/linear/org/get)
 
 
 ### Options inherited from parent commands

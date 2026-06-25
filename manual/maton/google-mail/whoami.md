@@ -5,7 +5,7 @@ permalink: /:path/:basename
 
 {% raw %}## maton google-mail whoami
 
-Show the signed-in user (GET users/me/profile)
+Verify your connection and show the authenticated account
 
 ```
 maton google-mail whoami [flags]

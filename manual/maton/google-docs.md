@@ -7,7 +7,7 @@ permalink: /:path/:basename
 
 Create, read, and append documents in Google Docs.
 
-### Available commands
+### Resource commands
 
 * [maton google-docs document](/manual/maton/google-docs/document)
 
@@ -27,7 +27,7 @@ Create, read, and append documents in Google Docs.
 
 {% highlight bash %}{% raw %}
 $ maton google-docs document create --title 'Sprint notes'
-$ maton google-docs document view DOC_ID
+$ maton google-docs document get DOC_ID
 $ maton google-docs document write DOC_ID --text 'Hello!'
 {% endraw %}{% endhighlight %}
 

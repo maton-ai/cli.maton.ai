@@ -7,7 +7,7 @@ permalink: /:path/:basename
 
 Manage customers, payments, and subscriptions in Stripe.
 
-### Available commands
+### Resource commands
 
 * [maton stripe balance](/manual/maton/stripe/balance)
 * [maton stripe charge](/manual/maton/stripe/charge)
@@ -21,6 +21,10 @@ Manage customers, payments, and subscriptions in Stripe.
 * [maton stripe refund](/manual/maton/stripe/refund)
 * [maton stripe subscription](/manual/maton/stripe/subscription)
 * [maton stripe transaction](/manual/maton/stripe/transaction)
+
+
+### Auth commands
+
 * [maton stripe whoami](/manual/maton/stripe/whoami)
 
 
@@ -39,7 +43,7 @@ Manage customers, payments, and subscriptions in Stripe.
 
 {% highlight bash %}{% raw %}
 $ maton stripe whoami
-$ maton stripe balance
+$ maton stripe balance get
 $ maton stripe customer list -L 5
 $ maton stripe payment create --amount 1999 --currency usd --customer cus_123
 $ maton stripe subscription cancel sub_123 --at-period-end

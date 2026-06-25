@@ -11,8 +11,8 @@ Manage personal contacts
 
 * [maton outlook contact create](/manual/maton/outlook/contact/create)
 * [maton outlook contact delete](/manual/maton/outlook/contact/delete)
+* [maton outlook contact get](/manual/maton/outlook/contact/get)
 * [maton outlook contact list](/manual/maton/outlook/contact/list)
-* [maton outlook contact view](/manual/maton/outlook/contact/view)
 
 
 ### Options inherited from parent commands
@@ -34,7 +34,7 @@ maton outlook contacts
 
 {% highlight bash %}{% raw %}
 $ maton outlook contact list
-$ maton outlook contact view AAMkAGI...
+$ maton outlook contact get AAMkAGI...
 $ maton outlook contact create --given-name Alice --surname Smith --email alice@example.com
 $ maton outlook contact delete AAMkAGI...
 {% endraw %}{% endhighlight %}

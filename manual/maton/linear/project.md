@@ -5,12 +5,12 @@ permalink: /:path/:basename
 
 {% raw %}## maton linear project
 
-List or view projects
+List or get projects
 
 ### Available commands
 
+* [maton linear project get](/manual/maton/linear/project/get)
 * [maton linear project list](/manual/maton/linear/project/list)
-* [maton linear project view](/manual/maton/linear/project/view)
 
 
 ### Options inherited from parent commands

@@ -5,7 +5,7 @@ permalink: /:path/:basename
 
 {% raw %}## maton outlook whoami
 
-Show the signed-in mailbox owner (GET /me)
+Verify your connection and show the authenticated account
 
 ```
 maton outlook whoami [flags]

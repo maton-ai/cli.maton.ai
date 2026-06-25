@@ -11,8 +11,8 @@ Work with Maton connections.
 
 * [maton connection create](/manual/maton/connection/create)
 * [maton connection delete](/manual/maton/connection/delete)
+* [maton connection get](/manual/maton/connection/get)
 * [maton connection list](/manual/maton/connection/list)
-* [maton connection view](/manual/maton/connection/view)
 
 
 ### Options inherited from parent commands
@@ -32,7 +32,7 @@ Work with Maton connections.
 $ maton connection list
 $ maton connection list google-mail
 $ maton connection create google-mail
-$ maton connection view <connection-id>
+$ maton connection get <connection-id>
 $ maton connection delete <connection-id>
 {% endraw %}{% endhighlight %}
 

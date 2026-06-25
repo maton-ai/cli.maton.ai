@@ -5,15 +5,15 @@ permalink: /:path/:basename
 
 {% raw %}## maton google-mail thread
 
-List, view, trash, and modify message threads
+List, get, trash, and modify message threads
 
 ### Available commands
 
+* [maton google-mail thread get](/manual/maton/google-mail/thread/get)
 * [maton google-mail thread list](/manual/maton/google-mail/thread/list)
 * [maton google-mail thread modify](/manual/maton/google-mail/thread/modify)
 * [maton google-mail thread trash](/manual/maton/google-mail/thread/trash)
 * [maton google-mail thread untrash](/manual/maton/google-mail/thread/untrash)
-* [maton google-mail thread view](/manual/maton/google-mail/thread/view)
 
 
 ### Options inherited from parent commands
@@ -35,7 +35,7 @@ List, view, trash, and modify message threads
 
 {% highlight bash %}{% raw %}
 $ maton google-mail thread list -L 10
-$ maton google-mail thread view 18f1a2b3
+$ maton google-mail thread get 18f1a2b3
 $ maton google-mail thread trash 18f1a2b3
 $ maton google-mail thread modify 18f1a2b3 --add-label STARRED
 {% endraw %}{% endhighlight %}

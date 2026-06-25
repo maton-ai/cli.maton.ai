@@ -5,7 +5,7 @@ permalink: /:path/:basename
 
 {% raw %}## maton linear whoami
 
-Verify your connection and show the authenticated user
+Verify your connection and show the authenticated account
 
 ```
 maton linear whoami [flags]

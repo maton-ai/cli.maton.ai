@@ -5,7 +5,7 @@ permalink: /:path/:basename
 
 {% raw %}## maton youtube whoami
 
-Verify your token by fetching the connected channel
+Verify your connection and show the authenticated account
 
 ```
 maton youtube whoami [flags]

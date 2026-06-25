@@ -5,15 +5,15 @@ permalink: /:path/:basename
 
 {% raw %}## maton stripe subscription
 
-Manage subscriptions (list, view, create, update, cancel)
+Manage subscriptions (list, get, create, update, cancel)
 
 ### Available commands
 
 * [maton stripe subscription cancel](/manual/maton/stripe/subscription/cancel)
 * [maton stripe subscription create](/manual/maton/stripe/subscription/create)
+* [maton stripe subscription get](/manual/maton/stripe/subscription/get)
 * [maton stripe subscription list](/manual/maton/stripe/subscription/list)
 * [maton stripe subscription update](/manual/maton/stripe/subscription/update)
-* [maton stripe subscription view](/manual/maton/stripe/subscription/view)
 
 
 ### Options inherited from parent commands
@@ -35,7 +35,7 @@ maton stripe subscriptions
 
 {% highlight bash %}{% raw %}
 $ maton stripe subscription list
-$ maton stripe subscription view sub_123
+$ maton stripe subscription get sub_123
 $ maton stripe subscription create --customer cus_123 --price price_456
 $ maton stripe subscription cancel sub_123
 {% endraw %}{% endhighlight %}

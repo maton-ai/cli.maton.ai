@@ -5,13 +5,13 @@ permalink: /:path/:basename
 
 {% raw %}## maton notion data-source
 
-View, query, and update data sources (database schemas)
+Get, query, and update data sources (database schemas)
 
 ### Available commands
 
+* [maton notion data-source get](/manual/maton/notion/data-source/get)
 * [maton notion data-source query](/manual/maton/notion/data-source/query)
 * [maton notion data-source update](/manual/maton/notion/data-source/update)
-* [maton notion data-source view](/manual/maton/notion/data-source/view)
 
 
 ### Options inherited from parent commands
@@ -32,7 +32,7 @@ View, query, and update data sources (database schemas)
 ### Examples
 
 {% highlight bash %}{% raw %}
-$ maton notion data-source view 0123456789abcdef0123456789abcdef
+$ maton notion data-source get 0123456789abcdef0123456789abcdef
 $ maton notion data-source query <dataSourceId> --filter '{"property":"Status","select":{"equals":"Active"}}'
 $ maton notion data-source update <dataSourceId> --body '{"properties":{"NewColumn":{"rich_text":{}}}}'
 {% endraw %}{% endhighlight %}

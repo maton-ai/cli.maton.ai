@@ -5,13 +5,12 @@ permalink: /:path/:basename
 
 {% raw %}## maton linear user
 
-List, view, or identify Linear users
+List, get, or identify Linear users
 
 ### Available commands
 
+* [maton linear user get](/manual/maton/linear/user/get)
 * [maton linear user list](/manual/maton/linear/user/list)
-* [maton linear user me](/manual/maton/linear/user/me)
-* [maton linear user view](/manual/maton/linear/user/view)
 
 
 ### Options inherited from parent commands

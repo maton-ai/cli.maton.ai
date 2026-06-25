@@ -7,7 +7,7 @@ permalink: /:path/:basename
 
 Manage task lists and tasks in Google Tasks.
 
-### Available commands
+### Resource commands
 
 * [maton google-tasks task](/manual/maton/google-tasks/task)
 * [maton google-tasks tasklist](/manual/maton/google-tasks/tasklist)

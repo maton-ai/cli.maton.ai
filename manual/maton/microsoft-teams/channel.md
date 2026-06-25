@@ -9,8 +9,8 @@ Browse channels within a team
 
 ### Available commands
 
+* [maton microsoft-teams channel get](/manual/maton/microsoft-teams/channel/get)
 * [maton microsoft-teams channel list](/manual/maton/microsoft-teams/channel/list)
-* [maton microsoft-teams channel view](/manual/maton/microsoft-teams/channel/view)
 
 
 ### Options inherited from parent commands
@@ -33,7 +33,7 @@ maton microsoft-teams channels
 {% highlight bash %}{% raw %}
 $ maton microsoft-teams team list
 $ maton microsoft-teams channel list --team 19:abc...
-$ maton microsoft-teams channel view 19:chan... --team 19:abc...
+$ maton microsoft-teams channel get 19:chan... --team 19:abc...
 {% endraw %}{% endhighlight %}
 
 ### See also

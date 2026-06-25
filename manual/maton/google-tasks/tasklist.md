@@ -5,16 +5,16 @@ permalink: /:path/:basename
 
 {% raw %}## maton google-tasks tasklist
 
-List, view, create, update, and delete task lists
+List, get, create, update, and delete task lists
 
 ### Available commands
 
 * [maton google-tasks tasklist clear](/manual/maton/google-tasks/tasklist/clear)
 * [maton google-tasks tasklist create](/manual/maton/google-tasks/tasklist/create)
 * [maton google-tasks tasklist delete](/manual/maton/google-tasks/tasklist/delete)
+* [maton google-tasks tasklist get](/manual/maton/google-tasks/tasklist/get)
 * [maton google-tasks tasklist list](/manual/maton/google-tasks/tasklist/list)
 * [maton google-tasks tasklist update](/manual/maton/google-tasks/tasklist/update)
-* [maton google-tasks tasklist view](/manual/maton/google-tasks/tasklist/view)
 
 
 ### Options inherited from parent commands

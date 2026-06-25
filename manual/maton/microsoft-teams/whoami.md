@@ -5,7 +5,7 @@ permalink: /:path/:basename
 
 {% raw %}## maton microsoft-teams whoami
 
-Show the signed-in user (GET /me)
+Verify your connection and show the authenticated account
 
 ```
 maton microsoft-teams whoami [flags]

@@ -5,7 +5,7 @@ permalink: /:path/:basename
 
 {% raw %}## maton google-drive file
 
-Manage files and folders (list, view, create, update, delete, copy, upload, download, export)
+Manage files and folders (list, get, create, update, delete, copy, upload, download, export)
 
 ### Available commands
 
@@ -16,10 +16,10 @@ Manage files and folders (list, view, create, update, delete, copy, upload, down
 * [maton google-drive file empty-trash](/manual/maton/google-drive/file/empty-trash)
 * [maton google-drive file export](/manual/maton/google-drive/file/export)
 * [maton google-drive file generate-ids](/manual/maton/google-drive/file/generate-ids)
+* [maton google-drive file get](/manual/maton/google-drive/file/get)
 * [maton google-drive file list](/manual/maton/google-drive/file/list)
 * [maton google-drive file update](/manual/maton/google-drive/file/update)
 * [maton google-drive file upload](/manual/maton/google-drive/file/upload)
-* [maton google-drive file view](/manual/maton/google-drive/file/view)
 
 
 ### Options inherited from parent commands
@@ -41,7 +41,7 @@ maton google-drive files
 
 {% highlight bash %}{% raw %}
 $ maton google-drive file list
-$ maton google-drive file view 1aBcD...
+$ maton google-drive file get 1aBcD...
 $ maton google-drive file upload ./report.pdf
 $ maton google-drive file download 1aBcD... --output ./report.pdf
 {% endraw %}{% endhighlight %}

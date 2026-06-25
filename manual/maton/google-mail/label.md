@@ -11,9 +11,9 @@ List, create, update, and delete labels
 
 * [maton google-mail label create](/manual/maton/google-mail/label/create)
 * [maton google-mail label delete](/manual/maton/google-mail/label/delete)
+* [maton google-mail label get](/manual/maton/google-mail/label/get)
 * [maton google-mail label list](/manual/maton/google-mail/label/list)
 * [maton google-mail label update](/manual/maton/google-mail/label/update)
-* [maton google-mail label view](/manual/maton/google-mail/label/view)
 
 
 ### Options inherited from parent commands
@@ -35,7 +35,7 @@ List, create, update, and delete labels
 
 {% highlight bash %}{% raw %}
 $ maton google-mail label list
-$ maton google-mail label view Label_123
+$ maton google-mail label get Label_123
 $ maton google-mail label create --name 'Followup'
 $ maton google-mail label update Label_123 --name 'Renamed'
 {% endraw %}{% endhighlight %}

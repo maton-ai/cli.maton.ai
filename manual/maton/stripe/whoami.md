@@ -5,7 +5,7 @@ permalink: /:path/:basename
 
 {% raw %}## maton stripe whoami
 
-Show the connected Stripe account (GET /v1/account)
+Verify your connection and show the authenticated account
 
 ```
 maton stripe whoami [flags]

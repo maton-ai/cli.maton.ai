@@ -5,12 +5,12 @@ permalink: /:path/:basename
 
 {% raw %}## maton stripe transaction
 
-Inspect balance transactions (list, view)
+Inspect balance transactions (list, get)
 
 ### Available commands
 
+* [maton stripe transaction get](/manual/maton/stripe/transaction/get)
 * [maton stripe transaction list](/manual/maton/stripe/transaction/list)
-* [maton stripe transaction view](/manual/maton/stripe/transaction/view)
 
 
 ### Options inherited from parent commands
@@ -32,7 +32,7 @@ Inspect balance transactions (list, view)
 
 {% highlight bash %}{% raw %}
 $ maton stripe transaction list
-$ maton stripe transaction view txn_123
+$ maton stripe transaction get txn_123
 {% endraw %}{% endhighlight %}
 
 ### See also

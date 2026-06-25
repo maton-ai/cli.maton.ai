@@ -7,7 +7,7 @@ permalink: /:path/:basename
 
 Manage campaigns, ad groups, and ads in Google Ads.
 
-### Available commands
+### Resource commands
 
 * [maton google-ads account](/manual/maton/google-ads/account)
 * [maton google-ads ad](/manual/maton/google-ads/ad)

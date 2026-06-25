@@ -5,12 +5,12 @@ permalink: /:path/:basename
 
 {% raw %}## maton google-ads account
 
-List and view accessible Google Ads customer accounts
+List and get accessible Google Ads customer accounts
 
 ### Available commands
 
+* [maton google-ads account get](/manual/maton/google-ads/account/get)
 * [maton google-ads account list](/manual/maton/google-ads/account/list)
-* [maton google-ads account view](/manual/maton/google-ads/account/view)
 
 
 ### Options inherited from parent commands

@@ -57,7 +57,7 @@ Create a connection to a third-party app. By default this opens your browser to 
 
 ### JSON Fields
 
-`app`, `connectionId`, `creationTime`, `lastUpdatedTime`, `metadata`, `method`, `status`, `url`
+`app`, `connection_id`, `creation_time`, `last_updated_time`, `metadata`, `method`, `status`, `url`
 
 {% endraw %}
 ### Examples
@@ -66,7 +66,7 @@ Create a connection to a third-party app. By default this opens your browser to 
 $ maton connection create slack
 $ maton connection create slack --interactive
 $ maton connection create slack --method OAUTH2
-$ maton connection create slack --json connectionId,status
+$ maton connection create slack --json connection_id,status
 {% endraw %}{% endhighlight %}
 
 ### See also

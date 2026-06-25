@@ -5,15 +5,15 @@ permalink: /:path/:basename
 
 {% raw %}## maton stripe customer
 
-Manage customers (list, view, create, update, delete)
+Manage customers (list, get, create, update, delete)
 
 ### Available commands
 
 * [maton stripe customer create](/manual/maton/stripe/customer/create)
 * [maton stripe customer delete](/manual/maton/stripe/customer/delete)
+* [maton stripe customer get](/manual/maton/stripe/customer/get)
 * [maton stripe customer list](/manual/maton/stripe/customer/list)
 * [maton stripe customer update](/manual/maton/stripe/customer/update)
-* [maton stripe customer view](/manual/maton/stripe/customer/view)
 
 
 ### Options inherited from parent commands

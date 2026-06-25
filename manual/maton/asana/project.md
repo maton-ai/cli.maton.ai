@@ -5,15 +5,15 @@ permalink: /:path/:basename
 
 {% raw %}## maton asana project
 
-List, view, create, and delete projects
+List, get, create, and delete projects
 
 ### Available commands
 
 * [maton asana project create](/manual/maton/asana/project/create)
 * [maton asana project delete](/manual/maton/asana/project/delete)
+* [maton asana project get](/manual/maton/asana/project/get)
 * [maton asana project list](/manual/maton/asana/project/list)
 * [maton asana project update](/manual/maton/asana/project/update)
-* [maton asana project view](/manual/maton/asana/project/view)
 
 
 ### Options inherited from parent commands
@@ -37,7 +37,7 @@ maton asana projects
 $ maton asana workspace list
 $ maton asana project list -w 12345
 $ maton asana project create -w 12345 --name 'Q3 Roadmap'
-$ maton asana project view 67890
+$ maton asana project get 67890
 {% endraw %}{% endhighlight %}
 
 ### See also

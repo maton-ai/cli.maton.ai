@@ -7,13 +7,17 @@ permalink: /:path/:basename
 
 Manage messages, folders, calendar events, and contacts in Outlook.
 
-### Available commands
+### Resource commands
 
 * [maton outlook calendar](/manual/maton/outlook/calendar)
 * [maton outlook contact](/manual/maton/outlook/contact)
 * [maton outlook event](/manual/maton/outlook/event)
 * [maton outlook folder](/manual/maton/outlook/folder)
 * [maton outlook message](/manual/maton/outlook/message)
+
+
+### Auth commands
+
 * [maton outlook whoami](/manual/maton/outlook/whoami)
 
 

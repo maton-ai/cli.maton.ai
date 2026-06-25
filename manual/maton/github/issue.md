@@ -5,7 +5,7 @@ permalink: /:path/:basename
 
 {% raw %}## maton github issue
 
-Create, view, list, and edit issues
+Create, get, list, and edit issues
 
 ### Available commands
 
@@ -15,6 +15,7 @@ Create, view, list, and edit issues
 * [maton github issue delete](/manual/maton/github/issue/delete)
 * [maton github issue develop](/manual/maton/github/issue/develop)
 * [maton github issue edit](/manual/maton/github/issue/edit)
+* [maton github issue get](/manual/maton/github/issue/get)
 * [maton github issue list](/manual/maton/github/issue/list)
 * [maton github issue lock](/manual/maton/github/issue/lock)
 * [maton github issue pin](/manual/maton/github/issue/pin)
@@ -24,7 +25,6 @@ Create, view, list, and edit issues
 * [maton github issue transfer](/manual/maton/github/issue/transfer)
 * [maton github issue unlock](/manual/maton/github/issue/unlock)
 * [maton github issue unpin](/manual/maton/github/issue/unpin)
-* [maton github issue view](/manual/maton/github/issue/view)
 
 
 ### Options inherited from parent commands
@@ -46,7 +46,7 @@ maton github issues
 
 {% highlight bash %}{% raw %}
 $ maton github issue list --repo maton-ai/cli --state open
-$ maton github issue view 123 --repo maton-ai/cli
+$ maton github issue get 123 --repo maton-ai/cli
 $ maton github issue create --repo maton-ai/cli --title "Bug" --body "..."
 $ maton github issue close 123 --repo maton-ai/cli
 {% endraw %}{% endhighlight %}

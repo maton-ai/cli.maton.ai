@@ -5,15 +5,15 @@ permalink: /:path/:basename
 
 {% raw %}## maton one-drive drive
 
-Drive-wide queries (list, view, recent, shared with me, search)
+Drive-wide queries (list, get, recent, shared with me, search)
 
 ### Available commands
 
+* [maton one-drive drive get](/manual/maton/one-drive/drive/get)
 * [maton one-drive drive list](/manual/maton/one-drive/drive/list)
 * [maton one-drive drive recent](/manual/maton/one-drive/drive/recent)
 * [maton one-drive drive search](/manual/maton/one-drive/drive/search)
 * [maton one-drive drive shared](/manual/maton/one-drive/drive/shared)
-* [maton one-drive drive view](/manual/maton/one-drive/drive/view)
 
 
 ### Options inherited from parent commands

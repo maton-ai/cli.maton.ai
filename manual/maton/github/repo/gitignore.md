@@ -5,12 +5,12 @@ permalink: /:path/:basename
 
 {% raw %}## maton github repo gitignore
 
-List and view .gitignore templates
+List and get .gitignore templates
 
 ### Available commands
 
+* [maton github repo gitignore get](/manual/maton/github/repo/gitignore/get)
 * [maton github repo gitignore list](/manual/maton/github/repo/gitignore/list)
-* [maton github repo gitignore view](/manual/maton/github/repo/gitignore/view)
 
 
 ### Options inherited from parent commands

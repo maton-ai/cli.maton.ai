@@ -5,12 +5,12 @@ permalink: /:path/:basename
 
 {% raw %}## maton linear team
 
-List or view Linear teams
+List or get Linear teams
 
 ### Available commands
 
+* [maton linear team get](/manual/maton/linear/team/get)
 * [maton linear team list](/manual/maton/linear/team/list)
-* [maton linear team view](/manual/maton/linear/team/view)
 
 
 ### Options inherited from parent commands

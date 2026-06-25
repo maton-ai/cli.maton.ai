@@ -5,14 +5,14 @@ permalink: /:path/:basename
 
 {% raw %}## maton slack user
 
-List, view, and look up workspace users
+List, get, and look up workspace users
 
 ### Available commands
 
+* [maton slack user get](/manual/maton/slack/user/get)
 * [maton slack user list](/manual/maton/slack/user/list)
 * [maton slack user lookup](/manual/maton/slack/user/lookup)
 * [maton slack user presence](/manual/maton/slack/user/presence)
-* [maton slack user view](/manual/maton/slack/user/view)
 
 
 ### Options inherited from parent commands
@@ -30,7 +30,7 @@ List, view, and look up workspace users
 
 {% highlight bash %}{% raw %}
 $ maton slack user list
-$ maton slack user view U0123456789
+$ maton slack user get U0123456789
 $ maton slack user lookup --email alice@example.com
 $ maton slack user presence U0123456789
 {% endraw %}{% endhighlight %}

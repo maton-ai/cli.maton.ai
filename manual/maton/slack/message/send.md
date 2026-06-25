@@ -31,10 +31,6 @@ maton slack message send [flags]
 		<code>--dry-run</code></dt>
 	<dd>Print the request that would be sent without executing it</dd>
 
-	<dt>
-		<code>--icon-emoji &lt;string&gt;</code></dt>
-	<dd>Override the bot icon with an emoji, e.g. :ghost:</dd>
-
 	<dt><code>-q</code>, 
 		<code>--jq &lt;expression&gt;</code></dt>
 	<dd>Filter JSON output using a jq expression</dd>
@@ -46,10 +42,6 @@ maton slack message send [flags]
 	<dt>
 		<code>--paginate</code></dt>
 	<dd>Follow next_cursor and concatenate all pages (list commands only)</dd>
-
-	<dt>
-		<code>--reply-broadcast</code></dt>
-	<dd>When sent inside a thread, also broadcast to channel</dd>
 
 	<dt>
 		<code>--template &lt;string&gt;</code></dt>
@@ -70,10 +62,6 @@ maton slack message send [flags]
 	<dt>
 		<code>--unfurl-media</code></dt>
 	<dd>Toggle media unfurling (true|false)</dd>
-
-	<dt>
-		<code>--username &lt;string&gt;</code></dt>
-	<dd>Override the bot username (legacy)</dd>
 </dl>
 
 

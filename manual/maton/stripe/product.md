@@ -5,15 +5,15 @@ permalink: /:path/:basename
 
 {% raw %}## maton stripe product
 
-Manage products (list, view, create, update, delete)
+Manage products (list, get, create, update, delete)
 
 ### Available commands
 
 * [maton stripe product create](/manual/maton/stripe/product/create)
 * [maton stripe product delete](/manual/maton/stripe/product/delete)
+* [maton stripe product get](/manual/maton/stripe/product/get)
 * [maton stripe product list](/manual/maton/stripe/product/list)
 * [maton stripe product update](/manual/maton/stripe/product/update)
-* [maton stripe product view](/manual/maton/stripe/product/view)
 
 
 ### Options inherited from parent commands
@@ -35,7 +35,7 @@ maton stripe products
 
 {% highlight bash %}{% raw %}
 $ maton stripe product list
-$ maton stripe product view prod_123
+$ maton stripe product get prod_123
 $ maton stripe product create --name 'Pro plan'
 {% endraw %}{% endhighlight %}
 

@@ -7,7 +7,7 @@ permalink: /:path/:basename
 
 Manage teams, channels, and chats in Microsoft Teams.
 
-### Available commands
+### Resource commands
 
 * [maton microsoft-teams channel](/manual/maton/microsoft-teams/channel)
 * [maton microsoft-teams chat](/manual/maton/microsoft-teams/chat)
@@ -15,6 +15,10 @@ Manage teams, channels, and chats in Microsoft Teams.
 * [maton microsoft-teams message](/manual/maton/microsoft-teams/message)
 * [maton microsoft-teams presence](/manual/maton/microsoft-teams/presence)
 * [maton microsoft-teams team](/manual/maton/microsoft-teams/team)
+
+
+### Auth commands
+
 * [maton microsoft-teams whoami](/manual/maton/microsoft-teams/whoami)
 
 

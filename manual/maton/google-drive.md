@@ -7,7 +7,7 @@ permalink: /:path/:basename
 
 Manage files, folders, and permissions in Google Drive.
 
-### Available commands
+### Resource commands
 
 * [maton google-drive about](/manual/maton/google-drive/about)
 * [maton google-drive comment](/manual/maton/google-drive/comment)

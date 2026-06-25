@@ -10,7 +10,6 @@ Search videos, channels, playlists across YouTube
 ### Available commands
 
 * [maton youtube search channels](/manual/maton/youtube/search/channels)
-* [maton youtube search mine](/manual/maton/youtube/search/mine)
 * [maton youtube search playlists](/manual/maton/youtube/search/playlists)
 * [maton youtube search videos](/manual/maton/youtube/search/videos)
 

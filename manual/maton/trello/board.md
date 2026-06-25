@@ -5,15 +5,15 @@ permalink: /:path/:basename
 
 {% raw %}## maton trello board
 
-Manage Trello boards (list, view, create, update, delete)
+Manage Trello boards (list, get, create, update, delete)
 
 ### Available commands
 
 * [maton trello board create](/manual/maton/trello/board/create)
 * [maton trello board delete](/manual/maton/trello/board/delete)
+* [maton trello board get](/manual/maton/trello/board/get)
 * [maton trello board list](/manual/maton/trello/board/list)
 * [maton trello board update](/manual/maton/trello/board/update)
-* [maton trello board view](/manual/maton/trello/board/view)
 
 
 ### Options inherited from parent commands
@@ -35,7 +35,7 @@ maton trello boards
 
 {% highlight bash %}{% raw %}
 $ maton trello board list
-$ maton trello board view 5f1a2b3c4d5e6f7a8b9c0d1e
+$ maton trello board get 5f1a2b3c4d5e6f7a8b9c0d1e
 $ maton trello board create --name 'Q3 Roadmap'
 $ maton trello board update 5f1a... --name 'Renamed'
 $ maton trello board delete 5f1a...

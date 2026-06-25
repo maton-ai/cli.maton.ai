@@ -5,7 +5,7 @@ permalink: /:path/:basename
 
 {% raw %}## maton youtube video list
 
-List trending/popular videos by region
+List trending/popular videos by region, or your own uploads
 
 ```
 maton youtube video list [flags]
@@ -34,6 +34,10 @@ maton youtube video list [flags]
 	<dt><code>-L</code>, 
 		<code>--limit &lt;int&gt; (default 10)</code></dt>
 	<dd>Max results (1-50)</dd>
+
+	<dt>
+		<code>--mine</code></dt>
+	<dd>List the authenticated user&#39;s own uploaded videos (includes private)</dd>
 
 	<dt>
 		<code>--paginate</code></dt>
@@ -69,6 +73,7 @@ maton youtube video list [flags]
 {% highlight bash %}{% raw %}
 $ maton youtube video list
 $ maton youtube video list --region KR --limit 25
+$ maton youtube video list --mine
 {% endraw %}{% endhighlight %}
 
 ### See also

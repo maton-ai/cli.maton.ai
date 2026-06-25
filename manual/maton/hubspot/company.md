@@ -5,7 +5,7 @@ permalink: /:path/:basename
 
 {% raw %}## maton hubspot company
 
-List, view, create, update, archive, and search companies
+List, get, create, update, archive, and search companies
 
 ### Available commands
 
@@ -15,10 +15,10 @@ List, view, create, update, archive, and search companies
 * [maton hubspot company batch-read](/manual/maton/hubspot/company/batch-read)
 * [maton hubspot company batch-update](/manual/maton/hubspot/company/batch-update)
 * [maton hubspot company create](/manual/maton/hubspot/company/create)
+* [maton hubspot company get](/manual/maton/hubspot/company/get)
 * [maton hubspot company list](/manual/maton/hubspot/company/list)
 * [maton hubspot company search](/manual/maton/hubspot/company/search)
 * [maton hubspot company update](/manual/maton/hubspot/company/update)
-* [maton hubspot company view](/manual/maton/hubspot/company/view)
 
 
 ### Options inherited from parent commands
@@ -40,7 +40,7 @@ maton hubspot companies
 
 {% highlight bash %}{% raw %}
 $ maton hubspot company list
-$ maton hubspot company view 12345
+$ maton hubspot company get 12345
 $ maton hubspot company create --set name='Acme' --set domain='acme.com'
 $ maton hubspot company search --filter name:EQ:Acme
 {% endraw %}{% endhighlight %}

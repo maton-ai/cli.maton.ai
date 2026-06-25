@@ -5,12 +5,12 @@ permalink: /:path/:basename
 
 {% raw %}## maton trello member
 
-View Trello members
+Get Trello members
 
 ### Available commands
 
+* [maton trello member get](/manual/maton/trello/member/get)
 * [maton trello member list](/manual/maton/trello/member/list)
-* [maton trello member view](/manual/maton/trello/member/view)
 
 
 ### Options inherited from parent commands

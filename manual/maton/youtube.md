@@ -7,7 +7,7 @@ permalink: /:path/:basename
 
 Manage videos, playlists, and channels in YouTube.
 
-### Available commands
+### Resource commands
 
 * [maton youtube channel](/manual/maton/youtube/channel)
 * [maton youtube comment](/manual/maton/youtube/comment)
@@ -16,6 +16,10 @@ Manage videos, playlists, and channels in YouTube.
 * [maton youtube subscription](/manual/maton/youtube/subscription)
 * [maton youtube video](/manual/maton/youtube/video)
 * [maton youtube video-category](/manual/maton/youtube/video-category)
+
+
+### Auth commands
+
 * [maton youtube whoami](/manual/maton/youtube/whoami)
 
 
@@ -36,7 +40,7 @@ Manage videos, playlists, and channels in YouTube.
 $ maton youtube whoami
 $ maton youtube search videos 'go programming'
 $ maton youtube video list --region US
-$ maton youtube video view dQw4w9WgXcQ
+$ maton youtube video get dQw4w9WgXcQ
 $ maton youtube comment list --video dQw4w9WgXcQ
 {% endraw %}{% endhighlight %}
 

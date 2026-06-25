@@ -5,7 +5,7 @@ permalink: /:path/:basename
 
 {% raw %}## maton hubspot deal
 
-List, view, create, update, archive, and search deals
+List, get, create, update, archive, and search deals
 
 ### Available commands
 
@@ -15,10 +15,10 @@ List, view, create, update, archive, and search deals
 * [maton hubspot deal batch-read](/manual/maton/hubspot/deal/batch-read)
 * [maton hubspot deal batch-update](/manual/maton/hubspot/deal/batch-update)
 * [maton hubspot deal create](/manual/maton/hubspot/deal/create)
+* [maton hubspot deal get](/manual/maton/hubspot/deal/get)
 * [maton hubspot deal list](/manual/maton/hubspot/deal/list)
 * [maton hubspot deal search](/manual/maton/hubspot/deal/search)
 * [maton hubspot deal update](/manual/maton/hubspot/deal/update)
-* [maton hubspot deal view](/manual/maton/hubspot/deal/view)
 
 
 ### Options inherited from parent commands
@@ -40,7 +40,7 @@ maton hubspot deals
 
 {% highlight bash %}{% raw %}
 $ maton hubspot deal list
-$ maton hubspot deal view 12345
+$ maton hubspot deal get 12345
 $ maton hubspot deal create --set dealname='New Deal' --set amount=10000
 $ maton hubspot deal search --filter dealstage:EQ:closedwon
 {% endraw %}{% endhighlight %}

@@ -5,7 +5,7 @@ permalink: /:path/:basename
 
 {% raw %}## maton slack whoami
 
-Verify your token and show the authenticated user/team
+Verify your connection and show the authenticated account
 
 ```
 maton slack whoami [flags]

@@ -5,7 +5,7 @@ permalink: /:path/:basename
 
 {% raw %}## maton hubspot contact
 
-List, view, create, update, archive, and search contacts
+List, get, create, update, archive, and search contacts
 
 ### Available commands
 
@@ -16,10 +16,10 @@ List, view, create, update, archive, and search contacts
 * [maton hubspot contact batch-update](/manual/maton/hubspot/contact/batch-update)
 * [maton hubspot contact create](/manual/maton/hubspot/contact/create)
 * [maton hubspot contact gdpr-delete](/manual/maton/hubspot/contact/gdpr-delete)
+* [maton hubspot contact get](/manual/maton/hubspot/contact/get)
 * [maton hubspot contact list](/manual/maton/hubspot/contact/list)
 * [maton hubspot contact search](/manual/maton/hubspot/contact/search)
 * [maton hubspot contact update](/manual/maton/hubspot/contact/update)
-* [maton hubspot contact view](/manual/maton/hubspot/contact/view)
 
 
 ### Options inherited from parent commands
@@ -41,7 +41,7 @@ maton hubspot contacts
 
 {% highlight bash %}{% raw %}
 $ maton hubspot contact list
-$ maton hubspot contact view 12345
+$ maton hubspot contact get 12345
 $ maton hubspot contact create --set email=j@ex.com --set firstname=John
 $ maton hubspot contact search --filter email:EQ:j@ex.com
 {% endraw %}{% endhighlight %}

@@ -5,7 +5,7 @@ permalink: /:path/:basename
 
 {% raw %}## maton youtube channel mine
 
-View your own channel
+Get your own channel
 
 ```
 maton youtube channel mine [flags]
