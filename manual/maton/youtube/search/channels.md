@@ -37,7 +37,7 @@ maton youtube search channels <query> [flags]
 
 	<dt>
 		<code>--order &lt;string&gt; (default &#34;relevance&#34;)</code></dt>
-	<dd>Sort: relevance, date, rating, viewCount, title</dd>
+	<dd>Sort: relevance, date, rating, viewCount, videoCount, title</dd>
 
 	<dt>
 		<code>--paginate</code></dt>

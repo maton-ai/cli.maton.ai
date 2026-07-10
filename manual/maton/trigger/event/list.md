@@ -28,6 +28,10 @@ maton trigger event list --trigger <trigger-id> [flags]
 	<dd>Maximum number of events to fetch (0 = no limit)</dd>
 
 	<dt>
+		<code>--since &lt;string&gt;</code></dt>
+	<dd>Only list events received after this event ID</dd>
+
+	<dt>
 		<code>--template &lt;string&gt;</code></dt>
 	<dd>Format JSON output using a Go template; see &#34;maton help formatting&#34;</dd>
 
@@ -61,6 +65,7 @@ maton trigger event list --trigger <trigger-id> [flags]
 {% highlight bash %}{% raw %}
 $ maton trigger event list --trigger trg_abc123
 $ maton trigger event list --trigger trg_abc123 -L 50
+$ maton trigger event list --trigger trg_abc123 --since evt_123
 {% endraw %}{% endhighlight %}
 
 ### See also

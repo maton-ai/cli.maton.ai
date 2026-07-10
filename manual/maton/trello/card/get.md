@@ -16,7 +16,7 @@ maton trello card get <id> [flags]
 
 <dl class="flags">
 	<dt>
-		<code>--checklists &lt;string&gt; (default &#34;none&#34;)</code></dt>
+		<code>--checklists &lt;string&gt;</code></dt>
 	<dd>Include checklists: all, none</dd>
 
 	<dt>

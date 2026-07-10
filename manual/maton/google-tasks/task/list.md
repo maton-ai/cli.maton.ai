@@ -61,7 +61,7 @@ maton google-tasks task list [flags]
 
 	<dt>
 		<code>--show-completed</code></dt>
-	<dd>Include completed tasks</dd>
+	<dd>Include completed tasks (default true server-side; pass --show-completed=false to hide)</dd>
 
 	<dt>
 		<code>--show-deleted</code></dt>

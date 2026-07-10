@@ -23,7 +23,7 @@ is hidden from the board but can be unarchived in the Trello UI.
 
 	<dt>
 		<code>--closed</code></dt>
-	<dd>Archive (close) the list</dd>
+	<dd>Archive (true) or unarchive (false) the list</dd>
 
 	<dt>
 		<code>--connection &lt;string&gt;</code></dt>

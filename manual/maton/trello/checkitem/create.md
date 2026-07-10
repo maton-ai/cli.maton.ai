@@ -17,7 +17,7 @@ maton trello checkitem create [flags]
 <dl class="flags">
 	<dt>
 		<code>--checked</code></dt>
-	<dd>Mark the item as already complete</dd>
+	<dd>Mark the item as already complete (--checked=false to force incomplete)</dd>
 
 	<dt>
 		<code>--checklist &lt;string&gt;</code></dt>

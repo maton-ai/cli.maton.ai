@@ -36,8 +36,8 @@ Query a Notion data source. Use 'maton notion database get' to discover the data
 	<dd>Output raw JSON</dd>
 
 	<dt><code>-L</code>, 
-		<code>--page-size &lt;int&gt; (default 100)</code></dt>
-	<dd>Max results per page</dd>
+		<code>--page-size &lt;int&gt;</code></dt>
+	<dd>Max results per page (default 100)</dd>
 
 	<dt>
 		<code>--paginate</code></dt>

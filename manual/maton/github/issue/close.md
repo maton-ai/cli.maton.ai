@@ -27,6 +27,10 @@ maton github issue close <number-or-url> [flags]
 		<code>--dry-run</code></dt>
 	<dd>Print the request that would be sent without executing it</dd>
 
+	<dt>
+		<code>--duplicate-of &lt;string&gt;</code></dt>
+	<dd>Mark as a duplicate of another issue (number or URL); implies --reason duplicate</dd>
+
 	<dt><code>-q</code>, 
 		<code>--jq &lt;expression&gt;</code></dt>
 	<dd>Filter JSON output using a jq expression</dd>
@@ -41,7 +45,7 @@ maton github issue close <number-or-url> [flags]
 
 	<dt><code>-r</code>, 
 		<code>--reason &lt;string&gt;</code></dt>
-	<dd>Close reason: completed or &#39;not planned&#39;</dd>
+	<dd>Close reason: completed, not_planned, or duplicate</dd>
 
 	<dt><code>-R</code>, 
 		<code>--repo &lt;owner/repo&gt;</code></dt>
@@ -68,7 +72,8 @@ maton github issue close <number-or-url> [flags]
 
 {% highlight bash %}{% raw %}
 $ maton github issue close 123 --repo maton-ai/cli
-$ maton github issue close 123 --repo maton-ai/cli --reason "not planned" --comment "tracked in #456"
+$ maton github issue close 123 --repo maton-ai/cli --reason not_planned --comment "tracked in #456"
+$ maton github issue close 123 --repo maton-ai/cli --duplicate-of 456
 $ maton github issue close https://github.com/maton-ai/cli/issues/123
 {% endraw %}{% endhighlight %}
 

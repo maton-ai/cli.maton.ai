@@ -24,7 +24,7 @@ maton google-mail thread get <thread-id> [flags]
 	<dd>Print the request that would be sent without executing it</dd>
 
 	<dt>
-		<code>--fetch-format &lt;string&gt;</code></dt>
+		<code>--format &lt;string&gt;</code></dt>
 	<dd>Gmail message format: minimal, metadata, full (default Gmail&#39;s default)</dd>
 
 	<dt><code>-q</code>, 

@@ -25,7 +25,7 @@ maton youtube search videos [query] [flags]
 
 	<dt>
 		<code>--duration &lt;string&gt;</code></dt>
-	<dd>Video duration: short (&lt;4m), medium (4-20m), long (&gt;20m)</dd>
+	<dd>Video duration: any, short (&lt;4m), medium (4-20m), long (&gt;20m)</dd>
 
 	<dt><code>-q</code>, 
 		<code>--jq &lt;expression&gt;</code></dt>
@@ -45,7 +45,7 @@ maton youtube search videos [query] [flags]
 
 	<dt>
 		<code>--order &lt;string&gt; (default &#34;relevance&#34;)</code></dt>
-	<dd>Sort: relevance, date, rating, viewCount, title</dd>
+	<dd>Sort: relevance, date, rating, viewCount, videoCount, title</dd>
 
 	<dt>
 		<code>--paginate</code></dt>

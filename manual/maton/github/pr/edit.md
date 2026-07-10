@@ -17,7 +17,7 @@ maton github pr edit <number-or-url> [flags]
 <dl class="flags">
 	<dt>
 		<code>--add-assignee &lt;string&gt;</code></dt>
-	<dd>Comma-separated assignees to add</dd>
+	<dd>Comma-separated assignees to add (&#39;@me&#39; for self)</dd>
 
 	<dt>
 		<code>--add-label &lt;string&gt;</code></dt>
@@ -57,7 +57,7 @@ maton github pr edit <number-or-url> [flags]
 
 	<dt>
 		<code>--remove-assignee &lt;string&gt;</code></dt>
-	<dd>Comma-separated assignees to remove</dd>
+	<dd>Comma-separated assignees to remove (&#39;@me&#39; for self)</dd>
 
 	<dt>
 		<code>--remove-label &lt;string&gt;</code></dt>

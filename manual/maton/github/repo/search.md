@@ -76,7 +76,7 @@ search foo "size:<5000"').
 	<dd>Format JSON output using a Go template; see &#34;maton help formatting&#34;</dd>
 
 	<dt>
-		<code>--topic &lt;string&gt;</code></dt>
+		<code>--topics &lt;string&gt;</code></dt>
 	<dd>Comma-separated topics to match</dd>
 </dl>
 
@@ -98,7 +98,7 @@ search foo "size:<5000"').
 $ maton github repo search cli shell
 $ maton github repo search "vim plugin"
 $ maton github repo search --owner microsoft --language go
-$ maton github repo search --topic cli,terminal --stars ">100"
+$ maton github repo search --topics cli,terminal --stars ">100"
 $ maton github repo search --owner github --archived false --sort stars
 {% endraw %}{% endhighlight %}
 

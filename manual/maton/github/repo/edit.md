@@ -20,15 +20,15 @@ Patch repository settings. Pass --topics with a comma-separated list to replace 
 	<dd>Allow auto-merge on PRs</dd>
 
 	<dt>
-		<code>--allow-merge (default true)</code></dt>
+		<code>--allow-merge</code></dt>
 	<dd>Allow merge commits on PRs</dd>
 
 	<dt>
-		<code>--allow-rebase (default true)</code></dt>
+		<code>--allow-rebase</code></dt>
 	<dd>Allow rebase-merging on PRs</dd>
 
 	<dt>
-		<code>--allow-squash (default true)</code></dt>
+		<code>--allow-squash</code></dt>
 	<dd>Allow squash-merging on PRs</dd>
 
 	<dt>
@@ -56,15 +56,15 @@ Patch repository settings. Pass --topics with a comma-separated list to replace 
 	<dd>Print the request that would be sent without executing it</dd>
 
 	<dt>
-		<code>--enable-issues (default true)</code></dt>
+		<code>--enable-issues</code></dt>
 	<dd>Enable issues</dd>
 
 	<dt>
-		<code>--enable-projects (default true)</code></dt>
+		<code>--enable-projects</code></dt>
 	<dd>Enable projects</dd>
 
 	<dt>
-		<code>--enable-wiki (default true)</code></dt>
+		<code>--enable-wiki</code></dt>
 	<dd>Enable wiki</dd>
 
 	<dt><code>-h</code>, 

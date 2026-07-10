@@ -9,7 +9,7 @@ permalink: /:path/:basename
 maton asana task create [flags]
 ```
 
-Create a task. Either --projects or --workspace is required; use --parent to create a subtask of an existing task. Workspace-scoped creation also requires --assignee (Asana API constraint).
+Create a task. One of --projects, --workspace, or --parent is required; use --parent to create a subtask of an existing task.
 
 ### Options
 
@@ -61,7 +61,7 @@ Create a task. Either --projects or --workspace is required; use --parent to cre
 
 	<dt><code>-w</code>, 
 		<code>--workspace &lt;string&gt;</code></dt>
-	<dd>Workspace gid (one of --projects/--workspace/--parent; needs --assignee if alone)</dd>
+	<dd>Workspace gid (one of --projects/--workspace/--parent)</dd>
 </dl>
 
 
@@ -80,7 +80,7 @@ Create a task. Either --projects or --workspace is required; use --parent to cre
 
 {% highlight bash %}{% raw %}
 $ maton asana task create --name 'Write spec' --projects 67890
-$ maton asana task create --name 'Triage' --assignee me -w 12345
+$ maton asana task create --name 'Triage' -w 12345
 $ maton asana task create --name 'Subtask' --parent 11111
 {% endraw %}{% endhighlight %}
 

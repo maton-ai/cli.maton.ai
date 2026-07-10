@@ -9,7 +9,7 @@ permalink: /:path/:basename
 maton hubspot deal search [flags]
 ```
 
-Search HubSpot deals using one or more filters. Filters are combined with AND inside a single filterGroup. Operators: EQ, NEQ, LT, LTE, GT, GTE, CONTAINS_TOKEN, NOT_CONTAINS_TOKEN.
+Search HubSpot deals using one or more filters. Filters are combined with AND inside a single filterGroup. Operators: EQ, NEQ, LT, LTE, GT, GTE, CONTAINS_TOKEN, NOT_CONTAINS_TOKEN, HAS_PROPERTY, NOT_HAS_PROPERTY. Valueless operators (HAS_PROPERTY, NOT_HAS_PROPERTY) take the form propertyName:operator.
 
 ### Options
 

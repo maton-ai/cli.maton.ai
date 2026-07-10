@@ -9,7 +9,7 @@ permalink: /:path/:basename
 maton google-mail message get <message-id> [flags]
 ```
 
-Fetch a Gmail message and print its body. Defaults to plain text; use --html to print the HTML alternative when available, --headers to prepend a From/To/Cc/Subject/Date block, or --raw to dump the raw API JSON. Use --fetch-format (minimal/metadata/full/raw) and --metadata-header to control Gmail's users.messages.get query params directly — when --fetch-format is set, the raw API response is printed and body parsing is skipped.
+Fetch a Gmail message and print its body. Defaults to plain text; use --html to print the HTML alternative when available, --headers to prepend a From/To/Cc/Subject/Date block, or --raw to dump the raw API JSON. Use --format (minimal/metadata/full/raw) and --metadata-header to control Gmail's users.messages.get query params directly — when --format is set, the raw API response is printed and body parsing is skipped.
 
 ### Options
 
@@ -24,7 +24,7 @@ Fetch a Gmail message and print its body. Defaults to plain text; use --html to 
 	<dd>Print the request that would be sent without executing it</dd>
 
 	<dt>
-		<code>--fetch-format &lt;string&gt;</code></dt>
+		<code>--format &lt;string&gt;</code></dt>
 	<dd>Gmail messages.get format: minimal, metadata, full, raw (forces raw JSON output)</dd>
 
 	<dt>
@@ -45,7 +45,7 @@ Fetch a Gmail message and print its body. Defaults to plain text; use --html to 
 
 	<dt>
 		<code>--metadata-header &lt;strings&gt;</code></dt>
-	<dd>Header to include when --fetch-format=metadata (repeatable or comma-separated, e.g. From,Subject,Date)</dd>
+	<dd>Header to include when --format=metadata (repeatable or comma-separated, e.g. From,Subject,Date)</dd>
 
 	<dt>
 		<code>--paginate</code></dt>
@@ -82,7 +82,7 @@ Fetch a Gmail message and print its body. Defaults to plain text; use --html to 
 $ maton google-mail message get 18f1a2b3c4d
 $ maton google-mail message get 18f1a2b3c4d --headers
 $ maton google-mail message get 18f1a2b3c4d --raw --json
-$ maton google-mail message get 18f1a2b3c4d --fetch-format metadata --metadata-header From,Subject,Date
+$ maton google-mail message get 18f1a2b3c4d --format metadata --metadata-header From,Subject,Date
 {% endraw %}{% endhighlight %}
 
 ### See also

@@ -25,7 +25,7 @@ associationCategory + associationTypeId body).
 <dl class="flags">
 	<dt>
 		<code>--category &lt;string&gt; (default &#34;HUBSPOT_DEFINED&#34;)</code></dt>
-	<dd>Association category: HUBSPOT_DEFINED or USER_DEFINED</dd>
+	<dd>Association category: HUBSPOT_DEFINED, USER_DEFINED, or INTEGRATOR_DEFINED</dd>
 
 	<dt>
 		<code>--connection &lt;string&gt;</code></dt>

@@ -44,7 +44,7 @@ List comments on an issue. Jira's comment endpoint paginates with startAt/maxRes
 	<dd>Follow next_cursor and concatenate all pages (list commands only)</dd>
 
 	<dt>
-		<code>--start-at &lt;int&gt; (default 0)</code></dt>
+		<code>--start-at &lt;int&gt;</code></dt>
 	<dd>Index of the first comment to return (for pagination)</dd>
 
 	<dt><code>-t</code>, 

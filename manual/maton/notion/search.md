@@ -36,8 +36,8 @@ Search workspace content. Optional --filter narrows results to pages or data sou
 	<dd>Output raw JSON</dd>
 
 	<dt><code>-L</code>, 
-		<code>--page-size &lt;int&gt; (default 100)</code></dt>
-	<dd>Max results per page</dd>
+		<code>--page-size &lt;int&gt;</code></dt>
+	<dd>Max results per page (default 100)</dd>
 
 	<dt>
 		<code>--paginate</code></dt>

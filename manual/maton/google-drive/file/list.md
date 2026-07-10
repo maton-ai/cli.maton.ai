@@ -21,7 +21,7 @@ List files visible to the connection. Use -q for Drive's query language (e.g. "m
 
 	<dt>
 		<code>--corpora &lt;string&gt;</code></dt>
-	<dd>Bodies to search: user, drive, allDrives</dd>
+	<dd>Bodies to search: user, domain, drive, allDrives</dd>
 
 	<dt>
 		<code>--drive-id &lt;string&gt;</code></dt>

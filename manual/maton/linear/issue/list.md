@@ -41,7 +41,7 @@ maton linear issue list [flags]
 
 	<dt>
 		<code>--state &lt;string&gt;</code></dt>
-	<dd>Filter by workflow state type: backlog, unstarted, started, completed, canceled</dd>
+	<dd>Filter by workflow state type: triage, backlog, unstarted, started, completed, canceled</dd>
 
 	<dt><code>-c</code>, 
 		<code>--team &lt;string&gt;</code></dt>

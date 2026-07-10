@@ -17,7 +17,7 @@ maton trello card update <id> [flags]
 <dl class="flags">
 	<dt>
 		<code>--closed</code></dt>
-	<dd>Archive the card</dd>
+	<dd>Archive (true) or unarchive (false) the card</dd>
 
 	<dt>
 		<code>--connection &lt;string&gt;</code></dt>

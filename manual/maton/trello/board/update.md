@@ -17,7 +17,7 @@ maton trello board update <id> [flags]
 <dl class="flags">
 	<dt>
 		<code>--closed</code></dt>
-	<dd>Archive (close) the board</dd>
+	<dd>Archive (true) or unarchive (false) the board</dd>
 
 	<dt>
 		<code>--connection &lt;string&gt;</code></dt>
@@ -53,7 +53,7 @@ maton trello board update <id> [flags]
 
 	<dt>
 		<code>--subscribed</code></dt>
-	<dd>Subscribe the current member to the board</dd>
+	<dd>Subscribe (true) or unsubscribe (false) the current member</dd>
 
 	<dt><code>-t</code>, 
 		<code>--template &lt;string&gt;</code></dt>
