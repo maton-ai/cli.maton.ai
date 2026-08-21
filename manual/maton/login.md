@@ -9,7 +9,7 @@ permalink: /:path/:basename
 maton login [flags]
 ```
 
-Login to your Maton account to set up the CLI. By default, this opens your browser to the Maton login page. After signing in, copy your API key and paste it back into the terminal. Use --interactive when you don't want to launch a browser (for example, on a headless host).
+Login to your Maton account to set up the CLI. By default, this opens your browser to the Maton login page. After signing in, copy your API key and paste it back into the terminal. Use --interactive when you don't want to launch a browser (for example, on a headless host). Use --oauth to sign in with your browser instead of an API key: the CLI then holds a short-lived access token that it renews automatically, so no long-lived key is stored on the machine.
 
 ### Available commands
 
@@ -28,6 +28,10 @@ Login to your Maton account to set up the CLI. By default, this opens your brows
 	<dt><code>-i</code>, 
 		<code>--interactive</code></dt>
 	<dd>Skip launching the browser; only prompt for an API key</dd>
+
+	<dt>
+		<code>--oauth</code></dt>
+	<dd>Sign in through the browser and store a renewable token instead of an API key</dd>
 </dl>
 
 
@@ -50,6 +54,9 @@ $ maton login
 
 # Skip the browser launch and just paste an API key
 $ maton login --interactive
+
+# Sign in with your browser; no API key to copy
+$ maton login --oauth
 {% endraw %}{% endhighlight %}
 
 ### See also

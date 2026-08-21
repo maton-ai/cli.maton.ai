@@ -42,6 +42,7 @@ The official command-line tool to interact with Maton.
 
 * [maton login](/manual/maton/login)
 * [maton logout](/manual/maton/logout)
+* [maton token](/manual/maton/token)
 * [maton whoami](/manual/maton/whoami)
 
 
