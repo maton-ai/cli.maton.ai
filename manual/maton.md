@@ -35,6 +35,7 @@ The official command-line tool to interact with Maton.
 ### Resource commands
 
 * [maton connection](/manual/maton/connection)
+* [maton function](/manual/maton/function)
 * [maton trigger](/manual/maton/trigger)
 
 
