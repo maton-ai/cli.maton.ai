@@ -9,7 +9,7 @@ permalink: /:path/:basename
 maton login [flags]
 ```
 
-Login to your Maton account to set up the CLI. By default, this opens your browser to the Maton login page. After signing in, copy your API key and paste it back into the terminal. Use --interactive when you don't want to launch a browser (for example, on a headless host). Use --oauth to sign in with your browser instead of an API key: the CLI then holds a short-lived access token that it renews automatically, so no long-lived key is stored on the machine.
+Login to your Maton account to set up the CLI. By default, this signs you in through your browser and stores a short-lived access token that the CLI renews automatically, so no long-lived key is kept on the machine. Use --device to earn that same token on a host with no browser: the CLI prints a one-time code that you approve from any other device. The default flow falls back to it by itself when no browser can be opened. Use --api-key to paste in a Maton API key instead: the CLI opens the Maton login page, and you copy the key back into the terminal. --api-key, --oauth, and --device cannot be combined; pick the one that matches the host. Add --interactive to any of these when you don't want a browser launched at all: the CLI prints the URL to open yourself, or just prompts for an API key.
 
 ### Available commands
 
@@ -22,16 +22,24 @@ Login to your Maton account to set up the CLI. By default, this opens your brows
 
 <dl class="flags">
 	<dt>
+		<code>--api-key</code></dt>
+	<dd>Paste in a Maton API key instead of signing in through the browser</dd>
+
+	<dt>
+		<code>--device</code></dt>
+	<dd>Sign in with a one-time code shown in the terminal; no local browser needed</dd>
+
+	<dt>
 		<code>--insecure-storage</code></dt>
-	<dd>Save the API key in plain text instead of the OS keyring</dd>
+	<dd>Save credentials in plain text instead of the OS keyring</dd>
 
 	<dt><code>-i</code>, 
 		<code>--interactive</code></dt>
-	<dd>Skip launching the browser; only prompt for an API key</dd>
+	<dd>Skip launching a browser; on its own, prompt for an API key</dd>
 
 	<dt>
 		<code>--oauth</code></dt>
-	<dd>Sign in through the browser and store a renewable token instead of an API key</dd>
+	<dd>Sign in through the browser and store a renewable token (the default)</dd>
 </dl>
 
 
@@ -49,14 +57,14 @@ Login to your Maton account to set up the CLI. By default, this opens your brows
 ### Examples
 
 {% highlight bash %}{% raw %}
-# Open the Maton login page and paste in an API key
+# Sign in with your browser; no API key to copy
 $ maton login
 
-# Skip the browser launch and just paste an API key
-$ maton login --interactive
+# Sign in from a container or an SSH session with a one-time code
+$ maton login --device
 
-# Sign in with your browser; no API key to copy
-$ maton login --oauth
+# Open the Maton login page and paste in an API key
+$ maton login --api-key
 {% endraw %}{% endhighlight %}
 
 ### See also

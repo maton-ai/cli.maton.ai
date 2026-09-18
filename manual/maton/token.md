@@ -10,7 +10,7 @@ maton token
 ```
 
 Print a valid access token for the active profile, renewing it first if it
-has expired. Only profiles signed in with 'maton login --oauth' have a
+has expired. Only profiles signed in with 'maton login' have a
 renewable token; for API-key profiles this exits non-zero, since printing a
 long-lived key on request is not the same operation.
 
