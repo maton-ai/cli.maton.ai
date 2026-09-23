@@ -14,9 +14,9 @@ has expired. Only profiles signed in with 'maton login' have a
 renewable token; for API-key profiles this exits non-zero, since printing a
 long-lived key on request is not the same operation.
 
-Intended for programs that need to call the Maton API directly:
-
-    curl -H "Authorization: Bearer $(maton token)" https://api.maton.ai/user
+To call the Maton API from the command line, use 'maton api' instead: it
+attaches the credential itself, so the token never lands in shell history,
+process listings, or logs.
 
 The token is short-lived, so fetch it per invocation rather than caching it.
 
@@ -36,7 +36,6 @@ The token is short-lived, so fetch it per invocation rather than caching it.
 
 {% highlight bash %}{% raw %}
 $ maton token
-$ curl -H "Authorization: Bearer $(maton token)" https://api.maton.ai/user
 {% endraw %}{% endhighlight %}
 
 ### See also
