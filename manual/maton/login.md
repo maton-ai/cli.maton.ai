@@ -9,7 +9,7 @@ permalink: /:path/:basename
 maton login [flags]
 ```
 
-Login to your Maton account to set up the CLI. By default, this signs you in through your browser and stores a short-lived access token that the CLI renews automatically, so no long-lived key is kept on the machine. Use --device to earn that same token on a host with no browser: the CLI prints a one-time code that you approve from any other device. The default flow falls back to it by itself when no browser can be opened. Use --api-key to paste in a Maton API key instead: the CLI opens the Maton login page, and you copy the key back into the terminal. --api-key, --oauth, and --device cannot be combined; pick the one that matches the host. Add --interactive to any of these when you don't want a browser launched at all: the CLI prints the URL to open yourself, or just prompts for an API key.
+Login to your Maton account to set up the CLI. By default, the CLI prints a user code and a link, then exits 8 to say the sign-in is pending; open the link on this or any other device, approve the code, then run maton login again. That run exits 0 once the code is approved, exits 8 and shows the code again while it is still pending, and exits 1 if it was denied. A code that expired is replaced with a new one, and the run exits 8. Exit 0 always means you are signed in. The CLI then stores a short-lived access token that the CLI renews automatically, so no long-lived key is kept on the machine. This works the same on a desktop, over SSH, or in a container. Use --api-key to paste in a Maton API key instead: the CLI opens the Maton login page, and you copy the key back into the terminal. --api-key and --device cannot be combined; pick the one that matches the host.
 
 ### Available commands
 
@@ -23,11 +23,11 @@ Login to your Maton account to set up the CLI. By default, this signs you in thr
 <dl class="flags">
 	<dt>
 		<code>--api-key</code></dt>
-	<dd>Paste in a Maton API key instead of signing in through the browser</dd>
+	<dd>Paste in a Maton API key instead of signing in with device authorization</dd>
 
 	<dt>
 		<code>--device</code></dt>
-	<dd>Sign in with a one-time code shown in the terminal; no local browser needed</dd>
+	<dd>Sign in with device authorization, using a user code shown in the terminal (the default)</dd>
 
 	<dt>
 		<code>--insecure-storage</code></dt>
@@ -35,11 +35,11 @@ Login to your Maton account to set up the CLI. By default, this signs you in thr
 
 	<dt><code>-i</code>, 
 		<code>--interactive</code></dt>
-	<dd>Skip launching a browser; on its own, prompt for an API key</dd>
+	<dd>Skip launching a browser for --oauth or --api-key; on its own, prompt for an API key</dd>
 
 	<dt>
 		<code>--oauth</code></dt>
-	<dd>Sign in through the browser and store a renewable token (the default)</dd>
+	<dd>Sign in through a browser that redirects back to this host</dd>
 </dl>
 
 
@@ -57,11 +57,8 @@ Login to your Maton account to set up the CLI. By default, this signs you in thr
 ### Examples
 
 {% highlight bash %}{% raw %}
-# Sign in with your browser; no API key to copy
+# Sign in with device authorization
 $ maton login
-
-# Sign in from a container or an SSH session with a one-time code
-$ maton login --device
 
 # Open the Maton login page and paste in an API key
 $ maton login --api-key
