@@ -48,6 +48,10 @@ Pass `--slurp` to wrap all pages of JSON arrays or objects into an outer JSON ar
 
 <dl class="flags">
 	<dt>
+		<code>--bridge &lt;string&gt;</code></dt>
+	<dd>Bridge ID to send the request through (Maton-Bridge header); see &#34;maton bridge list&#34;</dd>
+
+	<dt>
 		<code>--connection &lt;string&gt;</code></dt>
 	<dd>Connection ID to route through (Maton-Connection header)</dd>
 
@@ -127,6 +131,9 @@ $ maton api -X GET connections -f app=slack
 
 # Use a JSON file as request body
 $ maton api /connections --input file.json
+
+# Send a gateway request through one of your bridges
+$ maton api /icloud-mail/<path> --bridge <bridge-id>
 
 # Set a custom HTTP header
 $ maton api -H 'Accept: application/json' connections

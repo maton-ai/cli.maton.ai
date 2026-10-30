@@ -14,6 +14,7 @@ Manage messages, folders, calendar events, and contacts in Outlook.
 * [maton outlook event](/manual/maton/outlook/event)
 * [maton outlook folder](/manual/maton/outlook/folder)
 * [maton outlook message](/manual/maton/outlook/message)
+* [maton outlook thread](/manual/maton/outlook/thread)
 
 
 ### Auth commands

@@ -9,7 +9,7 @@ permalink: /:path/:basename
 maton connection create <app> [flags]
 ```
 
-Create a connection to a third-party app. By default this opens your browser to complete the OAuth handshake and waits until the connection becomes active. Use --interactive on a headless host to skip the browser launch.
+Create a connection to a third-party app. By default this opens your browser to complete the OAuth handshake and waits until the connection becomes active. For iCloud Mail and Yahoo Mail it waits until the app password is accepted, then shows how the mailbox will send (which can take a few minutes, or need the Maton bridge). Use --interactive on a headless host to skip the browser launch.
 
 ### Options
 
@@ -57,7 +57,7 @@ Create a connection to a third-party app. By default this opens your browser to 
 
 ### JSON Fields
 
-`app`, `connection_id`, `creation_time`, `last_updated_time`, `metadata`, `method`, `status`, `url`
+`app`, `connection_id`, `creation_time`, `last_updated_time`, `metadata`, `method`, `status`, `status_reason`, `url`
 
 {% endraw %}
 ### Examples

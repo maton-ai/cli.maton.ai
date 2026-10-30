@@ -57,7 +57,7 @@ maton connection ls
 
 ### JSON Fields
 
-`app`, `connection_id`, `creation_time`, `last_updated_time`, `metadata`, `method`, `status`, `url`
+`app`, `connection_id`, `creation_time`, `last_updated_time`, `metadata`, `method`, `status`, `status_reason`, `url`
 
 {% endraw %}
 ### Examples

@@ -19,6 +19,7 @@ The official command-line tool to interact with Maton.
 * [maton google-sheets](/manual/maton/google-sheets)
 * [maton google-tasks](/manual/maton/google-tasks)
 * [maton hubspot](/manual/maton/hubspot)
+* [maton icloud-mail](/manual/maton/icloud-mail)
 * [maton jira](/manual/maton/jira)
 * [maton linear](/manual/maton/linear)
 * [maton microsoft-teams](/manual/maton/microsoft-teams)
@@ -29,11 +30,13 @@ The official command-line tool to interact with Maton.
 * [maton slack](/manual/maton/slack)
 * [maton stripe](/manual/maton/stripe)
 * [maton trello](/manual/maton/trello)
+* [maton yahoo-mail](/manual/maton/yahoo-mail)
 * [maton youtube](/manual/maton/youtube)
 
 
 ### Resource commands
 
+* [maton bridge](/manual/maton/bridge)
 * [maton connection](/manual/maton/connection)
 * [maton function](/manual/maton/function)
 * [maton trigger](/manual/maton/trigger)
