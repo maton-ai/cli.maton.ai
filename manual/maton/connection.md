@@ -13,6 +13,7 @@ Work with Maton connections.
 * [maton connection delete](/manual/maton/connection/delete)
 * [maton connection get](/manual/maton/connection/get)
 * [maton connection list](/manual/maton/connection/list)
+* [maton connection reauthorize](/manual/maton/connection/reauthorize)
 
 
 ### Options inherited from parent commands
