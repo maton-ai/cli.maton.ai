@@ -9,7 +9,7 @@ permalink: /:path/:basename
 maton connection reauthorize <id> [flags]
 ```
 
-Reauthorize a FAILED or PENDING connection in place. It keeps its connection ID, so scripts and settings that use that ID keep working. By default this opens your browser to authorize the app again and waits until the connection becomes active. For iCloud Mail and Yahoo Mail it waits until the new app password is accepted, then shows how the mailbox will send. Use --interactive on a headless host to skip the browser launch. An ACTIVE connection doesn't need reauthorizing.
+Reauthorize a FAILED or PENDING connection in place, or change the OAuth scopes of an ACTIVE one with --scopes. It keeps its connection ID, so scripts and settings that use that ID keep working. By default this opens your browser to authorize the app again and waits until the change is complete. An ACTIVE connection keeps working with its current permissions until you approve. For iCloud Mail and Yahoo Mail it waits until the new app password is accepted, then shows how the mailbox will send. Use --interactive on a headless host to skip the browser launch. An ACTIVE connection without --scopes doesn't need reauthorizing.
 
 ### Options
 
@@ -30,6 +30,10 @@ Reauthorize a FAILED or PENDING connection in place. It keeps its connection ID,
 	<dt>
 		<code>--json &lt;fields&gt;</code></dt>
 	<dd>Output JSON with the specified fields</dd>
+
+	<dt>
+		<code>--scopes &lt;strings&gt;</code></dt>
+	<dd>New OAuth scopes for the connection (repeatable or comma-separated)</dd>
 
 	<dt><code>-t</code>, 
 		<code>--template &lt;string&gt;</code></dt>
@@ -53,7 +57,7 @@ Reauthorize a FAILED or PENDING connection in place. It keeps its connection ID,
 
 ### JSON Fields
 
-`app`, `connection_id`, `creation_time`, `last_updated_time`, `metadata`, `method`, `status`, `status_reason`, `url`
+`access_policy`, `app`, `connection_id`, `creation_time`, `granted_scopes`, `last_updated_time`, `metadata`, `method`, `status`, `status_reason`, `url`
 
 {% endraw %}
 ### Examples
@@ -61,6 +65,8 @@ Reauthorize a FAILED or PENDING connection in place. It keeps its connection ID,
 {% highlight bash %}{% raw %}
 $ maton connection reauthorize conn_abc123
 $ maton connection reauthorize conn_abc123 --interactive
+$ maton connection reauthorize conn_abc123 --scopes https://www.googleapis.com/auth/spreadsheets.readonly
+$ maton connection reauthorize conn_abc123 --scopes https://www.googleapis.com/auth/spreadsheets,https://www.googleapis.com/auth/drive.readonly
 $ maton connection reauthorize conn_abc123 --json connection_id,status,url
 {% endraw %}{% endhighlight %}
 

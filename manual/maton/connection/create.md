@@ -11,10 +11,20 @@ maton connection create <app> [flags]
 
 Create a connection to a third-party app. By default this opens your browser to complete the OAuth handshake and waits until the connection becomes active. For iCloud Mail and Yahoo Mail it waits until the app password is accepted, then shows how the mailbox will send (which can take a few minutes, or need the Maton bridge). Use --interactive on a headless host to skip the browser launch.
 
+For apps that offer a choice of OAuth scopes, --scopes requests only those (the app's required scopes are always added; without it the app's defaults are requested). --access-policy (or --access-policy-file) limits which endpoints the connection may call through Maton; see maton connection update --help for the format.
+
 ### Options
 
 
 <dl class="flags">
+	<dt>
+		<code>--access-policy &lt;string&gt;</code></dt>
+	<dd>Access policy as JSON, or null for full access</dd>
+
+	<dt><code>-F</code>, 
+		<code>--access-policy-file &lt;file&gt;</code></dt>
+	<dd>Read the access policy from a JSON file (use - for stdin)</dd>
+
 	<dt><code>-i</code>, 
 		<code>--interactive</code></dt>
 	<dd>Skip launching the browser; print the URL and wait</dd>
@@ -34,6 +44,10 @@ Create a connection to a third-party app. By default this opens your browser to 
 	<dt>
 		<code>--method &lt;string&gt;</code></dt>
 	<dd>Connection method: {API_KEY|BASIC|JWT|OAUTH1|OAUTH2|MCP}</dd>
+
+	<dt>
+		<code>--scopes &lt;strings&gt;</code></dt>
+	<dd>OAuth scopes to request (repeatable or comma-separated)</dd>
 
 	<dt><code>-t</code>, 
 		<code>--template &lt;string&gt;</code></dt>
@@ -57,7 +71,7 @@ Create a connection to a third-party app. By default this opens your browser to 
 
 ### JSON Fields
 
-`app`, `connection_id`, `creation_time`, `last_updated_time`, `metadata`, `method`, `status`, `status_reason`, `url`
+`access_policy`, `app`, `connection_id`, `creation_time`, `granted_scopes`, `last_updated_time`, `metadata`, `method`, `status`, `status_reason`, `url`
 
 {% endraw %}
 ### Examples
@@ -66,6 +80,9 @@ Create a connection to a third-party app. By default this opens your browser to 
 $ maton connection create slack
 $ maton connection create slack --interactive
 $ maton connection create slack --method OAUTH2
+$ maton connection create google-sheets --scopes https://www.googleapis.com/auth/spreadsheets.readonly
+$ maton connection create github --access-policy '{"allow": [{"method": "GET", "path": "**"}]}'
+$ maton connection create github --access-policy-file read-only.json
 $ maton connection create slack --json connection_id,status
 {% endraw %}{% endhighlight %}
 

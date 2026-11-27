@@ -45,7 +45,7 @@ maton connection view
 
 ### JSON Fields
 
-`app`, `connection_id`, `creation_time`, `last_updated_time`, `metadata`, `method`, `status`, `status_reason`, `url`
+`access_policy`, `app`, `connection_id`, `creation_time`, `granted_scopes`, `last_updated_time`, `metadata`, `method`, `status`, `status_reason`, `url`
 
 {% endraw %}
 ### Examples

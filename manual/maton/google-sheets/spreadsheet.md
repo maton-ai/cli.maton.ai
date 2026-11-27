@@ -5,13 +5,14 @@ permalink: /:path/:basename
 
 {% raw %}## maton google-sheets spreadsheet
 
-Create, get, and batch-update spreadsheets
+List, create, get, and batch-update spreadsheets
 
 ### Available commands
 
 * [maton google-sheets spreadsheet batch-update](/manual/maton/google-sheets/spreadsheet/batch-update)
 * [maton google-sheets spreadsheet create](/manual/maton/google-sheets/spreadsheet/create)
 * [maton google-sheets spreadsheet get](/manual/maton/google-sheets/spreadsheet/get)
+* [maton google-sheets spreadsheet list](/manual/maton/google-sheets/spreadsheet/list)
 
 
 ### Options inherited from parent commands
@@ -32,6 +33,7 @@ maton google-sheets spreadsheets
 ### Examples
 
 {% highlight bash %}{% raw %}
+$ maton google-sheets spreadsheet list -Q "name contains 'forecast'"
 $ maton google-sheets spreadsheet get ABC
 $ maton google-sheets spreadsheet create --title 'Q3 forecast'
 $ maton google-sheets spreadsheet create --title 'Tracker' --sheet-title 'Issues'

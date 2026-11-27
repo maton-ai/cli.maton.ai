@@ -14,6 +14,7 @@ Work with Maton connections.
 * [maton connection get](/manual/maton/connection/get)
 * [maton connection list](/manual/maton/connection/list)
 * [maton connection reauthorize](/manual/maton/connection/reauthorize)
+* [maton connection update](/manual/maton/connection/update)
 
 
 ### Options inherited from parent commands
@@ -33,6 +34,9 @@ Work with Maton connections.
 $ maton connection list
 $ maton connection list google-mail
 $ maton connection create google-mail
+$ maton connection create google-sheets --scopes https://www.googleapis.com/auth/spreadsheets.readonly
+$ maton connection reauthorize <connection-id> --scopes <scope>
+$ maton connection update <connection-id> --access-policy-file policy.json
 $ maton connection get <connection-id>
 $ maton connection delete <connection-id>
 {% endraw %}{% endhighlight %}

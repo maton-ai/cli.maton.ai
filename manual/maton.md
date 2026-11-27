@@ -38,7 +38,11 @@ The official command-line tool to interact with Maton.
 
 * [maton bridge](/manual/maton/bridge)
 * [maton connection](/manual/maton/connection)
+* [maton context](/manual/maton/context)
 * [maton function](/manual/maton/function)
+* [maton log](/manual/maton/log)
+* [maton metric](/manual/maton/metric)
+* [maton request](/manual/maton/request)
 * [maton trigger](/manual/maton/trigger)
 
 
